@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#031323">
+  <title>SisMOM — Meta 1 | Visualizador 9:16</title>
+  <link rel="stylesheet" href="assets/leaflet.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .navy-logo{width:3.7em;height:92%;display:block;object-fit:contain}.brand-suite{width:24.5em}.sismom-logo{width:12.4em}.inpe-logo{width:3.8em}
+    .acquisition-kpi{position:relative;padding:0!important;overflow:visible}.acquisition-date-button{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 .5em;border:0;color:inherit;background:transparent;cursor:pointer}.acquisition-date-button:hover,.acquisition-date-button:focus-visible{background:rgba(49,217,239,.08);outline:0}.acquisition-date-button strong{display:flex;align-items:center;gap:.36em}.calendar-icon{color:var(--cyan);font-size:.9em}
+    .acquisition-calendar{width:21em;position:absolute;top:calc(100% - .2em);left:.15em;z-index:1200;padding:.75em;border:1px solid rgba(49,217,239,.48);border-radius:.7em;color:#eaf7ff;background:rgba(2,16,29,.985);box-shadow:0 1.2em 3.2em rgba(0,0,0,.68),0 0 1.6em rgba(49,217,239,.12);font-size:1.12em}.acquisition-calendar[hidden]{display:none}.calendar-heading{display:grid;grid-template-columns:2.2em 1fr 2.2em;align-items:center;gap:.3em}.calendar-heading strong{margin:0;font-size:.86em;text-align:center}.calendar-heading button{height:2.1em;border:1px solid var(--soft);border-radius:.38em;color:#547189;background:rgba(12,43,70,.5)}
+    .calendar-weekdays,.calendar-days{display:grid;grid-template-columns:repeat(7,1fr);gap:.22em}.calendar-weekdays{margin:.72em 0 .35em;color:#7895ab;font-size:.58em;text-align:center}.calendar-days button,.calendar-days>span{aspect-ratio:1}.calendar-days button{display:grid;place-items:center;border:1px solid transparent;border-radius:.38em;color:#5f788c;background:rgba(13,37,57,.38);font-size:.66em}.calendar-days button:disabled{cursor:not-allowed;opacity:.58}.calendar-days button:not(:disabled){color:#07150d;border-color:rgba(69,236,139,.9);background:var(--green);box-shadow:0 0 .9em rgba(69,236,139,.32);cursor:pointer;font-weight:900}.calendar-days button.selected{outline:2px solid #effff6;outline-offset:1px}
+    .acquisition-calendar p{margin:.68em 0 0;color:#8fa9bc;font-size:.56em;text-align:center}.acquisition-calendar p i{width:.62em;height:.62em;display:inline-block;margin-right:.4em;border-radius:50%;background:var(--green);box-shadow:0 0 .6em rgba(69,236,139,.65)}
+  </style>
+</head>
+<body>
+  <main class="viewport">
+    <div class="dashboard-frame" id="dashboardFrame">
+      <header class="topbar">
+        <div class="header-identity">
+          <div class="brand-suite">
+            <img class="sismom-logo" src="assets/logo-sismom-oficial.png" alt="SisMOM">
+            <span class="brand-divider"></span>
+            <img class="inpe-logo" src="assets/logo-inpe.png" alt="INPE">
+            <span class="brand-divider"></span>
+            <img class="navy-logo" src="assets/logo-marinha-brasil.png" alt="Marinha do Brasil">
+          </div>
+          <div class="title-block">
+            <span>PROJETO SisMOM</span>
+            <h1>META 1</h1>
+            <p>Detecção de alvos marítimos</p>
+          </div>
+        </div>
+        <div class="clock-block">
+          <span class="clock-icon" aria-hidden="true">◷</span>
+          <span><strong id="currentDate">--/--/----</strong><small><span id="currentTime">--:--:--</span> UTC</small></span>
+          <button id="fullscreenButton" class="icon-button" type="button" title="Tela cheia" aria-label="Alternar tela cheia">⛶</button>
+        </div>
+      </header>
+
+      <div class="dashboard">
+        <section class="panel overview-panel">
+          <div class="panel-heading overview-heading">
+            <div>
+              <span class="eyebrow">PRODUTO SAR — SENTINEL-1D</span>
+              <h2>Produto processado • arquivo 923</h2>
+              <small class="product-full-name">S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2</small>
+            </div>
+            <span class="status-chip"><i></i> PROCESSADO</span>
+          </div>
+
+          <div class="product-kpis">
+            <article class="acquisition-kpi" id="acquisitionKpi">
+              <button class="acquisition-date-button" id="acquisitionDateButton" type="button" aria-haspopup="dialog" aria-expanded="false">
+                <span>Aquisição</span>
+                <strong>29/07/2026 <span class="calendar-icon" aria-hidden="true">▣</span></strong>
+              </button>
+              <div class="acquisition-calendar" id="acquisitionCalendar" role="dialog" aria-label="Datas de aquisição disponíveis" hidden>
+                <div class="calendar-heading"><button type="button" disabled aria-label="Mês anterior">‹</button><strong>Julho de 2026</strong><button type="button" disabled aria-label="Próximo mês">›</button></div>
+                <div class="calendar-weekdays" aria-hidden="true"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div>
+                <div class="calendar-days" id="calendarDays"></div>
+                <p><i></i> Data com produto disponível</p>
+              </div>
+            </article>
+            <article class="time-kpi"><span>Intervalo UTC</span><strong>08:56:06–08:56:35</strong><small>Brasília: 05:56:06–05:56:35 BRT</small></article>
+            <article><span>Modo</span><strong>IW</strong></article>
+            <article><span>Polarização</span><strong>VV</strong></article>
+            <article><span>Recortes</span><strong>130</strong></article>
+            <article><span>Detecções CFAR</span><strong class="green">6</strong></article>
+          </div>
+
+          <div class="overview-stage">
+            <div class="map-view-controls" role="group" aria-label="Enquadramento do mapa">
+              <button id="zeeButton" type="button">ZEE completa</button>
+              <button id="productButton" class="active" type="button">Produto 923</button>
+            </div>
+            <div id="zeeMap" class="zee-map" aria-label="Mapa do Produto SAR 923 e da Amazônia Azul"></div>
+            <div class="overview-caption">
+              <span><b class="legend-swatch zee"></b> Limite da ZEE</span>
+              <span><b class="legend-swatch pce"></b> Plataforma Continental Estendida</span>
+              <span><b class="legend-swatch raster"></b> Imagem SAR completa</span>
+              <span><b class="legend-swatch detected"></b> Com CFAR</span>
+              <span><b class="legend-swatch selected"></b> Selecionado</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="right-grid">
+          <section class="panel crop-panel">
+            <div class="panel-heading crop-heading">
+              <div class="crop-title"><span class="eyebrow">RECORTE COM DETECÇÃO</span><span class="patch-pill" id="patchPill">P005</span></div>
+              <div class="crop-controls">
+                <button id="previousButton" type="button" aria-label="Recorte anterior">‹</button>
+                <span><b id="patchCounter">1 de 6</b><small>AUTOMÁTICO • 10 s</small></span>
+                <button id="nextButton" type="button" aria-label="Próximo recorte">›</button>
+              </div>
+            </div>
+
+            <div class="sar-stage">
+              <div class="latitude-axis">
+                <span class="orientation-label">N ↑</span>
+                <span id="latNorth">—</span><span id="latMid">—</span><span id="latSouth">—</span>
+              </div>
+              <div class="sar-visual">
+                <div class="sar-image-wrap" id="sarImageWrap">
+                  <img id="sarImage" src="data/P005.png" alt="Recorte SAR geograficamente orientado">
+                  <span class="detection-frame" id="detectionFrame" aria-label="Detecção CFAR"></span>
+                </div>
+                <div class="longitude-axis"><span id="lonWest">—</span><span id="lonMid">—</span><span id="lonEast">—</span></div>
+              </div>
+              <div class="sigma-colorbar">
+                <strong>σ⁰ VV</strong><span class="colorbar-unit">dB</span>
+                <div class="colorbar-scale"><i class="colorbar-gradient"></i><span style="top:0%">0</span><span style="top:20%">−5</span><span style="top:40%">−10</span><span style="top:60%">−15</span><span style="top:80%">−20</span><span style="top:100%">−25</span></div>
+              </div>
+            </div>
+            <div class="overlay-legend"><span><b class="legend-box cfar"></b>Detecção CFAR</span><span><b class="legend-box yolo"></b>YOLO: sem dados</span><span><b class="legend-box ais"></b>AIS: sem AIS</span></div>
+          </section>
+
+          <aside class="details-column">
+            <section class="panel details-panel">
+              <div class="panel-heading compact"><h2>INFORMAÇÕES DO RECORTE</h2></div>
+              <dl class="compact-details">
+                <div><dt>Recorte</dt><dd><b class="badge patch" id="infoPatch">P005</b></dd></div>
+                <div><dt>Arquivo</dt><dd id="infoFile">928</dd></div>
+                <div><dt>CFAR</dt><dd><b class="status-inline">● CONCLUÍDO</b></dd></div>
+                <div>
+                  <dt>Dimensão</dt>
+                  <dd class="dimension-area">
+                    <span id="infoSize">2320 × 2160 px</span>
+                    <small id="infoArea">Área total: 23,2 × 21,6 = 501,12 km²</small>
+                  </dd>
+                </div>
+                <div><dt>CRS</dt><dd>EPSG:4326</dd></div>
+                <div><dt>Tempo SNAP</dt><dd id="infoSnap">2,900 s</dd></div>
+              </dl>
+            </section>
+            <section class="panel details-panel">
+              <div class="panel-heading compact"><h2>DETECÇÃO CFAR</h2><span class="count-badge">1 alvo</span></div>
+              <dl class="compact-details detection-details">
+                <div><dt>Latitude</dt><dd id="detLat">—</dd></div><div><dt>Longitude</dt><dd id="detLon">—</dd></div>
+                <div><dt>Área</dt><dd id="detArea">—</dd></div><div><dt>Pico σ⁰</dt><dd id="detPeak">—</dd></div>
+                <div><dt>Limiar</dt><dd id="detThreshold">—</dd></div><div><dt>Comprimento</dt><dd id="detLength">—</dd></div>
+                <div><dt>YOLO</dt><dd><b class="badge yolo">Sem dados</b></dd></div><div><dt>AIS</dt><dd><b class="badge ais">Sem AIS</b></dd></div>
+              </dl>
+            </section>
+          </aside>
+        </section>
+      </div>
+
+      <footer class="statusbar"><span>SisMOM • Meta 1 • Produto fonte 923</span><span><i></i> CFAR: 6 • YOLO: 0 • AIS: sem dados</span><span>S1D • IW • VV • 29/07/2026 08:56 UTC</span></footer>
+    </div>
+  </main>
+  <script src="assets/leaflet.js"></script>
+  <script src="assets/zee-data.js"></script>
+  <script src="assets/recortes-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

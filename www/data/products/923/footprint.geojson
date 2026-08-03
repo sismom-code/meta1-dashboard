@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "name": "Footprint completo do produto SAR 923",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "source_arquivo_id": 923,
+        "product_name": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.229778,
+              1.039937
+            ],
+            [
+              -46.860519,
+              2.813034
+            ],
+            [
+              -49.136639,
+              3.292312
+            ],
+            [
+              -49.502163,
+              1.524519
+            ],
+            [
+              -47.229778,
+              1.039937
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+/* ============================================================
+   CONFIGURAÇÃO VISUAL — SISMoM META 1
+   Este arquivo é carregado DEPOIS de assets/styles.css.
+   Portanto, as regras abaixo substituem o estilo original.
+   ============================================================ */
+
+:root {
+  /* Cores principais */
+  --bg: #010711;
+  --panel: #071d33;
+  --deep: #031323;
+  --border: rgba(74, 157, 217, 0.34);
+  --soft: rgba(126, 188, 230, 0.16);
+  --text: #f0f7ff;
+  --muted: #91a9c0;
+
+  /* Cores dos resultados */
+  --green: #45ec8b;   /* CFAR / processado */
+  --cyan: #31d9ef;    /* ZEE / AIS */
+  --purple: #b65cff;  /* YOLO */
+  --orange: #ffa451;  /* recorte selecionado */
+}
+
+/* Proporção da tela da Sala de Situação: 9:16 vertical. */
+.dashboard-frame {
+  width: min(100vw, calc(100dvh * 9 / 16));
+  height: min(100dvh, calc(100vw * 16 / 9));
+  aspect-ratio: 9 / 16;
+
+  /* Escala geral dos textos e controles. */
+  font-size: clamp(8px, min(1.3vw, 0.73vh), 14px);
+}
+
+/* Divisão vertical: painel do produto e painel dos recortes. */
+.dashboard {
+  grid-template-rows: minmax(0, 45.5%) minmax(0, 54.5%);
+}
+
+/* Larguras dos logotipos. */
+.navy-logo {
+  width: 3.7em;
+  height: 92%;
+  object-fit: contain;
+}
+
+.brand-suite { width: 24.5em; }
+.sismom-logo { width: 12.4em; }
+.inpe-logo { width: 3.8em; }
+
+/* Calendário de aquisições. */
+.acquisition-kpi {
+  position: relative;
+  padding: 0 !important;
+  overflow: visible;
+}
+
+.acquisition-date-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0.5em;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.acquisition-date-button:hover,
+.acquisition-date-button:focus-visible {
+  background: rgba(49, 217, 239, 0.08);
+  outline: 0;
+}
+
+.acquisition-date-button strong {
+  display: flex;
+  align-items: center;
+  gap: 0.36em;
+}
+
+.calendar-icon {
+  color: var(--cyan);
+  font-size: 0.9em;
+}
+
+.acquisition-calendar {
+  width: 21em;
+  position: absolute;
+  top: calc(100% - 0.2em);
+  left: 0.15em;
+  z-index: 1200;
+  padding: 0.75em;
+  border: 1px solid rgba(49, 217, 239, 0.48);
+  border-radius: 0.7em;
+  color: #eaf7ff;
+  background: rgba(2, 16, 29, 0.985);
+  box-shadow: 0 1.2em 3.2em rgba(0, 0, 0, 0.68),
+              0 0 1.6em rgba(49, 217, 239, 0.12);
+  font-size: 1.12em;
+}
+
+.acquisition-calendar[hidden] { display: none; }
+
+.calendar-heading {
+  display: grid;
+  grid-template-columns: 2.2em 1fr 2.2em;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.calendar-heading strong {
+  margin: 0;
+  font-size: 0.86em;
+  text-align: center;
+}
+
+.calendar-heading button {
+  height: 2.1em;
+  border: 1px solid var(--soft);
+  border-radius: 0.38em;
+  color: #547189;
+  background: rgba(12, 43, 70, 0.5);
+}
+
+.calendar-weekdays,
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.22em;
+}
+
+.calendar-weekdays {
+  margin: 0.72em 0 0.35em;
+  color: #7895ab;
+  font-size: 0.58em;
+  text-align: center;
+}
+
+.calendar-days button,
+.calendar-days > span { aspect-ratio: 1; }
+
+.calendar-days button {
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.38em;
+  color: #5f788c;
+  background: rgba(13, 37, 57, 0.38);
+  font-size: 0.66em;
+}
+
+.calendar-days button:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.calendar-days button:not(:disabled) {
+  color: #07150d;
+  border-color: rgba(69, 236, 139, 0.9);
+  background: var(--green);
+  box-shadow: 0 0 0.9em rgba(69, 236, 139, 0.32);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.calendar-days button.selected {
+  outline: 2px solid #effff6;
+  outline-offset: 1px;
+}
+
+.acquisition-calendar p {
+  margin: 0.68em 0 0;
+  color: #8fa9bc;
+  font-size: 0.56em;
+  text-align: center;
+}
+
+.acquisition-calendar p i {
+  width: 0.62em;
+  height: 0.62em;
+  display: inline-block;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0.6em rgba(69, 236, 139, 0.65);
+}
+
+/* Catálogo automático de produtos. */
+.product-heading-actions{min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:.55em}
+#productSelect{width:min(27em,42vw);min-width:12em;height:2.35em;padding:0 2.1em 0 .65em;border:1px solid rgba(49,217,239,.42);border-radius:.46em;color:#e9f7ff;background:rgba(3,25,43,.96);font-size:.63em;text-overflow:ellipsis}
+#productSelect[hidden]{display:none}
+.calendar-heading button:not(:disabled){color:#d8efff;border-color:rgba(49,217,239,.38);cursor:pointer}
+.viewer-alert{max-width:calc(100% - 2em);position:absolute;left:50%;bottom:3.7em;z-index:900;transform:translateX(-50%);padding:.62em .9em;border:1px solid rgba(255,116,116,.72);border-radius:.5em;color:#ffe9e9;background:rgba(72,8,16,.94);box-shadow:0 .8em 2em rgba(0,0,0,.48);font-size:.66em;text-align:center}
+.viewer-alert[data-kind="warning"]{color:#fff3cf;border-color:rgba(255,224,113,.72);background:rgba(67,46,3,.94)}
+.viewer-alert[hidden]{display:none}
+.preview-message{width:100%;height:100%;display:grid;place-items:center;padding:1.2em;color:#8fa9bc;background:radial-gradient(circle at 50% 45%,rgba(25,72,104,.28),rgba(2,5,10,.96));font-size:.72em;text-align:center}
+.preview-message[hidden]{display:none}
+.sar-image-wrap:has(.preview-message:not([hidden])){width:100%;aspect-ratio:16/9}
+.status-chip{flex:none}

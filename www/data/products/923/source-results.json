@@ -1,0 +1,28 @@
+{
+  "produto": {
+    "arquivo_id": 923,
+    "nome": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2.SAFE.zip",
+    "satelite": "Sentinel-1D",
+    "modo": "IW",
+    "polarizacao": "VV",
+    "inicio_utc": "2026-07-29T08:56:06Z",
+    "fim_utc": "2026-07-29T08:56:35Z",
+    "total_recortes": 130
+  },
+  "cfar": {
+    "status": "concluido",
+    "metodo": "CFAR_hybrid",
+    "total_deteccoes": 6,
+    "geojson": "deteccoes_sar_923.geojson"
+  },
+  "yolo": {
+    "status": "sem_dados",
+    "total_deteccoes": 0,
+    "deteccoes": []
+  },
+  "ais": {
+    "status": "sem_ais",
+    "total_correlacoes": 0,
+    "correlacoes": []
+  }
+}

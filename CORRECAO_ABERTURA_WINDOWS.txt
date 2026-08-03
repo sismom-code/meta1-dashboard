@@ -1,0 +1,20 @@
+CORRECAO DE ABERTURA NO WINDOWS
+
+O RStudio nao e necessario.
+
+O arquivo ABRIR_VISUALIZADOR_SHINY_WINDOWS.bat agora procura automaticamente o
+Rscript.exe:
+
+1. no PATH do Windows;
+2. no Registro do Windows;
+3. em C:\Program Files\R\R-*;
+4. em C:\Program Files (x86)\R\R-*.
+
+Na primeira abertura, ele tambem instala automaticamente os pacotes shiny e
+jsonlite na biblioteca pessoal do usuario. Para isso, mantenha a conexao com a
+internet ativa.
+
+Depois, o navegador deve abrir em:
+http://127.0.0.1:3838
+
+Para encerrar o visualizador, feche a janela preta ou pressione Ctrl+C nela.

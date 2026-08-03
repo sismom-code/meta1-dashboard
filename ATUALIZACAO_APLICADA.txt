@@ -1,0 +1,11 @@
+VERSÃO FINAL — ATUALIZAÇÃO MULTIDATAS APLICADA
+
+Os arquivos do pacote de atualização foram incorporados ao projeto-base.
+O Produto 923 está organizado em www/data/products/923/.
+A camada www/data/zee-amazonia-azul.geojson foi preservada.
+Os arquivos legados substituídos foram removidos para evitar duplicidade.
+
+Depois de instalar o R:
+1. Execute ABRIR_VISUALIZADOR_SHINY_WINDOWS.bat.
+2. Na primeira utilização, caso faltem pacotes, execute Rscript install_packages.R.
+3. Para verificar o catálogo, execute Rscript validate_products.R.

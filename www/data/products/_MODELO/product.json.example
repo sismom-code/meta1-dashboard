@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "id": "1050",
+  "arquivo_id": 1050,
+  "date": "2026-08-15",
+  "name": "S1A_IW_GRDH_1SDV_...",
+  "source_name": "S1A_IW_GRDH_1SDV_....SAFE.zip",
+  "satellite": "Sentinel-1A",
+  "mode": "IW",
+  "polarization": "VV",
+  "status": "processado",
+  "start_utc": "2026-08-15T09:30:00Z",
+  "end_utc": "2026-08-15T09:30:29Z",
+  "total_patches": 130,
+  "total_cfar_detections": 0,
+  "pixel_spacing_m": 10,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {"west": -50.0, "south": -5.0, "east": -47.0, "north": -2.0}
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": "detections-cfar.csv",
+    "yolo_geojson": null,
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95
+  },
+  "cfar": {"status": "concluido", "method": "CFAR_hybrid"},
+  "yolo": {"status": "sem_dados", "total_detections": 0},
+  "ais": {"status": "sem_ais", "total_correlations": 0},
+  "patch_metadata": {"P001": {"snap_seconds": 3.125}}
+}

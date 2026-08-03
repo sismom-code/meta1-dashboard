@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "id": "923",
+  "arquivo_id": 923,
+  "date": "2026-07-29",
+  "name": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2",
+  "source_name": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2.SAFE.zip",
+  "satellite": "Sentinel-1D",
+  "mode": "IW",
+  "polarization": "VV",
+  "status": "processado",
+  "start_utc": "2026-07-29T08:56:06Z",
+  "end_utc": "2026-07-29T08:56:35Z",
+  "total_patches": 130,
+  "total_cfar_detections": 6,
+  "pixel_spacing_m": 10,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {
+      "west": -49.50200115318,
+      "south": 1.04006277794,
+      "east": -46.860465695647,
+      "north": 3.292329519397
+    }
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": "detections-cfar.csv",
+    "yolo_geojson": null,
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95
+  },
+  "cfar": {
+    "status": "concluido",
+    "method": "CFAR_hybrid"
+  },
+  "yolo": {
+    "status": "sem_dados",
+    "total_detections": 0
+  },
+  "ais": {
+    "status": "sem_ais",
+    "total_correlations": 0
+  },
+  "patch_metadata": {
+    "P005": {
+      "snap_seconds": 2.9
+    },
+    "P016": {
+      "snap_seconds": 2.95
+    },
+    "P034": {
+      "snap_seconds": 3.205
+    },
+    "P100": {
+      "snap_seconds": 3.141
+    },
+    "P121": {
+      "snap_seconds": 3.143
+    },
+    "P126": {
+      "snap_seconds": 3.294
+    }
+  }
+}
