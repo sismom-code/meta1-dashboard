@@ -21,21 +21,10 @@
   --orange: #ffa451;  /* recorte selecionado */
 }
 
-/* Proporção da tela da Sala de Situação: 9:16 vertical.
-.dashboard-frame {
-  width: min(100vw, calc(100dvh * 16 / 16));
-  height: min(100dvh, calc(100vw * 16 / 9));
-  aspect-ratio: 9 / 16;
-
-  /* Escala geral dos textos e controles. */
-  font-size: clamp(8px, min(1.3vw, 0.73vh), 14px);
-}
-*/
 .dashboard-frame {
   width: 100vw;
   height: 100dvh ;
-  aspect-ratio: 9 / 16;
-
+   
   /* Escala geral dos textos e controles. */
   font-size: clamp(14px, min(1.3vw, 0.73vh), 24px);
 }
