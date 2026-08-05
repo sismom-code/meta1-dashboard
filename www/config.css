@@ -21,15 +21,19 @@
   --orange: #ffa451;  /* recorte selecionado */
 }
 
+/* Proporção da tela da Sala de Situação: 3:4 vertical. */
 .dashboard-frame {
-  width: min(100vw, calc(100dvh * 16 / 16));
-  height: min(100dvh, calc(100vw * 16 / 9));
-  aspect-ratio: 9 / 16;
+  /* Proporção real da tela: 960 × 1280 = 3:4 */
+  width: min(100vw, calc(100dvh * 3 / 4));
+  height: min(100dvh, calc(100vw * 4 / 3));
+  aspect-ratio: 3 / 4;
 
-  /* Escala geral dos textos e controles. */
-  font-size: clamp(8px, min(1.3vw, 0.73vh), 14px);
+  /*
+    Em 960 × 1280, a fonte-base ficará em aproximadamente 10,9 px.
+    Antes ela ficava em aproximadamente 9,3 px.
+  */
+  font-size: clamp(10px, min(1.5vw, 0.85vh), 15px);
 }
-
 
 /* Divisão vertical: painel do produto e painel dos recortes. */
 .dashboard {
@@ -199,3 +203,139 @@
 .preview-message[hidden]{display:none}
 .sar-image-wrap:has(.preview-message:not([hidden])){width:100%;aspect-ratio:16/9}
 .status-chip{flex:none}
+
+
+/* ============================================================
+   LEGIBILIDADE — TELA 960 × 1280
+   ============================================================ */
+
+@media (orientation: portrait) and (min-width: 850px) and (max-width: 1100px) {
+
+  /* Título principal */
+  .title-block > span {
+    font-size: 0.68em;
+  }
+
+  .title-block h1 {
+    font-size: 2.35em;
+  }
+
+  .title-block p {
+    font-size: 1em;
+  }
+
+  /* Relógio */
+  .clock-block strong {
+    font-size: 1em;
+  }
+
+  .clock-block small {
+    font-size: 0.82em;
+  }
+
+  /* Cabeçalhos das seções */
+  .panel-heading h2,
+  .eyebrow {
+    font-size: 0.9em;
+  }
+
+  .overview-heading h2 {
+    font-size: 1.3em;
+  }
+
+  /* Nome completo do produto */
+  .product-full-name {
+    font-size: 0.72em;
+  }
+
+  /* Informações superiores do produto */
+  .product-kpis span {
+    font-size: 0.76em;
+  }
+
+  .product-kpis strong {
+    font-size: 1em;
+  }
+
+  .product-kpis .green {
+    font-size: 1.32em;
+  }
+
+  .product-kpis small {
+    font-size: 0.62em;
+  }
+
+  /* Status e etiquetas */
+  .status-chip,
+  .count-badge,
+  .patch-pill {
+    font-size: 0.76em;
+  }
+
+  /* Botões do mapa */
+  .map-view-controls button {
+    font-size: 0.76em;
+  }
+
+  /* Identificação Pxxx no mapa */
+  .map-patch-label span {
+    font-size: 0.74em;
+  }
+
+  /* Legenda inferior do mapa */
+  .overview-caption {
+    font-size: 0.72em;
+  }
+
+  /* Navegação entre recortes */
+  .crop-controls span {
+    font-size: 0.76em;
+  }
+
+  /* Tabelas de informações */
+  .compact-details div {
+    font-size: 0.82em;
+    padding-top: 0.43em;
+    padding-bottom: 0.43em;
+  }
+
+  .dimension-area small {
+    font-size: 0.9em;
+  }
+
+  .badge {
+    font-size: 0.92em;
+  }
+
+  /* Coordenadas da imagem SAR */
+  .latitude-axis,
+  .longitude-axis {
+    font-size: 0.64em;
+  }
+
+  /* Barra Sigma0 */
+  .sigma-colorbar strong {
+    font-size: 0.74em;
+  }
+
+  .colorbar-unit,
+  .colorbar-scale span {
+    font-size: 0.62em;
+  }
+
+  /* Legenda CFAR, YOLO e AIS */
+  .overlay-legend {
+    font-size: 0.76em;
+  }
+
+  /* Rodapé */
+  .statusbar {
+    font-size: 0.68em;
+  }
+
+  /* Textos internos do Leaflet */
+  .leaflet-control-layers-expanded,
+  .map-tooltip {
+    font-size: 0.76em !important;
+  }
+}
