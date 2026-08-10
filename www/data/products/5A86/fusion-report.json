@@ -1,0 +1,96 @@
+{
+  "enabled": true,
+  "match_on_overlap": true,
+  "max_centroid_distance_m": 100.0,
+  "assignment": "many_cfar_to_one_yolo_overlap_then_nearest",
+  "distance_method": "WGS84_geodesic_between_centroids",
+  "total_cfar": 19,
+  "total_yolo": 7,
+  "candidate_pairs": 4,
+  "total_matches": 3,
+  "total_matched_targets": 3,
+  "total_cfar_yolo_associations": 4,
+  "cfar_fragments_absorbed": 4,
+  "cfar_only": 15,
+  "yolo_only": 4,
+  "total_unique_targets": 22,
+  "count_check": 22,
+  "matches": [
+    {
+      "target_id": "T0001",
+      "cfar_id": 18,
+      "cfar_ids": [
+        18,
+        19
+      ],
+      "cfar_fragment_count": 2,
+      "yolo_id": 1,
+      "cfar_patch_id": 120,
+      "cfar_patch_ids": [
+        120,
+        120
+      ],
+      "yolo_patch_id": 120,
+      "match_distance_m": 40.512,
+      "match_distances_m": [
+        40.512,
+        136.31
+      ],
+      "nearest_match_distance_m": 40.512,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap",
+      "fusion_rules": [
+        "geometry_overlap",
+        "geometry_overlap"
+      ]
+    },
+    {
+      "target_id": "T0002",
+      "cfar_id": 3,
+      "cfar_ids": [
+        3
+      ],
+      "cfar_fragment_count": 1,
+      "yolo_id": 2,
+      "cfar_patch_id": 85,
+      "cfar_patch_ids": [
+        85
+      ],
+      "yolo_patch_id": 85,
+      "match_distance_m": 30.855,
+      "match_distances_m": [
+        30.855
+      ],
+      "nearest_match_distance_m": 30.855,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap",
+      "fusion_rules": [
+        "geometry_overlap"
+      ]
+    },
+    {
+      "target_id": "T0003",
+      "cfar_id": 17,
+      "cfar_ids": [
+        17
+      ],
+      "cfar_fragment_count": 1,
+      "yolo_id": 3,
+      "cfar_patch_id": 110,
+      "cfar_patch_ids": [
+        110
+      ],
+      "yolo_patch_id": 110,
+      "match_distance_m": 15.819,
+      "match_distances_m": [
+        15.819
+      ],
+      "nearest_match_distance_m": 15.819,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap",
+      "fusion_rules": [
+        "geometry_overlap"
+      ]
+    }
+  ]
+}

@@ -60,13 +60,22 @@ validate_product_manifest <- function(manifest, product_dir) {
   required_files <- list(
     footprint = manifest$footprint,
     patches = manifest$patches,
-    cfar_geojson = manifest$detections$cfar_geojson,
-    cfar_csv = manifest$detections$cfar_csv
+    presentation = manifest$presentation
   )
   for (name in names(required_files)) {
     relative_path <- required_files[[name]]
     if (is.null(relative_path) || !manifest_file_exists(product_dir, relative_path)) {
       add_error(sprintf("arquivo obrigatório ausente: %s", name))
+    }
+  }
+
+  detection_paths <- unlist(manifest$detections, recursive = TRUE, use.names = TRUE)
+  detection_paths <- detection_paths[vapply(detection_paths, function(value) {
+    is.character(value) && length(value) == 1L && nzchar(value)
+  }, logical(1))]
+  for (name in names(detection_paths)) {
+    if (!manifest_file_exists(product_dir, detection_paths[[name]])) {
+      add_error(sprintf("arquivo de detecção declarado e ausente: %s", name))
     }
   }
 

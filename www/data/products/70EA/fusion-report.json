@@ -1,0 +1,207 @@
+{
+  "enabled": true,
+  "match_on_overlap": true,
+  "max_centroid_distance_m": 100.0,
+  "assignment": "one_to_one_overlap_then_nearest",
+  "distance_method": "WGS84_geodesic_between_centroids",
+  "total_cfar": 38,
+  "total_yolo": 20,
+  "candidate_pairs": 20,
+  "total_matches": 19,
+  "cfar_only": 19,
+  "yolo_only": 1,
+  "total_unique_targets": 39,
+  "count_check": 39,
+  "matches": [
+    {
+      "target_id": "T0001",
+      "cfar_id": 34,
+      "yolo_id": 17,
+      "cfar_patch_id": 92,
+      "yolo_patch_id": 92,
+      "match_distance_m": 0.0,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0002",
+      "cfar_id": 1,
+      "yolo_id": 15,
+      "cfar_patch_id": 2,
+      "yolo_patch_id": 1,
+      "match_distance_m": 5.0,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0003",
+      "cfar_id": 9,
+      "yolo_id": 8,
+      "cfar_patch_id": 40,
+      "yolo_patch_id": 39,
+      "match_distance_m": 10.151,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0004",
+      "cfar_id": 32,
+      "yolo_id": 10,
+      "cfar_patch_id": 92,
+      "yolo_patch_id": 92,
+      "match_distance_m": 11.2,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0005",
+      "cfar_id": 31,
+      "yolo_id": 14,
+      "cfar_patch_id": 92,
+      "yolo_patch_id": 91,
+      "match_distance_m": 18.186,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0006",
+      "cfar_id": 24,
+      "yolo_id": 13,
+      "cfar_patch_id": 91,
+      "yolo_patch_id": 91,
+      "match_distance_m": 20.902,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0007",
+      "cfar_id": 36,
+      "yolo_id": 18,
+      "cfar_patch_id": 94,
+      "yolo_patch_id": 81,
+      "match_distance_m": 22.407,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0008",
+      "cfar_id": 2,
+      "yolo_id": 5,
+      "cfar_patch_id": 22,
+      "yolo_patch_id": 22,
+      "match_distance_m": 25.087,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0009",
+      "cfar_id": 15,
+      "yolo_id": 3,
+      "cfar_patch_id": 52,
+      "yolo_patch_id": 52,
+      "match_distance_m": 27.305,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0010",
+      "cfar_id": 28,
+      "yolo_id": 11,
+      "cfar_patch_id": 91,
+      "yolo_patch_id": 91,
+      "match_distance_m": 30.831,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0011",
+      "cfar_id": 10,
+      "yolo_id": 2,
+      "cfar_patch_id": 42,
+      "yolo_patch_id": 42,
+      "match_distance_m": 31.643,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0012",
+      "cfar_id": 38,
+      "yolo_id": 9,
+      "cfar_patch_id": 108,
+      "yolo_patch_id": 95,
+      "match_distance_m": 33.706,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0013",
+      "cfar_id": 7,
+      "yolo_id": 4,
+      "cfar_patch_id": 36,
+      "yolo_patch_id": 36,
+      "match_distance_m": 36.817,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0014",
+      "cfar_id": 11,
+      "yolo_id": 1,
+      "cfar_patch_id": 43,
+      "yolo_patch_id": 43,
+      "match_distance_m": 39.335,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0015",
+      "cfar_id": 3,
+      "yolo_id": 6,
+      "cfar_patch_id": 30,
+      "yolo_patch_id": 30,
+      "match_distance_m": 40.874,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0016",
+      "cfar_id": 35,
+      "yolo_id": 20,
+      "cfar_patch_id": 92,
+      "yolo_patch_id": 92,
+      "match_distance_m": 41.768,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0017",
+      "cfar_id": 4,
+      "yolo_id": 7,
+      "cfar_patch_id": 32,
+      "yolo_patch_id": 32,
+      "match_distance_m": 46.311,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0018",
+      "cfar_id": 18,
+      "yolo_id": 16,
+      "cfar_patch_id": 58,
+      "yolo_patch_id": 57,
+      "match_distance_m": 51.046,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    },
+    {
+      "target_id": "T0019",
+      "cfar_id": 5,
+      "yolo_id": 12,
+      "cfar_patch_id": 36,
+      "yolo_patch_id": 36,
+      "match_distance_m": 115.958,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap"
+    }
+  ]
+}

@@ -1,0 +1,6725 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.55065192247471,
+              -33.411573415568725
+            ],
+            [
+              -49.60635543138937,
+              -33.58834614990464
+            ],
+            [
+              -49.81408561087216,
+              -33.541022410244544
+            ],
+            [
+              -49.75798552085612,
+              -33.36433056228456
+            ],
+            [
+              -49.55065192247471,
+              -33.411573415568725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 0,
+        "tile_id": 0,
+        "patch_number": 1,
+        "patch_label": "P001",
+        "name": "patch_0001_VV",
+        "x_start": 0,
+        "y_start": 0,
+        "valid_x_end": 2000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 2160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": -160,
+          "y0": -160,
+          "x1": 2160,
+          "y1": 2160
+        },
+        "processing_width": 2160,
+        "processing_height": 2160,
+        "processing_target_width": 2160,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 2000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 2000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -49.83520827143941,
+          "south": -33.60249351588277,
+          "east": -49.55065192247471,
+          "north": -33.3605370254932
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -49.83520827143941,
+          "south": -33.60249351588277,
+          "east": -49.55065192247471,
+          "north": -33.3605370254932
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.75808919237864,
+              -33.36430685267961
+            ],
+            [
+              -49.81418947853169,
+              -33.54099866133473
+            ],
+            [
+              -50.02171461381483,
+              -33.4933609506334
+            ],
+            [
+              -49.96522421229235,
+              -33.31675104894988
+            ],
+            [
+              -49.75808919237864,
+              -33.36430685267961
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 1,
+        "tile_id": 1,
+        "patch_number": 2,
+        "patch_label": "P002",
+        "name": "patch_0002_VV",
+        "x_start": 2000,
+        "y_start": 0,
+        "valid_x_end": 4000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 0,
+          "x1": 4160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 1840,
+          "y0": -160,
+          "x1": 4160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 0,
+          "x1": 4000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 2000,
+          "y0": 0,
+          "x1": 4000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.042845058986664,
+          "south": -33.558939941553035,
+          "east": -49.74150174900511,
+          "north": -33.312922130761436
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.042845058986664,
+          "south": -33.558939941553035,
+          "east": -49.74150174900511,
+          "north": -33.312922130761436
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.96532796058632,
+              -33.31672744383451
+            ],
+            [
+              -50.02181855697758,
+              -33.4933373096102
+            ],
+            [
+              -50.22909529021444,
+              -33.44532324494888
+            ],
+            [
+              -50.17221283013933,
+              -33.26880069159854
+            ],
+            [
+              -49.96532796058632,
+              -33.31672744383451
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 2,
+        "tile_id": 2,
+        "patch_number": 3,
+        "patch_label": "P003",
+        "name": "patch_0003_VV",
+        "x_start": 4000,
+        "y_start": 0,
+        "valid_x_end": 6000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 0,
+          "x1": 6160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 3840,
+          "y0": -160,
+          "x1": 6160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 0,
+          "x1": 6000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 4000,
+          "y0": 0,
+          "x1": 6000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.250245335008756,
+          "south": -33.51129595169644,
+          "east": -49.94875616856011,
+          "north": -33.26495289529038
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.250245335008756,
+          "south": -33.51129595169644,
+          "east": -49.94875616856011,
+          "north": -33.26495289529038
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.17231627633864,
+              -33.268776642871615
+            ],
+            [
+              -50.22919893487841,
+              -33.445299154017746
+            ],
+            [
+              -50.43626486447018,
+              -33.39696933447922
+            ],
+            [
+              -50.378996527925935,
+              -33.220535538179554
+            ],
+            [
+              -50.17231627633864,
+              -33.268776642871615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 3,
+        "tile_id": 3,
+        "patch_number": 4,
+        "patch_label": "P004",
+        "name": "patch_0004_VV",
+        "x_start": 6000,
+        "y_start": 0,
+        "valid_x_end": 8000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 0,
+          "x1": 8160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 5840,
+          "y0": -160,
+          "x1": 8160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 0,
+          "x1": 8000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 6000,
+          "y0": 0,
+          "x1": 8000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.45742242622417,
+          "south": -33.46328144824862,
+          "east": -50.15576487876614,
+          "north": -33.21665203280305
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.45742242622417,
+          "south": -33.46328144824862,
+          "east": -50.15576487876614,
+          "north": -33.21665203280305
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.379099828207,
+              -33.22051126627095
+            ],
+            [
+              -50.43636835740566,
+              -33.396945015137845
+            ],
+            [
+              -50.643189779459334,
+              -33.34824320574182
+            ],
+            [
+              -50.585535943326484,
+              -33.1719028927134
+            ],
+            [
+              -50.379099828207,
+              -33.22051126627095
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 4,
+        "tile_id": 4,
+        "patch_number": 5,
+        "patch_label": "P005",
+        "name": "patch_0005_VV",
+        "x_start": 8000,
+        "y_start": 0,
+        "valid_x_end": 10000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 0,
+          "x1": 10160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 7840,
+          "y0": -160,
+          "x1": 10160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 0,
+          "x1": 10000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 8000,
+          "y0": 0,
+          "x1": 10000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.664365556331774,
+          "south": -33.414950047239536,
+          "east": -50.36256753672194,
+          "north": -33.16800130064616
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.664365556331774,
+          "south": -33.414950047239536,
+          "east": -50.36256753672194,
+          "north": -33.16800130064616
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.58563916587255,
+              -33.171878507762976
+            ],
+            [
+              -50.643293194902085,
+              -33.34821877511768
+            ],
+            [
+              -50.849896819185815,
+              -33.299199653680546
+            ],
+            [
+              -50.791861077816506,
+              -33.122953753546746
+            ],
+            [
+              -50.58563916587255,
+              -33.171878507762976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 5,
+        "tile_id": 5,
+        "patch_number": 6,
+        "patch_label": "P006",
+        "name": "patch_0006_VV",
+        "x_start": 10000,
+        "y_start": 0,
+        "valid_x_end": 12000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 0,
+          "x1": 12160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 9840,
+          "y0": -160,
+          "x1": 12160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 0,
+          "x1": 12000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 10000,
+          "y0": 0,
+          "x1": 12000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.87107947010409,
+          "south": -33.36624117128572,
+          "east": -50.569123558093814,
+          "north": -33.11901645213348
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.87107947010409,
+          "south": -33.36624117128572,
+          "east": -50.569123558093814,
+          "north": -33.11901645213348
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.79196414972614,
+              -33.12292914541291
+            ],
+            [
+              -50.85000008452382,
+              -33.299174999872996
+            ],
+            [
+              -51.05636292121383,
+              -33.24979688928663
+            ],
+            [
+              -50.99794289168277,
+              -33.07364281408583
+            ],
+            [
+              -50.79196414972614,
+              -33.12292914541291
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 6,
+        "tile_id": 6,
+        "patch_number": 7,
+        "patch_label": "P007",
+        "name": "patch_0007_VV",
+        "x_start": 12000,
+        "y_start": 0,
+        "valid_x_end": 14000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 11840,
+          "y0": 0,
+          "x1": 14160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 11840,
+          "y0": -160,
+          "x1": 14160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 12000,
+          "y0": 0,
+          "x1": 14000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 12000,
+          "y0": 0,
+          "x1": 14000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.07756375606712,
+          "south": -33.31722509594046,
+          "east": -50.77547221776635,
+          "north": -33.06968742612068
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.07756375606712,
+          "south": -33.31722509594046,
+          "east": -50.77547221776635,
+          "north": -33.06968742612068
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.99804588932235,
+              -33.073618092911055
+            ],
+            [
+              -51.056466109209495,
+              -33.24977212186798
+            ],
+            [
+              -51.26260378542666,
+              -33.20006784866138
+            ],
+            [
+              -51.20380761145479,
+              -33.02401028302826
+            ],
+            [
+              -50.99804588932235,
+              -33.073618092911055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 7,
+        "tile_id": 7,
+        "patch_number": 8,
+        "patch_label": "P008",
+        "name": "patch_0008_VV",
+        "x_start": 14000,
+        "y_start": 0,
+        "valid_x_end": 16000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 0,
+          "x1": 16160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 13840,
+          "y0": -160,
+          "x1": 16160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 0,
+          "x1": 16000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 14000,
+          "y0": 0,
+          "x1": 16000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.283810730031654,
+          "south": -33.267833031061414,
+          "east": -50.98156625518366,
+          "north": -33.02001964975251
+        },
+        "cfar_detection_count": 1,
+        "yolo_detection_count": 1,
+        "processing_bounds_lonlat": {
+          "west": -51.283810730031654,
+          "south": -33.267833031061414,
+          "east": -50.98156625518366,
+          "north": -33.02001964975251
+        },
+        "cfar_count": 1,
+        "yolo_count": 1,
+        "has_cfar_detection": true,
+        "has_yolo_detection": true,
+        "has_detection": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.20391045650455,
+              -33.02398534157029
+            ],
+            [
+              -51.26270682037169,
+              -33.20004285630113
+            ],
+            [
+              -51.46860366192401,
+              -33.149984175535494
+            ],
+            [
+              -51.409433041368246,
+              -32.97402942840295
+            ],
+            [
+              -51.20391045650455,
+              -33.02398534157029
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 8,
+        "tile_id": 8,
+        "patch_number": 9,
+        "patch_label": "P009",
+        "name": "patch_0009_VV",
+        "x_start": 16000,
+        "y_start": 0,
+        "valid_x_end": 18000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 15840,
+          "y0": 0,
+          "x1": 18160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 15840,
+          "y0": -160,
+          "x1": 18160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 16000,
+          "y0": 0,
+          "x1": 18000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 16000,
+          "y0": 0,
+          "x1": 18000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.48982846812798,
+          "south": -33.218131816367475,
+          "east": -51.187455263989975,
+          "north": -32.97002117233305
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.48982846812798,
+          "south": -33.218131816367475,
+          "east": -51.187455263989975,
+          "north": -32.97002117233305
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.40953581376544,
+              -32.97400437680251
+            ],
+            [
+              -51.468706618206284,
+              -33.14995907189248
+            ],
+            [
+              -51.67437754948396,
+              -33.09957471940893
+            ],
+            [
+              -51.61483285982953,
+              -32.923720095056716
+            ],
+            [
+              -51.40953581376544,
+              -32.97400437680251
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 9,
+        "tile_id": 9,
+        "patch_number": 10,
+        "patch_label": "P010",
+        "name": "patch_0010_VV",
+        "x_start": 18000,
+        "y_start": 0,
+        "valid_x_end": 20000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 0,
+          "x1": 20160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 17840,
+          "y0": -160,
+          "x1": 20160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 0,
+          "x1": 20000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 18000,
+          "y0": 0,
+          "x1": 20000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.69560760066409,
+          "south": -33.168058211469,
+          "east": -51.393092229150255,
+          "north": -32.91967612964079
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.69560760066409,
+          "south": -33.168058211469,
+          "east": -51.393092229150255,
+          "north": -32.91967612964079
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.61493547680301,
+              -32.923694820272864
+            ],
+            [
+              -51.67448035184086,
+              -33.09954939315266
+            ],
+            [
+              -51.87991149695685,
+              -33.048818037364626
+            ],
+            [
+              -51.81999493225912,
+              -32.87306689431382
+            ],
+            [
+              -51.61493547680301,
+              -32.923694820272864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 10,
+        "tile_id": 10,
+        "patch_number": 11,
+        "patch_label": "P011",
+        "name": "patch_0011_VV",
+        "x_start": 20000,
+        "y_start": 0,
+        "valid_x_end": 22000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 0,
+          "x1": 22160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 19840,
+          "y0": -160,
+          "x1": 22160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 0,
+          "x1": 22000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 20000,
+          "y0": 0,
+          "x1": 22000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.901158920509026,
+          "south": -33.11767584708815,
+          "east": -51.59851675241294,
+          "north": -32.869005306103745
+        },
+        "cfar_detection_count": 1,
+        "yolo_detection_count": 1,
+        "processing_bounds_lonlat": {
+          "west": -51.901158920509026,
+          "south": -33.11767584708815,
+          "east": -51.59851675241294,
+          "north": -32.869005306103745
+        },
+        "cfar_count": 1,
+        "yolo_count": 1,
+        "has_cfar_detection": true,
+        "has_yolo_detection": true,
+        "has_detection": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.82009747265591,
+              -32.873041509387505
+            ],
+            [
+              -51.88001422391584,
+              -33.048792600395736
+            ],
+            [
+              -52.08521037800196,
+              -32.997730388761035
+            ],
+            [
+              -52.024923425368655,
+              -32.82208789707431
+            ],
+            [
+              -51.82009747265591,
+              -32.873041509387505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 11,
+        "tile_id": 11,
+        "patch_number": 12,
+        "patch_label": "P012",
+        "name": "patch_0012_VV",
+        "x_start": 22000,
+        "y_start": 0,
+        "valid_x_end": 24000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 0,
+          "x1": 24160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 21840,
+          "y0": -160,
+          "x1": 24160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 0,
+          "x1": 24000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 22000,
+          "y0": 0,
+          "x1": 24000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.10646238833358,
+          "south": -33.066928775637656,
+          "east": -51.80369099209227,
+          "north": -32.81799106327595
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.10646238833358,
+          "south": -33.066928775637656,
+          "east": -51.80369099209227,
+          "north": -32.81799106327595
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.025025813574466,
+              -32.82206229186308
+            ],
+            [
+              -52.08531294679061,
+              -32.99770473150722
+            ],
+            [
+              -52.29019700962123,
+              -32.94632612705115
+            ],
+            [
+              -52.229544098102146,
+              -32.770791164343656
+            ],
+            [
+              -52.025025813574466,
+              -32.82206229186308
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 12,
+        "tile_id": 12,
+        "patch_number": 13,
+        "patch_label": "P013",
+        "name": "patch_0013_VV",
+        "x_start": 24000,
+        "y_start": 0,
+        "valid_x_end": 26000,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 0,
+          "x1": 26160,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 23840,
+          "y0": -160,
+          "x1": 26160,
+          "y1": 2160
+        },
+        "processing_width": 2320,
+        "processing_height": 2160,
+        "processing_target_width": 2320,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 0,
+          "x1": 26000,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 24000,
+          "y0": 0,
+          "x1": 26000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.31145392689423,
+          "south": -33.015867455880084,
+          "east": -52.008643712535296,
+          "north": -32.76668041795192
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.31145392689423,
+          "south": -33.015867455880084,
+          "east": -52.008643712535296,
+          "north": -32.76668041795192
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.22964632945899,
+              -32.7707654721787
+            ],
+            [
+              -52.290299426390916,
+              -32.94630037937412
+            ],
+            [
+              -52.32317519367458,
+              -32.93803537504827
+            ],
+            [
+              -52.26246257915431,
+              -32.76251828723029
+            ],
+            [
+              -52.22964632945899,
+              -32.7707654721787
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 13,
+        "tile_id": 13,
+        "patch_number": 14,
+        "patch_label": "P014",
+        "name": "patch_0014_VV",
+        "x_start": 26000,
+        "y_start": 0,
+        "valid_x_end": 26322,
+        "valid_y_end": 2000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 25840,
+          "y0": 0,
+          "x1": 26322,
+          "y1": 2160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 25840,
+          "y0": -160,
+          "x1": 28160,
+          "y1": 2160
+        },
+        "processing_width": 482,
+        "processing_height": 2160,
+        "processing_target_width": 482,
+        "processing_target_height": 2160,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 26000,
+          "y0": 0,
+          "x1": 26322,
+          "y1": 2000
+        },
+        "requested_bbox_pixels": {
+          "x0": 26000,
+          "y0": 0,
+          "x1": 28000,
+          "y1": 2000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.328047762794114,
+          "south": -32.96446900899369,
+          "east": -52.213289310596984,
+          "north": -32.76251828723029
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.328047762794114,
+          "south": -32.96446900899369,
+          "east": -52.213289310596984,
+          "north": -32.76251828723029
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.60638336646937,
+              -33.588434570942
+            ],
+            [
+              -49.6622821714173,
+              -33.76518220906006
+            ],
+            [
+              -49.87041036383599,
+              -33.71777595307992
+            ],
+            [
+              -49.81411374398304,
+              -33.54111079074857
+            ],
+            [
+              -49.60638336646937,
+              -33.588434570942
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 14,
+        "tile_id": 14,
+        "patch_number": 15,
+        "patch_label": "P015",
+        "name": "patch_0015_VV",
+        "x_start": 0,
+        "y_start": 2000,
+        "valid_x_end": 2000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 1840,
+          "x1": 2160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": -160,
+          "y0": 1840,
+          "x1": 2160,
+          "y1": 4160
+        },
+        "processing_width": 2160,
+        "processing_height": 2320,
+        "processing_target_width": 2160,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 2000,
+          "x1": 2000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 0,
+          "y0": 2000,
+          "x1": 2000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -49.89157897998325,
+          "south": -33.779328113395984,
+          "east": -49.60191375431003,
+          "north": -33.523170658538945
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -49.89157897998325,
+          "south": -33.779328113395984,
+          "east": -49.60191375431003,
+          "north": -33.523170658538945
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.81421761174172,
+              -33.541087041816205
+            ],
+            [
+              -49.87051442981485,
+              -33.717752161329805
+            ],
+            [
+              -50.078434592407945,
+              -33.67002887093648
+            ],
+            [
+              -50.021742945337266,
+              -33.49344928838269
+            ],
+            [
+              -49.81421761174172,
+              -33.541087041816205
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 15,
+        "tile_id": 15,
+        "patch_number": 16,
+        "patch_label": "P016",
+        "name": "patch_0016_VV",
+        "x_start": 2000,
+        "y_start": 2000,
+        "valid_x_end": 4000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 1840,
+          "x1": 4160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 1840,
+          "y0": 1840,
+          "x1": 4160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 2000,
+          "x1": 4000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 2000,
+          "y0": 2000,
+          "x1": 4000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.099610645957945,
+          "south": -33.73569839381431,
+          "east": -49.79309999558349,
+          "north": -33.475479743438314
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.099610645957945,
+          "south": -33.73569839381431,
+          "east": -49.79309999558349,
+          "north": -33.475479743438314
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.02184688860101,
+              -33.493425647338654
+            ],
+            [
+              -50.078538730830424,
+              -33.67000518711548
+            ],
+            [
+              -50.28620972351818,
+              -33.62190469944308
+            ],
+            [
+              -50.22912381773881,
+              -33.44541153976917
+            ],
+            [
+              -50.02184688860101,
+              -33.493425647338654
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 16,
+        "tile_id": 16,
+        "patch_number": 17,
+        "patch_label": "P017",
+        "name": "patch_0017_VV",
+        "x_start": 4000,
+        "y_start": 2000,
+        "valid_x_end": 6000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 1840,
+          "x1": 6160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 3840,
+          "y0": 1840,
+          "x1": 6160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 2000,
+          "x1": 6000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 4000,
+          "y0": 2000,
+          "x1": 6000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.30740550406159,
+          "south": -33.68796887966237,
+          "east": -50.000713407423554,
+          "north": -33.42743039354697
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.30740550406159,
+          "south": -33.68796887966237,
+          "east": -50.000713407423554,
+          "north": -33.42743039354697
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.22922746250009,
+              -33.44538744881547
+            ],
+            [
+              -50.28631356363604,
+              -33.62188056452872
+            ],
+            [
+              -50.493773528099084,
+              -33.57346143914707
+            ],
+            [
+              -50.43629359106927,
+              -33.397057584350236
+            ],
+            [
+              -50.22922746250009,
+              -33.44538744881547
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 17,
+        "tile_id": 17,
+        "patch_number": 18,
+        "patch_label": "P018",
+        "name": "patch_0018_VV",
+        "x_start": 6000,
+        "y_start": 2000,
+        "valid_x_end": 8000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 1840,
+          "x1": 8160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 5840,
+          "y0": 1840,
+          "x1": 8160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 2000,
+          "x1": 8000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 6000,
+          "y0": 2000,
+          "x1": 8000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.5149755771868,
+          "south": -33.639867862900005,
+          "east": -50.20808236833814,
+          "north": -33.3790470402194
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.5149755771868,
+          "south": -33.639867862900005,
+          "east": -50.20808236833814,
+          "north": -33.3790470402194
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.43639708410032,
+              -33.39703326498804
+            ],
+            [
+              -50.49387721432204,
+              -33.5734370770079
+            ],
+            [
+              -50.70108532435826,
+              -33.52464605561329
+            ],
+            [
+              -50.64321869732281,
+              -33.34833141123024
+            ],
+            [
+              -50.43639708410032,
+              -33.39703326498804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 18,
+        "tile_id": 18,
+        "patch_number": 19,
+        "patch_label": "P019",
+        "name": "patch_0019_VV",
+        "x_start": 8000,
+        "y_start": 2000,
+        "valid_x_end": 10000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 1840,
+          "x1": 10160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 7840,
+          "y0": 1840,
+          "x1": 10160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 2000,
+          "x1": 10000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 8000,
+          "y0": 2000,
+          "x1": 10000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.722306714163985,
+          "south": -33.591447262304456,
+          "east": -50.41524029861539,
+          "north": -33.330310251379245
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.722306714163985,
+          "south": -33.591447262304456,
+          "east": -50.41524029861539,
+          "north": -33.330310251379245
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.64332211286127,
+              -33.34830698058181
+            ],
+            [
+              -50.701188933479514,
+              -33.52462157753469
+            ],
+            [
+              -50.90818066515652,
+              -33.475508979220166
+            ],
+            [
+              -50.849925930103325,
+              -33.299287812855844
+            ],
+            [
+              -50.64332211286127,
+              -33.34830698058181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 19,
+        "tile_id": 19,
+        "patch_number": 20,
+        "patch_label": "P020",
+        "name": "patch_0020_VV",
+        "x_start": 10000,
+        "y_start": 2000,
+        "valid_x_end": 12000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 1840,
+          "x1": 12160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 9840,
+          "y0": 1840,
+          "x1": 12160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 2000,
+          "x1": 12000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 10000,
+          "y0": 2000,
+          "x1": 12000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.92940891240853,
+          "south": -33.542649547598685,
+          "east": -50.62215120364928,
+          "north": -33.281238353757736
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.92940891240853,
+          "south": -33.542649547598685,
+          "east": -50.62215120364928,
+          "north": -33.281238353757736
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.8500291955363,
+              -33.299263159024
+            ],
+            [
+              -50.90828412112425,
+              -33.475484276815244
+            ],
+            [
+              -51.11502892354478,
+              -33.426008027293676
+            ],
+            [
+              -51.05639222301306,
+              -33.249884998410984
+            ],
+            [
+              -50.8500291955363,
+              -33.299263159024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 20,
+        "tile_id": 20,
+        "patch_number": 21,
+        "patch_label": "P021",
+        "name": "patch_0021_VV",
+        "x_start": 12000,
+        "y_start": 2000,
+        "valid_x_end": 14000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 11840,
+          "y0": 1840,
+          "x1": 14160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 11840,
+          "y0": 1840,
+          "x1": 14160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 12000,
+          "y0": 2000,
+          "x1": 14000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 12000,
+          "y0": 2000,
+          "x1": 14000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.13627557720608,
+          "south": -33.493539944508306,
+          "east": -50.82885099086796,
+          "north": -33.23182541384296
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.13627557720608,
+          "south": -33.493539944508306,
+          "east": -50.82885099086796,
+          "north": -33.23182541384296
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.056495411104805,
+              -33.249860230966306
+            ],
+            [
+              -51.115132303239,
+              -33.42598321009224
+            ],
+            [
+              -51.32165244083439,
+              -33.37617996377617
+            ],
+            [
+              -51.26263327899463,
+              -33.20015590871402
+            ],
+            [
+              -51.056495411104805,
+              -33.249860230966306
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 21,
+        "tile_id": 21,
+        "patch_number": 22,
+        "patch_label": "P022",
+        "name": "patch_0022_VV",
+        "x_start": 14000,
+        "y_start": 2000,
+        "valid_x_end": 16000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 1840,
+          "x1": 16160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 13840,
+          "y0": 1840,
+          "x1": 16160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 2000,
+          "x1": 16000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 14000,
+          "y0": 2000,
+          "x1": 16000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.34290435942647,
+          "south": -33.44405026849114,
+          "east": -51.0352994619548,
+          "north": -33.18206809665635
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.34290435942647,
+          "south": -33.44405026849114,
+          "east": -51.0352994619548,
+          "north": -33.18206809665635
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.26273631403308,
+              -33.200130916331204
+            ],
+            [
+              -51.32175566326792,
+              -33.376154924003984
+            ],
+            [
+              -51.528031288569395,
+              -33.325998342333236
+            ],
+            [
+              -51.468633345230344,
+              -33.15007218737538
+            ],
+            [
+              -51.26273631403308,
+              -33.200130916331204
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 22,
+        "tile_id": 22,
+        "patch_number": 23,
+        "patch_label": "P023",
+        "name": "patch_0023_VV",
+        "x_start": 16000,
+        "y_start": 2000,
+        "valid_x_end": 18000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 15840,
+          "y0": 1840,
+          "x1": 18160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 15840,
+          "y0": 1840,
+          "x1": 18160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 16000,
+          "y0": 2000,
+          "x1": 18000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 16000,
+          "y0": 2000,
+          "x1": 18000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.54930158351011,
+          "south": -33.394249616865785,
+          "east": -51.24153412939028,
+          "north": -33.13197437242426
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.54930158351011,
+          "south": -33.394249616865785,
+          "east": -51.24153412939028,
+          "north": -33.13197437242426
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.46873630160931,
+              -33.15004708370633
+            ],
+            [
+              -51.52813443682856,
+              -33.32597318776451
+            ],
+            [
+              -51.73418148360803,
+              -33.27548583527799
+            ],
+            [
+              -51.67440741984952,
+              -33.09966267962626
+            ],
+            [
+              -51.46873630160931,
+              -33.15004708370633
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 23,
+        "tile_id": 23,
+        "patch_number": 24,
+        "patch_label": "P024",
+        "name": "patch_0024_VV",
+        "x_start": 18000,
+        "y_start": 2000,
+        "valid_x_end": 20000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 1840,
+          "x1": 20160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 17840,
+          "y0": 1840,
+          "x1": 20160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 2000,
+          "x1": 20000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 18000,
+          "y0": 2000,
+          "x1": 20000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.75545675557321,
+          "south": -33.3440781198696,
+          "east": -51.44751641156692,
+          "north": -33.081537462007795
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.75545675557321,
+          "south": -33.3440781198696,
+          "east": -51.44751641156692,
+          "north": -33.081537462007795
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.67451022230022,
+              -33.09963735334569
+            ],
+            [
+              -51.73428447278718,
+              -33.27546045928145
+            ],
+            [
+              -51.940086537138555,
+              -33.224627481955665
+            ],
+            [
+              -51.879941551837575,
+              -33.04890594735154
+            ],
+            [
+              -51.67451022230022,
+              -33.09963735334569
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 24,
+        "tile_id": 24,
+        "patch_number": 25,
+        "patch_label": "P025",
+        "name": "patch_0025_VV",
+        "x_start": 20000,
+        "y_start": 2000,
+        "valid_x_end": 22000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 1840,
+          "x1": 22160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 19840,
+          "y0": 1840,
+          "x1": 22160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 2000,
+          "x1": 22000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 20000,
+          "y0": 2000,
+          "x1": 22000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.9613794034886,
+          "south": -33.29359265156639,
+          "east": -51.653284950059835,
+          "north": -33.03077109673502
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.9613794034886,
+          "south": -33.29359265156639,
+          "east": -51.653284950059835,
+          "north": -33.03077109673502
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.8800442788871,
+              -33.04888051035662
+            ],
+            [
+              -51.94018944821929,
+              -33.22460199291817
+            ],
+            [
+              -52.1457590383494,
+              -33.173432278998604
+            ],
+            [
+              -52.08524061940589,
+              -32.997818244395106
+            ],
+            [
+              -51.8800442788871,
+              -33.04888051035662
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 25,
+        "tile_id": 25,
+        "patch_number": 26,
+        "patch_label": "P026",
+        "name": "patch_0026_VV",
+        "x_start": 22000,
+        "y_start": 2000,
+        "valid_x_end": 24000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 1840,
+          "x1": 24160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 21840,
+          "y0": 1840,
+          "x1": 24160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 2000,
+          "x1": 24000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 22000,
+          "y0": 2000,
+          "x1": 24000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.16705701512578,
+          "south": -33.24274394077763,
+          "east": -51.85880145684912,
+          "north": -32.97965684464765
+        },
+        "cfar_detection_count": 1,
+        "yolo_detection_count": 1,
+        "processing_bounds_lonlat": {
+          "west": -52.16705701512578,
+          "south": -33.24274394077763,
+          "east": -51.85880145684912,
+          "north": -32.97965684464765
+        },
+        "cfar_count": 1,
+        "yolo_count": 1,
+        "has_cfar_detection": true,
+        "has_yolo_detection": true,
+        "has_detection": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.08534318828776,
+              -32.997792587115256
+            ],
+            [
+              -52.14586179424923,
+              -33.17340656853328
+            ],
+            [
+              -52.351113559246,
+              -33.121919283154654
+            ],
+            [
+              -52.290227434220284,
+              -32.94641392889383
+            ],
+            [
+              -52.08534318828776,
+              -32.997792587115256
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 26,
+        "tile_id": 26,
+        "patch_number": 27,
+        "patch_label": "P027",
+        "name": "patch_0027_VV",
+        "x_start": 24000,
+        "y_start": 2000,
+        "valid_x_end": 26000,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 1840,
+          "x1": 26160,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 23840,
+          "y0": 1840,
+          "x1": 26160,
+          "y1": 4160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 2000,
+          "x1": 26000,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 24000,
+          "y0": 2000,
+          "x1": 26000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.37241579322073,
+          "south": -33.191575572297026,
+          "east": -52.064095927077645,
+          "north": -32.928246712208036
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.37241579322073,
+          "south": -33.191575572297026,
+          "east": -52.064095927077645,
+          "north": -32.928246712208036
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.29032985107991,
+              -32.946388181189036
+            ],
+            [
+              -52.35121615674584,
+              -33.12189347993778
+            ],
+            [
+              -52.38414993821637,
+              -33.11361064732033
+            ],
+            [
+              -52.32320564723557,
+              -32.93812316794903
+            ],
+            [
+              -52.29032985107991,
+              -32.946388181189036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 27,
+        "tile_id": 27,
+        "patch_number": 28,
+        "patch_label": "P028",
+        "name": "patch_0028_VV",
+        "x_start": 26000,
+        "y_start": 2000,
+        "valid_x_end": 26322,
+        "valid_y_end": 4000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 25840,
+          "y0": 1840,
+          "x1": 26322,
+          "y1": 4160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 25840,
+          "y0": 1840,
+          "x1": 28160,
+          "y1": 4160
+        },
+        "processing_width": 482,
+        "processing_height": 2320,
+        "processing_target_width": 482,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 26000,
+          "y0": 2000,
+          "x1": 26322,
+          "y1": 4000
+        },
+        "requested_bbox_pixels": {
+          "x0": 26000,
+          "y0": 2000,
+          "x1": 28000,
+          "y1": 4000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.38903894039689,
+          "south": -33.140068437573355,
+          "east": -52.26907750500471,
+          "north": -32.92407630382729
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.38903894039689,
+          "south": -33.140068437573355,
+          "east": -52.26907750500471,
+          "north": -32.92407630382729
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.662310192427285,
+              -33.765270620962156
+            ],
+            [
+              -49.71840938781695,
+              -33.94199472249631
+            ],
+            [
+              -49.92693908612099,
+              -33.89450291424168
+            ],
+            [
+              -49.87043858583981,
+              -33.71786432224724
+            ],
+            [
+              -49.662310192427285,
+              -33.765270620962156
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 28,
+        "tile_id": 28,
+        "patch_number": 29,
+        "patch_label": "P029",
+        "name": "patch_0029_VV",
+        "x_start": 0,
+        "y_start": 4000,
+        "valid_x_end": 2000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 3840,
+          "x1": 2160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": -160,
+          "y0": 3840,
+          "x1": 2160,
+          "y1": 6160
+        },
+        "processing_width": 2160,
+        "processing_height": 2320,
+        "processing_target_width": 2160,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 4000,
+          "x1": 2000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 0,
+          "y0": 4000,
+          "x1": 2000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -49.948153783249204,
+          "south": -33.95613879929349,
+          "east": -49.65782683078157,
+          "north": -33.6999190611547
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -49.948153783249204,
+          "south": -33.95613879929349,
+          "east": -49.65782683078157,
+          "north": -33.6999190611547
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.87054265191786,
+              -33.71784053047803
+            ],
+            [
+              -49.927043353855964,
+              -33.894479080876586
+            ],
+            [
+              -50.1353600230637,
+              -33.846672310619084
+            ],
+            [
+              -50.07846301039776,
+              -33.67011719717739
+            ],
+            [
+              -49.87054265191786,
+              -33.71784053047803
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 29,
+        "tile_id": 29,
+        "patch_number": 30,
+        "patch_label": "P030",
+        "name": "patch_0030_VV",
+        "x_start": 2000,
+        "y_start": 4000,
+        "valid_x_end": 4000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 3840,
+          "x1": 4160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 1840,
+          "y0": 3840,
+          "x1": 4160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 4000,
+          "x1": 4000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 2000,
+          "y0": 4000,
+          "x1": 4000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.15658253465281,
+          "south": -33.912430219140425,
+          "east": -49.849379082020405,
+          "north": -33.65214269008072
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.15658253465281,
+          "south": -33.912430219140425,
+          "east": -49.849379082020405,
+          "north": -33.65214269008072
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.07856714891101,
+              -33.67009351333381
+            ],
+            [
+              -50.13546435127867,
+              -33.84664859188014
+            ],
+            [
+              -50.3435333418287,
+              -33.79845918585017
+            ],
+            [
+              -50.28623834123195,
+              -33.62199298183198
+            ],
+            [
+              -50.07856714891101,
+              -33.67009351333381
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 30,
+        "tile_id": 30,
+        "patch_number": 31,
+        "patch_label": "P031",
+        "name": "patch_0031_VV",
+        "x_start": 4000,
+        "y_start": 4000,
+        "valid_x_end": 6000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 3840,
+          "x1": 6160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 3840,
+          "y0": 3840,
+          "x1": 6160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 4000,
+          "x1": 6000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 4000,
+          "y0": 4000,
+          "x1": 6000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.36477498075984,
+          "south": -33.86461760893239,
+          "east": -50.057388207064726,
+          "north": -33.604006743161015
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.36477498075984,
+          "south": -33.86461760893239,
+          "east": -50.057388207064726,
+          "north": -33.604006743161015
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.286342181448376,
+              -33.6219688468968
+            ],
+            [
+              -50.3436373793081,
+              -33.79843500756527
+            ],
+            [
+              -50.551489188099936,
+              -33.749926520220924
+            ],
+            [
+              -50.49380233893659,
+              -33.57354967741996
+            ],
+            [
+              -50.286342181448376,
+              -33.6219688468968
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 31,
+        "tile_id": 31,
+        "patch_number": 32,
+        "patch_label": "P032",
+        "name": "patch_0032_VV",
+        "x_start": 6000,
+        "y_start": 4000,
+        "valid_x_end": 8000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 3840,
+          "x1": 8160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 5840,
+          "y0": 3840,
+          "x1": 8160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 4000,
+          "x1": 8000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 6000,
+          "y0": 4000,
+          "x1": 8000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.57273789336615,
+          "south": -33.81642762359941,
+          "east": -50.2651514142691,
+          "north": -33.55553418549389
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.57273789336615,
+          "south": -33.81642762359941,
+          "east": -50.2651514142691,
+          "north": -33.55553418549389
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.49390602525834,
+              -33.57352531525824
+            ],
+            [
+              -50.5515930709978,
+              -33.749902111239976
+            ],
+            [
+              -50.75919469655727,
+              -33.70101880127706
+            ],
+            [
+              -50.701114333069704,
+              -33.52473424876007
+            ],
+            [
+              -50.49390602525834,
+              -33.57352531525824
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 32,
+        "tile_id": 32,
+        "patch_number": 33,
+        "patch_label": "P033",
+        "name": "patch_0033_VV",
+        "x_start": 8000,
+        "y_start": 4000,
+        "valid_x_end": 10000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 3840,
+          "x1": 10160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 7840,
+          "y0": 3840,
+          "x1": 10160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 4000,
+          "x1": 10000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 8000,
+          "y0": 4000,
+          "x1": 10000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.780462481840644,
+          "south": -33.76791786585852,
+          "east": -50.472704561582134,
+          "north": -33.50670742670475
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.780462481840644,
+          "south": -33.76791786585852,
+          "east": -50.472704561582134,
+          "north": -33.50670742670475
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.701217942290114,
+              -33.5247097706589
+            ],
+            [
+              -50.75929850281787,
+              -33.700994278072336
+            ],
+            [
+              -50.966679741194966,
+              -33.651788628927726
+            ],
+            [
+              -50.90820987025211,
+              -33.47559712468997
+            ],
+            [
+              -50.701217942290114,
+              -33.5247097706589
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 33,
+        "tile_id": 33,
+        "patch_number": 34,
+        "patch_label": "P034",
+        "name": "patch_0034_VV",
+        "x_start": 10000,
+        "y_start": 4000,
+        "valid_x_end": 12000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 3840,
+          "x1": 12160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 9840,
+          "y0": 3840,
+          "x1": 12160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 4000,
+          "x1": 12000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 10000,
+          "y0": 4000,
+          "x1": 12000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.98795314633239,
+          "south": -33.71902727543685,
+          "east": -50.680001594852676,
+          "north": -33.45754208289283
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.98795314633239,
+          "south": -33.71902727543685,
+          "east": -50.680001594852676,
+          "north": -33.45754208289283
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.90831332631585,
+              -33.47557242226075
+            ],
+            [
+              -50.96678338943485,
+              -33.65176387792544
+            ],
+            [
+              -51.1739129343574,
+              -33.60219051569756
+            ],
+            [
+              -51.11505832011902,
+              -33.4260961256197
+            ],
+            [
+              -50.90831332631585,
+              -33.47557242226075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 34,
+        "tile_id": 34,
+        "patch_number": 35,
+        "patch_label": "P035",
+        "name": "patch_0035_VV",
+        "x_start": 12000,
+        "y_start": 4000,
+        "valid_x_end": 14000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 11840,
+          "y0": 3840,
+          "x1": 14160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 11840,
+          "y0": 3840,
+          "x1": 14160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 12000,
+          "y0": 4000,
+          "x1": 14000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 12000,
+          "y0": 4000,
+          "x1": 14000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.19520518481687,
+          "south": -33.66982548303336,
+          "east": -50.887089555013596,
+          "north": -33.40803021522947
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.19520518481687,
+          "south": -33.66982548303336,
+          "east": -50.887089555013596,
+          "north": -33.40803021522947
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.11516169990864,
+              -33.42607130839569
+            ],
+            [
+              -51.17401650679348,
+              -33.60216564993866
+            ],
+            [
+              -51.38092078042826,
+              -33.552264511365905
+            ],
+            [
+              -51.321682027835145,
+              -33.37626801169491
+            ],
+            [
+              -51.11516169990864,
+              -33.42607130839569
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 35,
+        "tile_id": 35,
+        "patch_number": 36,
+        "patch_label": "P036",
+        "name": "patch_0036_VV",
+        "x_start": 14000,
+        "y_start": 4000,
+        "valid_x_end": 16000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 3840,
+          "x1": 16160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 13840,
+          "y0": 3840,
+          "x1": 16160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 4000,
+          "x1": 16000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 14000,
+          "y0": 4000,
+          "x1": 16000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.40221899719205,
+          "south": -33.62023827329161,
+          "east": -51.09391989625011,
+          "north": -33.35817464345851
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.40221899719205,
+          "south": -33.62023827329161,
+          "east": -51.09391989625011,
+          "north": -33.35817464345851
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.32178525036311,
+              -33.37624297189669
+            ],
+            [
+              -51.38102419608316,
+              -33.55223941952511
+            ],
+            [
+              -51.58768160500504,
+              -33.501981839332856
+            ],
+            [
+              -51.528061064540495,
+              -33.32608633972668
+            ],
+            [
+              -51.32178525036311,
+              -33.37624297189669
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 36,
+        "tile_id": 36,
+        "patch_number": 37,
+        "patch_label": "P037",
+        "name": "patch_0037_VV",
+        "x_start": 16000,
+        "y_start": 4000,
+        "valid_x_end": 18000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 15840,
+          "y0": 3840,
+          "x1": 18160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 15840,
+          "y0": 3840,
+          "x1": 18160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 16000,
+          "y0": 4000,
+          "x1": 18000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 16000,
+          "y0": 4000,
+          "x1": 18000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.60899791157796,
+          "south": -33.570340615964405,
+          "east": -51.30053814398654,
+          "north": -33.30798264393863
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.60899791157796,
+          "south": -33.570340615964405,
+          "east": -51.30053814398654,
+          "north": -33.30798264393863
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.528164212894225,
+              -33.32606118513367
+            ],
+            [
+              -51.58778494146489,
+              -33.50195663616678
+            ],
+            [
+              -51.79421159555122,
+              -33.45136623600822
+            ],
+            [
+              -51.7342114499628,
+              -33.27557378134377
+            ],
+            [
+              -51.528164212894225,
+              -33.32606118513367
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 37,
+        "tile_id": 37,
+        "patch_number": 38,
+        "patch_label": "P038",
+        "name": "patch_0038_VV",
+        "x_start": 18000,
+        "y_start": 4000,
+        "valid_x_end": 20000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 3840,
+          "x1": 20160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 17840,
+          "y0": 3840,
+          "x1": 20160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 4000,
+          "x1": 20000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 18000,
+          "y0": 4000,
+          "x1": 20000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.81553295459364,
+          "south": -33.52006751645088,
+          "east": -51.50689872518369,
+          "north": -33.25744291368422
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.81553295459364,
+          "south": -33.52006751645088,
+          "east": -51.50689872518369,
+          "north": -33.25744291368422
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.734314439234566,
+              -33.275548405321196
+            ],
+            [
+              -51.79431477364395,
+              -33.45134080622741
+            ],
+            [
+              -52.00049364177125,
+              -33.40040192841248
+            ],
+            [
+              -51.94011669116087,
+              -33.22471537595283
+            ],
+            [
+              -51.734314439234566,
+              -33.275548405321196
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 38,
+        "tile_id": 38,
+        "patch_number": 39,
+        "patch_label": "P039",
+        "name": "patch_0039_VV",
+        "x_start": 20000,
+        "y_start": 4000,
+        "valid_x_end": 22000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 3840,
+          "x1": 22160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 19840,
+          "y0": 3840,
+          "x1": 22160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 4000,
+          "x1": 22000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 20000,
+          "y0": 4000,
+          "x1": 22000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.021832564089934,
+          "south": -33.46947974938103,
+          "east": -51.71304388650634,
+          "north": -33.20657475271878
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.021832564089934,
+          "south": -33.46947974938103,
+          "east": -51.71304388650634,
+          "north": -33.20657475271878
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.940219602336796,
+              -33.2246898868893
+            ],
+            [
+              -52.000596740871856,
+              -33.40037638730637
+            ],
+            [
+              -52.2065407745127,
+              -33.349101516666245
+            ],
+            [
+              -52.14578937976656,
+              -33.17352012039139
+            ],
+            [
+              -51.940219602336796,
+              -33.2246898868893
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 39,
+        "tile_id": 39,
+        "patch_number": 40,
+        "patch_label": "P040",
+        "name": "patch_0040_VV",
+        "x_start": 22000,
+        "y_start": 4000,
+        "valid_x_end": 24000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 3840,
+          "x1": 24160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 21840,
+          "y0": 3840,
+          "x1": 24160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 4000,
+          "x1": 24000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 22000,
+          "y0": 4000,
+          "x1": 24000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.22788457044831,
+          "south": -33.41852447326334,
+          "east": -51.91893157515384,
+          "north": -33.1553525295614
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.22788457044831,
+          "south": -33.41852447326334,
+          "east": -51.91893157515384,
+          "north": -33.1553525295614
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.14589213576062,
+              -33.17349440989829
+            ],
+            [
+              -52.20664371702935,
+              -33.349075750661065
+            ],
+            [
+              -52.41226778069397,
+              -33.29747744112392
+            ],
+            [
+              -52.35114408613481,
+              -33.12200706900758
+            ],
+            [
+              -52.14589213576062,
+              -33.17349440989829
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 40,
+        "tile_id": 40,
+        "patch_number": 41,
+        "patch_label": "P041",
+        "name": "patch_0041_VV",
+        "x_start": 24000,
+        "y_start": 4000,
+        "valid_x_end": 26000,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 3840,
+          "x1": 26160,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 23840,
+          "y0": 3840,
+          "x1": 26160,
+          "y1": 6160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 4000,
+          "x1": 26000,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 24000,
+          "y0": 4000,
+          "x1": 26000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.43361609955016,
+          "south": -33.36725144792082,
+          "east": -52.12459895914056,
+          "north": -33.103833524305756
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.43361609955016,
+          "south": -33.36725144792082,
+          "east": -52.12459895914056,
+          "north": -33.103833524305756
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.35124668372587,
+              -33.12198126576293
+            ],
+            [
+              -52.41237056405793,
+              -33.29745158236719
+            ],
+            [
+              -52.44536400794077,
+              -33.28915092145816
+            ],
+            [
+              -52.3841804944788,
+              -33.113698424231345
+            ],
+            [
+              -52.35124668372587,
+              -33.12198126576293
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 41,
+        "tile_id": 41,
+        "patch_number": 42,
+        "patch_label": "P042",
+        "name": "patch_0042_VV",
+        "x_start": 26000,
+        "y_start": 4000,
+        "valid_x_end": 26322,
+        "valid_y_end": 6000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 25840,
+          "y0": 3840,
+          "x1": 26322,
+          "y1": 6160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 25840,
+          "y0": 3840,
+          "x1": 28160,
+          "y1": 6160
+        },
+        "processing_width": 482,
+        "processing_height": 2320,
+        "processing_target_width": 482,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 26000,
+          "y0": 4000,
+          "x1": 26322,
+          "y1": 6000
+        },
+        "requested_bbox_pixels": {
+          "x0": 26000,
+          "y0": 4000,
+          "x1": 28000,
+          "y1": 6000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.450269446401094,
+          "south": -33.31563323349879,
+          "east": -52.329949085752766,
+          "north": -33.09965411846944
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.450269446401094,
+          "south": -33.31563323349879,
+          "east": -52.329949085752766,
+          "north": -33.09965411846944
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.7184374950165,
+              -33.942083122976285
+            ],
+            [
+              -49.774704682301326,
+              -34.11871135138058
+            ],
+            [
+              -49.98362472131836,
+              -34.07113848077477
+            ],
+            [
+              -49.92696739382717,
+              -33.89459127190321
+            ],
+            [
+              -49.7184374950165,
+              -33.942083122976285
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 42,
+        "tile_id": 42,
+        "patch_number": 43,
+        "patch_label": "P043",
+        "name": "patch_0043_VV",
+        "x_start": 0,
+        "y_start": 6000,
+        "valid_x_end": 2000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 5840,
+          "x1": 2160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": -160,
+          "y0": 5840,
+          "x1": 2160,
+          "y1": 8160
+        },
+        "processing_width": 2160,
+        "processing_height": 2320,
+        "processing_target_width": 2160,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 6000,
+          "x1": 2000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 0,
+          "y0": 6000,
+          "x1": 2000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.0048789494421,
+          "south": -34.13284519459954,
+          "east": -49.71394034295492,
+          "north": -33.876641281648055
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.0048789494421,
+          "south": -34.13284519459954,
+          "east": -49.71394034295492,
+          "north": -33.876641281648055
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.927071661664755,
+              -33.89456743851556
+            ],
+            [
+              -49.983729184097996,
+              -34.071114604571974
+            ],
+            [
+              -50.19243881409734,
+              -34.023225308122704
+            ],
+            [
+              -50.135388531544535,
+              -33.84676062771267
+            ],
+            [
+              -49.927071661664755,
+              -33.89456743851556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 43,
+        "tile_id": 43,
+        "patch_number": 44,
+        "patch_label": "P044",
+        "name": "patch_0044_VV",
+        "x_start": 2000,
+        "y_start": 6000,
+        "valid_x_end": 4000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 5840,
+          "x1": 4160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 1840,
+          "y0": 5840,
+          "x1": 4160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 6000,
+          "x1": 4000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 2000,
+          "y0": 6000,
+          "x1": 4000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.2136996942905,
+          "south": -34.08906287425813,
+          "east": -49.90586218495286,
+          "north": -33.82878037257403
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.2136996942905,
+          "south": -34.08906287425813,
+          "east": -49.90586218495286,
+          "north": -33.82878037257403
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.13549285985863,
+              -33.84673690896148
+            ],
+            [
+              -50.19254334755481,
+              -34.023201553583846
+            ],
+            [
+              -50.40099987859865,
+              -33.97492483504166
+            ],
+            [
+              -50.34356204875823,
+              -33.79854745782795
+            ],
+            [
+              -50.13549285985863,
+              -33.84673690896148
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 44,
+        "tile_id": 44,
+        "patch_number": 45,
+        "patch_label": "P045",
+        "name": "patch_0045_VV",
+        "x_start": 4000,
+        "y_start": 6000,
+        "valid_x_end": 6000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 5840,
+          "x1": 6160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 3840,
+          "y0": 5840,
+          "x1": 6160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 6000,
+          "x1": 6000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 4000,
+          "y0": 6000,
+          "x1": 6000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.422278971883934,
+          "south": -34.04116732954156,
+          "east": -50.114267823360194,
+          "north": -33.78055598980249
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.422278971883934,
+          "south": -34.04116732954156,
+          "east": -50.114267823360194,
+          "north": -33.78055598980249
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.34366608633644,
+              -33.79852327952048
+            ],
+            [
+              -50.40110411059266,
+              -33.97490061163063
+            ],
+            [
+              -50.60934566858417,
+              -33.92630504160057
+            ],
+            [
+              -50.55151809401512,
+              -33.750014746895715
+            ],
+            [
+              -50.34366608633644,
+              -33.79852327952048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 45,
+        "tile_id": 45,
+        "patch_number": 46,
+        "patch_label": "P046",
+        "name": "patch_0046_VV",
+        "x_start": 6000,
+        "y_start": 6000,
+        "valid_x_end": 8000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 5840,
+          "x1": 8160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 5840,
+          "y0": 5840,
+          "x1": 8160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 6000,
+          "x1": 8000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 6000,
+          "y0": 6000,
+          "x1": 8000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.63063036587836,
+          "south": -33.99289094536575,
+          "east": -50.32242947320364,
+          "north": -33.73199366013516
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.63063036587836,
+          "south": -33.99289094536575,
+          "east": -50.32242947320364,
+          "north": -33.73199366013516
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.55162197701087,
+              -33.749990337890466
+            ],
+            [
+              -50.609449743072446,
+              -33.926280588599084
+            ],
+            [
+              -50.8174345606611,
+              -33.87730661457253
+            ],
+            [
+              -50.759223798286875,
+              -33.701106980718336
+            ],
+            [
+              -50.55162197701087,
+              -33.749990337890466
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 46,
+        "tile_id": 46,
+        "patch_number": 47,
+        "patch_label": "P047",
+        "name": "patch_0047_VV",
+        "x_start": 8000,
+        "y_start": 6000,
+        "valid_x_end": 10000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 5840,
+          "x1": 10160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 7840,
+          "y0": 5840,
+          "x1": 10160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 6000,
+          "x1": 10000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 8000,
+          "y0": 6000,
+          "x1": 10000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.83873737897878,
+          "south": -33.94429416610821,
+          "east": -50.530373931504826,
+          "north": -33.68307513136249
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.83873737897878,
+          "south": -33.94429416610821,
+          "east": -50.530373931504826,
+          "north": -33.68307513136249
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.75932760464545,
+              -33.70108245749105
+            ],
+            [
+              -50.81753855876882,
+              -33.877282043953265
+            ],
+            [
+              -51.02530554121178,
+              -33.827984443239075
+            ],
+            [
+              -50.96670903621077,
+              -33.651876762976286
+            ],
+            [
+              -50.75932760464545,
+              -33.70108245749105
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 47,
+        "tile_id": 47,
+        "patch_number": 48,
+        "patch_label": "P048",
+        "name": "patch_0048_VV",
+        "x_start": 10000,
+        "y_start": 6000,
+        "valid_x_end": 12000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 5840,
+          "x1": 12160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 9840,
+          "y0": 5840,
+          "x1": 12160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 6000,
+          "x1": 12000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 10000,
+          "y0": 6000,
+          "x1": 12000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.046613819944085,
+          "south": -33.895314047543266,
+          "east": -50.738064802478384,
+          "north": -33.63381577300014
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.046613819944085,
+          "south": -33.895314047543266,
+          "east": -50.738064802478384,
+          "north": -33.63381577300014
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.96681268454693,
+              -33.6518520119497
+            ],
+            [
+              -51.02540938047007,
+              -33.82795964363941
+            ],
+            [
+              -51.232921540749174,
+              -33.77829006120456
+            ],
+            [
+              -51.17394242285232,
+              -33.60227859969517
+            ],
+            [
+              -50.96681268454693,
+              -33.6518520119497
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 48,
+        "tile_id": 48,
+        "patch_number": 49,
+        "patch_label": "P049",
+        "name": "patch_0049_VV",
+        "x_start": 12000,
+        "y_start": 6000,
+        "valid_x_end": 14000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 11840,
+          "y0": 5840,
+          "x1": 14160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 11840,
+          "y0": 5840,
+          "x1": 14160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 12000,
+          "y0": 6000,
+          "x1": 14000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 12000,
+          "y0": 6000,
+          "x1": 14000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.254248281956656,
+          "south": -33.84602023406205,
+          "east": -50.94554375679557,
+          "north": -33.58420730096762
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.254248281956656,
+          "south": -33.84602023406205,
+          "east": -50.94554375679557,
+          "north": -33.58420730096762
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.17404599538577,
+              -33.602253733910246
+            ],
+            [
+              -51.23302530511556,
+              -33.77826514795389
+            ],
+            [
+              -51.440311131999295,
+              -33.72826870515452
+            ],
+            [
+              -51.38095046286527,
+              -33.55235254786339
+            ],
+            [
+              -51.17404599538577,
+              -33.602253733910246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 49,
+        "tile_id": 49,
+        "patch_number": 50,
+        "patch_label": "P050",
+        "name": "patch_0050_VV",
+        "x_start": 14000,
+        "y_start": 6000,
+        "valid_x_end": 16000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 5840,
+          "x1": 16160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 13840,
+          "y0": 5840,
+          "x1": 16160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 6000,
+          "x1": 16000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 14000,
+          "y0": 6000,
+          "x1": 16000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.461642760738066,
+          "south": -33.796336975309714,
+          "east": -51.15275869656364,
+          "north": -33.53425267604951
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.461642760738066,
+          "south": -33.796336975309714,
+          "east": -51.15275869656364,
+          "north": -33.53425267604951
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.381053878619014,
+              -33.552327455996576
+            ],
+            [
+              -51.44041473804111,
+              -33.72824356353354
+            ],
+            [
+              -51.64745001171393,
+              -33.67788548964423
+            ],
+            [
+              -51.58771148049536,
+              -33.502069825305064
+            ],
+            [
+              -51.381053878619014,
+              -33.552327455996576
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 50,
+        "tile_id": 50,
+        "patch_number": 51,
+        "patch_label": "P051",
+        "name": "patch_0051_VV",
+        "x_start": 16000,
+        "y_start": 6000,
+        "valid_x_end": 18000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 15840,
+          "y0": 5840,
+          "x1": 18160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 15840,
+          "y0": 5840,
+          "x1": 18160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 16000,
+          "y0": 6000,
+          "x1": 18000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 16000,
+          "y0": 6000,
+          "x1": 18000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.6687984075278,
+          "south": -33.74634433162174,
+          "east": -51.35976069854824,
+          "north": -33.48396018133802
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.6687984075278,
+          "south": -33.74634433162174,
+          "east": -51.35976069854824,
+          "north": -33.48396018133802
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.587814817048844,
+              -33.50204462211468
+            ],
+            [
+              -51.64755353550837,
+              -33.67786023559236
+            ],
+            [
+              -51.8543543111125,
+              -33.627166538187126
+            ],
+            [
+              -51.794241660441386,
+              -33.4514541702067
+            ],
+            [
+              -51.587814817048844,
+              -33.50204462211468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 51,
+        "tile_id": 51,
+        "patch_number": 52,
+        "patch_label": "P052",
+        "name": "patch_0052_VV",
+        "x_start": 18000,
+        "y_start": 6000,
+        "valid_x_end": 20000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 5840,
+          "x1": 20160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 17840,
+          "y0": 5840,
+          "x1": 20160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 6000,
+          "x1": 20000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 18000,
+          "y0": 6000,
+          "x1": 20000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.875707499887255,
+          "south": -33.695971014266306,
+          "east": -51.56650327082734,
+          "north": -33.43331663998684
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.875707499887255,
+          "south": -33.695971014266306,
+          "east": -51.56650327082734,
+          "north": -33.43331663998684
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.79434483863045,
+              -33.451428740398114
+            ],
+            [
+              -51.8544576787149,
+              -33.62714105744329
+            ],
+            [
+              -52.061013268322725,
+              -33.576097111134665
+            ],
+            [
+              -52.00052389600641,
+              -33.40048980870415
+            ],
+            [
+              -51.79434483863045,
+              -33.451428740398114
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 52,
+        "tile_id": 52,
+        "patch_number": 53,
+        "patch_label": "P053",
+        "name": "patch_0053_VV",
+        "x_start": 20000,
+        "y_start": 6000,
+        "valid_x_end": 22000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 5840,
+          "x1": 22160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 19840,
+          "y0": 5840,
+          "x1": 22160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 6000,
+          "x1": 22000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 20000,
+          "y0": 6000,
+          "x1": 22000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.082383538279636,
+          "south": -33.64527980306943,
+          "east": -51.77302838749884,
+          "north": -33.38234304737259
+        },
+        "cfar_detection_count": 1,
+        "yolo_detection_count": 1,
+        "processing_bounds_lonlat": {
+          "west": -52.082383538279636,
+          "south": -33.64527980306943,
+          "east": -51.77302838749884,
+          "north": -33.38234304737259
+        },
+        "cfar_count": 1,
+        "yolo_count": 1,
+        "has_cfar_detection": true,
+        "has_yolo_detection": true,
+        "has_detection": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.000626995199816,
+              -33.40046426757201
+            ],
+            [
+              -52.06111655468168,
+              -33.576071515671536
+            ],
+            [
+              -52.26743102649842,
+              -33.524691338419615
+            ],
+            [
+              -52.20657121598049,
+              -33.34918934435352
+            ],
+            [
+              -52.000626995199816,
+              -33.40046426757201
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 53,
+        "tile_id": 53,
+        "patch_number": 54,
+        "patch_label": "P054",
+        "name": "patch_0054_VV",
+        "x_start": 22000,
+        "y_start": 6000,
+        "valid_x_end": 24000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 5840,
+          "x1": 24160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 21840,
+          "y0": 5840,
+          "x1": 24160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 6000,
+          "x1": 24000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 22000,
+          "y0": 6000,
+          "x1": 24000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.28880550554685,
+          "south": -33.59422040653977,
+          "east": -51.979292789632446,
+          "north": -33.33101506002753
+        },
+        "cfar_detection_count": 2,
+        "yolo_detection_count": 1,
+        "processing_bounds_lonlat": {
+          "west": -52.28880550554685,
+          "south": -33.59422040653977,
+          "east": -51.979292789632446,
+          "north": -33.33101506002753
+        },
+        "cfar_count": 2,
+        "yolo_count": 1,
+        "has_cfar_detection": true,
+        "has_yolo_detection": true,
+        "has_detection": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.2066741585895,
+              -33.34916357832057
+            ],
+            [
+              -52.267534155076774,
+              -33.52466551916301
+            ],
+            [
+              -52.47352903495727,
+              -33.472960760009634
+            ],
+            [
+              -52.412298409195714,
+              -33.29756521327135
+            ],
+            [
+              -52.2066741585895,
+              -33.34916357832057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 54,
+        "tile_id": 54,
+        "patch_number": 55,
+        "patch_label": "P055",
+        "name": "patch_0055_VV",
+        "x_start": 24000,
+        "y_start": 6000,
+        "valid_x_end": 26000,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": false,
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 5840,
+          "x1": 26160,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 23840,
+          "y0": 5840,
+          "x1": 26160,
+          "y1": 8160
+        },
+        "processing_width": 2320,
+        "processing_height": 2320,
+        "processing_target_width": 2320,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 6000,
+          "x1": 26000,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 24000,
+          "y0": 6000,
+          "x1": 26000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.49490737240207,
+          "south": -33.54284173766423,
+          "east": -52.185335067942134,
+          "north": -33.279384975073526
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.49490737240207,
+          "south": -33.54284173766423,
+          "east": -52.185335067942134,
+          "north": -33.279384975073526
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.41240119265436,
+              -33.29753935448685
+            ],
+            [
+              -52.47363200325303,
+              -33.47293484800147
+            ],
+            [
+              -52.506684810117925,
+              -33.46461709338218
+            ],
+            [
+              -52.4453946669301,
+              -33.28923868466367
+            ],
+            [
+              -52.41240119265436,
+              -33.29753935448685
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 55,
+        "tile_id": 55,
+        "patch_number": 56,
+        "patch_label": "P056",
+        "name": "patch_0056_VV",
+        "x_start": 26000,
+        "y_start": 6000,
+        "valid_x_end": 26322,
+        "valid_y_end": 8000,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 25840,
+          "y0": 5840,
+          "x1": 26322,
+          "y1": 8160
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 25840,
+          "y0": 5840,
+          "x1": 28160,
+          "y1": 8160
+        },
+        "processing_width": 482,
+        "processing_height": 2320,
+        "processing_target_width": 482,
+        "processing_target_height": 2320,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 26000,
+          "y0": 6000,
+          "x1": 26322,
+          "y1": 8000
+        },
+        "requested_bbox_pixels": {
+          "x0": 26000,
+          "y0": 6000,
+          "x1": 28000,
+          "y1": 8000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.51159059095895,
+          "south": -33.49111757577303,
+          "east": -52.391057685683904,
+          "north": -33.27519657178164
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.51159059095895,
+          "south": -33.49111757577303,
+          "east": -52.391057685683904,
+          "north": -33.27519657178164
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.77473285085349,
+              -34.1187996879007
+            ],
+            [
+              -49.784563675619104,
+              -34.14962913342206
+            ],
+            [
+              -49.99355105878666,
+              -34.102042490686635
+            ],
+            [
+              -49.98365308228235,
+              -34.071226777945945
+            ],
+            [
+              -49.77473285085349,
+              -34.1187996879007
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 56,
+        "tile_id": 56,
+        "patch_number": 57,
+        "patch_label": "P057",
+        "name": "patch_0057_VV",
+        "x_start": 0,
+        "y_start": 8000,
+        "valid_x_end": 2000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 7840,
+          "x1": 2160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": -160,
+          "y0": 7840,
+          "x1": 2160,
+          "y1": 10160
+        },
+        "processing_width": 2160,
+        "processing_height": 510,
+        "processing_target_width": 2160,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 8000,
+          "x1": 2000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 0,
+          "y0": 8000,
+          "x1": 2000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.01027041723546,
+          "south": -34.14962913342206,
+          "east": -49.77022588218946,
+          "north": -34.053279567960104
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.01027041723546,
+          "south": -34.14962913342206,
+          "east": -49.77022588218946,
+          "north": -34.053279567960104
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.98375754515689,
+              -34.07120290172232
+            ],
+            [
+              -49.99365555477847,
+              -34.102018607194225
+            ],
+            [
+              -50.20243319450574,
+              -34.054114738824154
+            ],
+            [
+              -50.19246736946972,
+              -34.023313563638986
+            ],
+            [
+              -49.98375754515689,
+              -34.07120290172232
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 57,
+        "tile_id": 57,
+        "patch_number": 58,
+        "patch_label": "P058",
+        "name": "patch_0058_VV",
+        "x_start": 2000,
+        "y_start": 8000,
+        "valid_x_end": 4000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.219128114916906,
+          "south": -34.10583996597878,
+          "east": -49.962508144642285,
+          "north": -34.005336271358615
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.219128114916906,
+          "south": -34.10583996597878,
+          "east": -49.962508144642285,
+          "north": -34.005336271358615
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.19257190303162,
+              -34.02328980907931
+            ],
+            [
+              -50.20253776451558,
+              -34.05409097699569
+            ],
+            [
+              -50.411061286928515,
+              -34.00579924059111
+            ],
+            [
+              -50.40102862547941,
+              -33.97501304762895
+            ],
+            [
+              -50.19257190303162,
+              -34.02328980907931
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 58,
+        "tile_id": 58,
+        "patch_number": 59,
+        "patch_label": "P059",
+        "name": "patch_0059_VV",
+        "x_start": 4000,
+        "y_start": 8000,
+        "valid_x_end": 6000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 7840,
+          "x1": 6160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 3840,
+          "y0": 7840,
+          "x1": 6160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 8000,
+          "x1": 6000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 4000,
+          "y0": 8000,
+          "x1": 6000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.42774381140263,
+          "south": -34.0579365068337,
+          "east": -50.1713079244074,
+          "north": -33.957023861902506
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.42774381140263,
+          "south": -34.0579365068337,
+          "east": -50.1713079244074,
+          "north": -33.957023861902506
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.40113285756989,
+              -33.97498882419535
+            ],
+            [
+              -50.41116555268192,
+              -34.005775009283
+            ],
+            [
+              -50.61947459043878,
+              -33.957164514393746
+            ],
+            [
+              -50.60937460836061,
+              -33.926393211522836
+            ],
+            [
+              -50.40113285756989,
+              -33.97498882419535
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 59,
+        "tile_id": 59,
+        "patch_number": 60,
+        "patch_label": "P060",
+        "name": "patch_0060_VV",
+        "x_start": 6000,
+        "y_start": 8000,
+        "valid_x_end": 8000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 7840,
+          "x1": 8160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 5840,
+          "y0": 7840,
+          "x1": 8160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 8000,
+          "x1": 8000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 6000,
+          "y0": 8000,
+          "x1": 8000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.63613180304512,
+          "south": -34.00965201857989,
+          "east": -50.37985867056874,
+          "north": -33.90837407357228
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.63613180304512,
+          "south": -34.00965201857989,
+          "east": -50.37985867056874,
+          "north": -33.90837407357228
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.60947868294362,
+              -33.92636875850052
+            ],
+            [
+              -50.619578698082336,
+              -33.95714005410265
+            ],
+            [
+              -50.827629829267636,
+              -33.908150553460004
+            ],
+            [
+              -50.81746368999979,
+              -33.87739474011221
+            ],
+            [
+              -50.60947868294362,
+              -33.92636875850052
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 60,
+        "tile_id": 60,
+        "patch_number": 61,
+        "patch_label": "P061",
+        "name": "patch_0061_VV",
+        "x_start": 8000,
+        "y_start": 8000,
+        "valid_x_end": 10000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 7840,
+          "x1": 10160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 7840,
+          "y0": 7840,
+          "x1": 10160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 8000,
+          "x1": 10000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 8000,
+          "y0": 8000,
+          "x1": 10000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -50.84427483696983,
+          "south": -33.96104708053586,
+          "east": -50.588194264638645,
+          "north": -33.859363972839255
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -50.84427483696983,
+          "south": -33.96104708053586,
+          "east": -50.588194264638645,
+          "north": -33.859363972839255
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50.81756768820236,
+              -33.87737016946865
+            ],
+            [
+              -50.82773386057636,
+              -33.908125974336194
+            ],
+            [
+              -51.035568291054524,
+              -33.85881217253518
+            ],
+            [
+              -51.02533486335399,
+              -33.828072522465625
+            ],
+            [
+              -50.81756768820236,
+              -33.87737016946865
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 61,
+        "tile_id": 61,
+        "patch_number": 62,
+        "patch_label": "P062",
+        "name": "patch_0062_VV",
+        "x_start": 10000,
+        "y_start": 8000,
+        "valid_x_end": 12000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 7840,
+          "x1": 12160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 9840,
+          "y0": 7840,
+          "x1": 12160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 8000,
+          "x1": 12000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 10000,
+          "y0": 8000,
+          "x1": 12000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.05218791829548,
+          "south": -33.912058634145424,
+          "east": -50.79626969405376,
+          "north": -33.810012528430065
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.05218791829548,
+          "south": -33.912058634145424,
+          "east": -50.79626969405376,
+          "north": -33.810012528430065
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.0254387027074,
+              -33.828047722841674
+            ],
+            [
+              -51.03567216360251,
+              -33.85878736443098
+            ],
+            [
+              -51.24325090587041,
+              -33.80910129017556
+            ],
+            [
+              -51.23295105322068,
+              -33.77837809328733
+            ],
+            [
+              -51.0254387027074,
+              -33.828047722841674
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 62,
+        "tile_id": 62,
+        "patch_number": 63,
+        "patch_label": "P063",
+        "name": "patch_0063_VV",
+        "x_start": 12000,
+        "y_start": 8000,
+        "valid_x_end": 14000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 11840,
+          "y0": 7840,
+          "x1": 14160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 11840,
+          "y0": 7840,
+          "x1": 14160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 12000,
+          "y0": 8000,
+          "x1": 14000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 12000,
+          "y0": 8000,
+          "x1": 14000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.25985854658677,
+          "south": -33.86275601939101,
+          "east": -51.00413482982678,
+          "north": -33.76030741394018
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.25985854658677,
+          "south": -33.86275601939101,
+          "east": -51.00413482982678,
+          "north": -33.76030741394018
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.2330548176823,
+              -33.77835318001409
+            ],
+            [
+              -51.24335470356877,
+              -33.809076369027814
+            ],
+            [
+              -51.450706747898145,
+              -33.759063215780465
+            ],
+            [
+              -51.440340833758896,
+              -33.7283566894706
+            ],
+            [
+              -51.2330548176823,
+              -33.77835318001409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 63,
+        "tile_id": 63,
+        "patch_number": 64,
+        "patch_label": "P064",
+        "name": "patch_0064_VV",
+        "x_start": 14000,
+        "y_start": 8000,
+        "valid_x_end": 16000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 7840,
+          "x1": 16160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 13840,
+          "y0": 7840,
+          "x1": 16160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 8000,
+          "x1": 16000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 14000,
+          "y0": 8000,
+          "x1": 16000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.46728893147864,
+          "south": -33.813063752666984,
+          "east": -51.21173291871671,
+          "north": -33.71025715769943
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.46728893147864,
+          "south": -33.813063752666984,
+          "east": -51.21173291871671,
+          "north": -33.71025715769943
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.440444439894016,
+              -33.72833154782532
+            ],
+            [
+              -51.45081038659717,
+              -33.759038065654934
+            ],
+            [
+              -51.65791105865627,
+              -33.7086624510316
+            ],
+            [
+              -51.647479900419285,
+              -33.67797342381962
+            ],
+            [
+              -51.440444439894016,
+              -33.72833154782532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 64,
+        "tile_id": 64,
+        "patch_number": 65,
+        "patch_label": "P065",
+        "name": "patch_0065_VV",
+        "x_start": 16000,
+        "y_start": 8000,
+        "valid_x_end": 18000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 15840,
+          "y0": 7840,
+          "x1": 18160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 15840,
+          "y0": 7840,
+          "x1": 18160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 16000,
+          "y0": 8000,
+          "x1": 18000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 16000,
+          "y0": 8000,
+          "x1": 18000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.67448010942192,
+          "south": -33.76306208573907,
+          "east": -51.41911756594588,
+          "north": -33.65986396977109
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.67448010942192,
+          "south": -33.76306208573907,
+          "east": -51.41911756594588,
+          "north": -33.65986396977109
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.64758342430741,
+              -33.677948169741725
+            ],
+            [
+              -51.65801461524005,
+              -33.70863718786774
+            ],
+            [
+              -51.86488045552886,
+              -33.65792543168054
+            ],
+            [
+              -51.854384385810576,
+              -33.62725442073996
+            ],
+            [
+              -51.64758342430741,
+              -33.677948169741725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 65,
+        "tile_id": 65,
+        "patch_number": 66,
+        "patch_label": "P066",
+        "name": "patch_0066_VV",
+        "x_start": 18000,
+        "y_start": 8000,
+        "valid_x_end": 20000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 7840,
+          "x1": 20160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 17840,
+          "y0": 7840,
+          "x1": 20160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 8000,
+          "x1": 20000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 18000,
+          "y0": 8000,
+          "x1": 20000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -51.8814245481399,
+          "south": -33.71267929408721,
+          "east": -51.626239791232166,
+          "north": -33.60911691143086
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -51.8814245481399,
+          "south": -33.71267929408721,
+          "east": -51.626239791232166,
+          "north": -33.60911691143086
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.8544877535069,
+              -33.62722893997183
+            ],
+            [
+              -51.86498385600996,
+              -33.65789994243217
+            ],
+            [
+              -52.071605210921305,
+              -33.60683785241768
+            ],
+            [
+              -52.06104353101551,
+              -33.576184941824046
+            ],
+            [
+              -51.8544877535069,
+              -33.62722893997183
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 66,
+        "tile_id": 66,
+        "patch_number": 67,
+        "patch_label": "P067",
+        "name": "patch_0067_VV",
+        "x_start": 20000,
+        "y_start": 8000,
+        "valid_x_end": 22000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 7840,
+          "x1": 22160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 19840,
+          "y0": 7840,
+          "x1": 22160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 8000,
+          "x1": 22000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 20000,
+          "y0": 8000,
+          "x1": 22000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.088136309276294,
+          "south": -33.66197822217196,
+          "east": -51.83313935074686,
+          "north": -33.55803746388957
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.088136309276294,
+          "south": -33.66197822217196,
+          "east": -51.83313935074686,
+          "north": -33.55803746388957
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.06114681746853,
+              -33.57615934633315
+            ],
+            [
+              -52.071708530201576,
+              -33.60681224723507
+            ],
+            [
+              -52.27808748207704,
+              -33.55541362776796
+            ],
+            [
+              -52.26746147351422,
+              -33.52477911638918
+            ],
+            [
+              -52.06114681746853,
+              -33.57615934633315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 67,
+        "tile_id": 67,
+        "patch_number": 68,
+        "patch_label": "P068",
+        "name": "patch_0068_VV",
+        "x_start": 22000,
+        "y_start": 8000,
+        "valid_x_end": 24000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 7840,
+          "x1": 24160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 21840,
+          "y0": 7840,
+          "x1": 24160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 8000,
+          "x1": 24000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 22000,
+          "y0": 8000,
+          "x1": 24000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.29459327696005,
+          "south": -33.61090907645139,
+          "east": -52.03978132833259,
+          "north": -33.50660422251335
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.29459327696005,
+          "south": -33.61090907645139,
+          "east": -52.03978132833259,
+          "north": -33.50660422251335
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.267564602185956,
+              -33.52475329710654
+            ],
+            [
+              -52.27819064333586,
+              -33.55538779939934
+            ],
+            [
+              -52.4842501384496,
+              -33.50366482534496
+            ],
+            [
+              -52.47355966668132,
+              -33.47304848591059
+            ],
+            [
+              -52.267564602185956,
+              -33.52475329710654
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 68,
+        "tile_id": 68,
+        "patch_number": 69,
+        "patch_label": "P069",
+        "name": "patch_0069_VV",
+        "x_start": 24000,
+        "y_start": 8000,
+        "valid_x_end": 26000,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 7840,
+          "x1": 26160,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 23840,
+          "y0": 7840,
+          "x1": 26160,
+          "y1": 10160
+        },
+        "processing_width": 2320,
+        "processing_height": 510,
+        "processing_target_width": 2320,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 8000,
+          "x1": 26000,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 24000,
+          "y0": 8000,
+          "x1": 26000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.50073017597343,
+          "south": -33.55952033837825,
+          "east": -52.246194879570695,
+          "north": -33.45486708276443
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.50073017597343,
+          "south": -33.55952033837825,
+          "east": -52.246194879570695,
+          "north": -33.45486708276443
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -52.47366263506842,
+              -33.47302257387639
+            ],
+            [
+              -52.484353138707434,
+              -33.5036389042248
+            ],
+            [
+              -52.51741620534356,
+              -33.49531822465141
+            ],
+            [
+              -52.50671547124693,
+              -33.46470481090009
+            ],
+            [
+              -52.47366263506842,
+              -33.47302257387639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "patch_id": 69,
+        "tile_id": 69,
+        "patch_number": 70,
+        "patch_label": "P070",
+        "name": "patch_0070_VV",
+        "x_start": 26000,
+        "y_start": 8000,
+        "valid_x_end": 26322,
+        "valid_y_end": 8350,
+        "width": 2000,
+        "height": 2000,
+        "target_width": 2000,
+        "target_height": 2000,
+        "requires_padding": true,
+        "processing_bbox_pixels": {
+          "x0": 25840,
+          "y0": 7840,
+          "x1": 26322,
+          "y1": 8350
+        },
+        "processing_requested_bbox_pixels": {
+          "x0": 25840,
+          "y0": 7840,
+          "x1": 28160,
+          "y1": 10160
+        },
+        "processing_width": 482,
+        "processing_height": 510,
+        "processing_target_width": 482,
+        "processing_target_height": 510,
+        "processing_requires_padding": false,
+        "core_bbox_pixels": {
+          "x0": 26000,
+          "y0": 8000,
+          "x1": 26322,
+          "y1": 8350
+        },
+        "requested_bbox_pixels": {
+          "x0": 26000,
+          "y0": 8000,
+          "x1": 28000,
+          "y1": 10000
+        },
+        "halo_pixels": 160,
+        "polarization": "VV",
+        "display_bounds_lonlat": {
+          "west": -52.51741620534356,
+          "south": -33.5077862834514,
+          "east": -52.45228893829723,
+          "north": -33.45067000803416
+        },
+        "cfar_detection_count": 0,
+        "yolo_detection_count": 0,
+        "processing_bounds_lonlat": {
+          "west": -52.51741620534356,
+          "south": -33.5077862834514,
+          "east": -52.45228893829723,
+          "north": -33.45067000803416
+        },
+        "cfar_count": 0,
+        "yolo_count": 0,
+        "has_cfar_detection": false,
+        "has_yolo_detection": false,
+        "has_detection": false
+      }
+    }
+  ]
+}

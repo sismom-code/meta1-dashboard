@@ -1,0 +1,30 @@
+{
+  "code": "1050",
+  "arquivoId": "1050",
+  "date": "2026-08-15",
+  "name": "S1A_IW_GRDH_1SDV_...",
+  "patches": [
+    {
+      "id": "P005",
+      "targetLabel": "T0001",
+      "patchNumber": 5,
+      "geotiff": "patch_0005_VV_sigma0_preproc.tif",
+      "width": 2320,
+      "height": 2320,
+      "snapTime": 3.125,
+      "bounds": {"west": -49.5, "south": -4.5, "east": -49.25, "north": -4.25},
+      "detection": {
+        "id": 1,
+        "lat": -4.375,
+        "lon": -49.375,
+        "area": 9,
+        "peak": 8.5,
+        "threshold": -2.1,
+        "method": "CFAR‑GΓD + YOLO",
+        "kind": "combined",
+        "yoloCount": 1,
+        "yoloConfidence": 0.87
+      }
+    }
+  ]
+}

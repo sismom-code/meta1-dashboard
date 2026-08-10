@@ -1,11 +1,24 @@
-VERSÃO FINAL — ATUALIZAÇÃO MULTIDATAS APLICADA
+ATUALIZAÇÃO META 1 — SALA DE SITUAÇÃO
+Data: 09/08/2026
 
-Os arquivos do pacote de atualização foram incorporados ao projeto-base.
-O Produto 923 está organizado em www/data/products/923/.
-A camada www/data/zee-amazonia-azul.geojson foi preservada.
-Os arquivos legados substituídos foram removidos para evitar duplicidade.
+Estrutura preservada: R Shiny, app.R, inicializadores e pasta www/data/products.
 
-Depois de instalar o R:
-1. Execute ABRIR_VISUALIZADOR_SHINY_WINDOWS.bat.
-2. Na primeira utilização, caso faltem pacotes, execute Rscript install_packages.R.
-3. Para verificar o catálogo, execute Rscript validate_products.R.
+Atualizações aplicadas:
+- catálogo com 12 produtos, 1.457 recortes e 481 alvos únicos;
+- 200 correspondências CFAR+YOLO;
+- filtros Todas, CFAR, YOLO e CFAR+YOLO;
+- abertura padrão em CFAR+YOLO e na data 09/08/2026;
+- produtos do mesmo dia exibidos simultaneamente;
+- produto selecionado trazido para a camada superior durante a alternância;
+- barra de opacidade SAR iniciada em 85%;
+- rótulos PXXX removidos do mapa;
+- todos os boxes do preview visíveis, com destaque do alvo corrente;
+- cartões inferiores compactados e áreas de mosaico/preview ampliadas;
+- identificação Sentinel-1A, Sentinel-1C e Sentinel-1D;
+- correção 9C2D · T0008 para o recorte P003.
+
+Para validar:
+Rscript validate_products.R
+
+Para abrir no Windows:
+ABRIR_VISUALIZADOR_SHINY_WINDOWS.bat
