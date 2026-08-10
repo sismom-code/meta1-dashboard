@@ -1,0 +1,3214 @@
+{
+  "schema_version": "1.1",
+  "id": "S1C_IW_GRDH_1SDV_20260803T082202_20260803T082233_008828_01182E_7710",
+  "product_id": "S1C_IW_GRDH_1SDV_20260803T082202_20260803T082233_008828_01182E_7710",
+  "name": "S1C_IW_GRDH_1SDV_20260803T082202_20260803T082233_008828_01182E_7710",
+  "source_name": "S1C_IW_GRDH_1SDV_20260803T082202_20260803T082233_008828_01182E_7710.SAFE",
+  "date": "2026-08-03",
+  "start_utc": "2026-08-03T08:22:02+00:00",
+  "end_utc": "2026-08-03T08:22:33+00:00",
+  "status": "processado",
+  "generated_at_utc": "2026-08-09T20:09:30.751432+00:00",
+  "bounds": {
+    "west": -45.58146110882534,
+    "south": -25.417634670255403,
+    "east": -42.63841209280739,
+    "north": -23.02075170392449
+  },
+  "total_patches": 143,
+  "total_cfar_detections": 86,
+  "total_yolo_detections": 79,
+  "total_cfar_yolo_matches": 56,
+  "total_cfar_yolo_associations": 67,
+  "total_cfar_fragments_absorbed": 67,
+  "total_unique_targets": 98,
+  "total_detections": 98,
+  "total_algorithm_detections": 165,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4,
+    "processing_scope": "display_only",
+    "detector_inputs_modified": false,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {
+      "west": -45.58146110882534,
+      "south": -25.417634670255403,
+      "east": -42.63841209280739,
+      "north": -23.02075170392449
+    },
+    "width": 3000,
+    "height": 2443
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": "detections-cfar.csv",
+    "yolo_geojson": "detections-yolo.geojson",
+    "yolo_csv": "detections-yolo.csv",
+    "combined_geojson": "detections-combined.geojson",
+    "combined_csv": "detections-combined.csv",
+    "fusion_report": "fusion-report.json",
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "selection": "detections_only",
+    "exported_count": 48,
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4
+  },
+  "cfar": {
+    "params": {
+      "device": "cuda",
+      "gpu_engine": "cupy",
+      "gpu_parity_guard": true,
+      "gpu_candidate_batch_size": 524288,
+      "PFA": 0.0001,
+      "janela": 100,
+      "guarda": 20,
+      "f_factor": 1.35,
+      "limiar_db": -10,
+      "resample_factor": 0.3333333333333333,
+      "min_area": 3,
+      "max_area": 100,
+      "legacy_compatible": true,
+      "strict_post_filters": false,
+      "exclude_edges": false,
+      "land_mask_enabled": true,
+      "skip_land_tiles": true,
+      "land_skip_threshold": 0.99,
+      "min_water_fraction": 0.01,
+      "land_mask_max_dim": 128,
+      "land_mask_buffer_degrees": 0,
+      "use_parallel": false
+    },
+    "patch_summaries": [
+      {
+        "patch_id": 0,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.222,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 1,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.251,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 2,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 3,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.241,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 4,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.244,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 5,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.22,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 6,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.219,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 7,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.245,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 8,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.568,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 9,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 6.921,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 10,
+        "status": "success",
+        "detections": 18,
+        "elapsed_seconds": 6.056,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 11,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.916,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -44.970499055974,
+            "south": -23.281658526348238,
+            "east": -44.7310991909189,
+            "north": -23.05794867501202
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 12,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.425,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            596
+          ],
+          "sample_shape": [
+            128,
+            106
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -45.126927844542,
+            "south": -23.235147862646315,
+            "east": -44.92127124890285,
+            "north": -23.02075170392449
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 13568,
+          "land_points": 13568,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 383587,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 383587,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 13,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 14,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 15,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.268,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 16,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.237,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 17,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 18,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 19,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 20,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 21,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 22,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.326,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 23,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 6.34,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 24,
+        "status": "success",
+        "detections": 8,
+        "elapsed_seconds": 6.337,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 25,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 5.207,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 26,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 27,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 28,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 29,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.255,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 30,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 31,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 32,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.249,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 33,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.242,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 34,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 35,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 36,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.24,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 37,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 6.36,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 38,
+        "status": "success",
+        "detections": 5,
+        "elapsed_seconds": 5.22,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 39,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 40,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 41,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 42,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.265,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 43,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.237,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 44,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.237,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 45,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.241,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 46,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.241,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 47,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 48,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.234,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 49,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 50,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 51,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.15,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 52,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 53,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 54,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 55,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 56,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 57,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.245,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 58,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 59,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.262,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 60,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 61,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.255,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 62,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 63,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 1.27,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 64,
+        "status": "success",
+        "detections": 8,
+        "elapsed_seconds": 1.368,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 65,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 66,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 67,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 68,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 69,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 70,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.24,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 71,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 72,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 73,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 74,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 75,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 76,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 77,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.507,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 78,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 79,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 80,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 81,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 82,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 83,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 84,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.262,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 85,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.266,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 86,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 87,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 88,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.269,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 89,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.275,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 90,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.207,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 91,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.23,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 92,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 93,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 94,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 95,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 96,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 97,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 98,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 99,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 100,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 101,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 102,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 103,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.212,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 104,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.229,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 105,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 106,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.253,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 107,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 108,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 109,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 110,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.234,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 111,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 112,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 113,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 114,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 115,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.237,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 116,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.183,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 117,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.21,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 118,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 119,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.23,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 120,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.229,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 121,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.218,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 122,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 123,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 124,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 125,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.22,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 126,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 127,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 128,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 129,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.205,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 130,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.031,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 131,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.033,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 132,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.033,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 133,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.034,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 134,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.034,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 135,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.033,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 136,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.033,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 137,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.033,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 138,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.055,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 139,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.072,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 140,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.074,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 141,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.074,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 142,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.059,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      }
+    ]
+  },
+  "yolo": {
+    "params": {
+      "tile_size": 768,
+      "stride": 736,
+      "batch_size": 8,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "imgsz": 800,
+      "device": "cuda",
+      "model_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/api/app/domain/yolo8/models/SAR-MULTI-1280p.pt",
+      "deduplicate_close_boxes": true,
+      "duplicate_center_distance_px": 12,
+      "duplicate_overlap_smaller_threshold": 0.8,
+      "duplicate_iou_threshold": 0.3,
+      "land_mask_enabled": true,
+      "land_mask_required": true,
+      "land_center_must_be_water": true,
+      "land_min_water_fraction": 0.5,
+      "land_mask_buffer_degrees": 0
+    },
+    "stats": {
+      "image_width": 25629,
+      "image_height": 20459,
+      "tile_size": 768,
+      "stride": 736,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "total_tiles": 980,
+      "raw_detections": 96,
+      "merged_detections": 92,
+      "geocoder": "SAFEGeocoder",
+      "final_detections": 79,
+      "file_path": "/content/sismom_colab_work_v2/run/input_extracted/S1C_IW_GRDH_1SDV_20260803T082202_20260803T082233_008828_01182E_7710.SAFE",
+      "format": "safe",
+      "detections_before_dedup": 92,
+      "duplicates_removed": 3,
+      "detections_before_land_mask": 89,
+      "land_detections_removed": 10,
+      "processing_time_seconds": 29.51
+    },
+    "model_sha256": "6eb6e332acea1e83bce53cd4e87de602cae4eadc28bf09a0be80e16521b3fe7d"
+  },
+  "fusion": {
+    "enabled": true,
+    "match_on_overlap": true,
+    "max_centroid_distance_m": 100,
+    "assignment": "many_cfar_to_one_yolo_overlap_then_nearest",
+    "distance_method": "WGS84_geodesic_between_centroids",
+    "total_cfar": 86,
+    "total_yolo": 79,
+    "candidate_pairs": 68,
+    "total_matches": 56,
+    "total_matched_targets": 56,
+    "total_cfar_yolo_associations": 67,
+    "cfar_fragments_absorbed": 67,
+    "cfar_only": 19,
+    "yolo_only": 23,
+    "total_unique_targets": 98,
+    "count_check": 98,
+    "matches": [
+      {
+        "target_id": "T0001",
+        "cfar_id": 74,
+        "cfar_ids": [
+          74
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 1,
+        "cfar_patch_id": 88,
+        "cfar_patch_ids": [
+          88
+        ],
+        "yolo_patch_id": 88,
+        "match_distance_m": 39.186,
+        "match_distances_m": [
+          39.186
+        ],
+        "nearest_match_distance_m": 39.186,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0002",
+        "cfar_id": 68,
+        "cfar_ids": [
+          68
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 2,
+        "cfar_patch_id": 83,
+        "cfar_patch_ids": [
+          83
+        ],
+        "yolo_patch_id": 83,
+        "match_distance_m": 36.381,
+        "match_distances_m": [
+          36.381
+        ],
+        "nearest_match_distance_m": 36.381,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0003",
+        "cfar_id": 41,
+        "cfar_ids": [
+          41
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 3,
+        "cfar_patch_id": 28,
+        "cfar_patch_ids": [
+          28
+        ],
+        "yolo_patch_id": 28,
+        "match_distance_m": 20.871,
+        "match_distances_m": [
+          20.871
+        ],
+        "nearest_match_distance_m": 20.871,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0004",
+        "cfar_id": 1,
+        "cfar_ids": [
+          1
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 4,
+        "cfar_patch_id": 1,
+        "cfar_patch_ids": [
+          1
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 18.06,
+        "match_distances_m": [
+          18.06
+        ],
+        "nearest_match_distance_m": 18.06,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0005",
+        "cfar_id": 29,
+        "cfar_ids": [
+          29
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 5,
+        "cfar_patch_id": 20,
+        "cfar_patch_ids": [
+          20
+        ],
+        "yolo_patch_id": 20,
+        "match_distance_m": 11.334,
+        "match_distances_m": [
+          11.334
+        ],
+        "nearest_match_distance_m": 11.334,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0006",
+        "cfar_id": 27,
+        "cfar_ids": [
+          27
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 6,
+        "cfar_patch_id": 15,
+        "cfar_patch_ids": [
+          15
+        ],
+        "yolo_patch_id": 15,
+        "match_distance_m": 20.871,
+        "match_distances_m": [
+          20.871
+        ],
+        "nearest_match_distance_m": 20.871,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0007",
+        "cfar_id": 26,
+        "cfar_ids": [
+          26
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 7,
+        "cfar_patch_id": 15,
+        "cfar_patch_ids": [
+          15
+        ],
+        "yolo_patch_id": 15,
+        "match_distance_m": 5.073,
+        "match_distances_m": [
+          5.073
+        ],
+        "nearest_match_distance_m": 5.073,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0008",
+        "cfar_id": 81,
+        "cfar_ids": [
+          81
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 8,
+        "cfar_patch_id": 100,
+        "cfar_patch_ids": [
+          100
+        ],
+        "yolo_patch_id": 100,
+        "match_distance_m": 95.602,
+        "match_distances_m": [
+          95.602
+        ],
+        "nearest_match_distance_m": 95.602,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0009",
+        "cfar_id": 43,
+        "cfar_ids": [
+          43
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 9,
+        "cfar_patch_id": 37,
+        "cfar_patch_ids": [
+          37
+        ],
+        "yolo_patch_id": 37,
+        "match_distance_m": 121.426,
+        "match_distances_m": [
+          121.426
+        ],
+        "nearest_match_distance_m": 121.426,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0010",
+        "cfar_id": 79,
+        "cfar_ids": [
+          79
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 10,
+        "cfar_patch_id": 90,
+        "cfar_patch_ids": [
+          90
+        ],
+        "yolo_patch_id": 90,
+        "match_distance_m": 26.907,
+        "match_distances_m": [
+          26.907
+        ],
+        "nearest_match_distance_m": 26.907,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0011",
+        "cfar_id": 52,
+        "cfar_ids": [
+          52,
+          51
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 11,
+        "cfar_patch_id": 50,
+        "cfar_patch_ids": [
+          50,
+          50
+        ],
+        "yolo_patch_id": 50,
+        "match_distance_m": 36.197,
+        "match_distances_m": [
+          36.197,
+          175.225
+        ],
+        "nearest_match_distance_m": 36.197,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0012",
+        "cfar_id": 54,
+        "cfar_ids": [
+          54
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 12,
+        "cfar_patch_id": 58,
+        "cfar_patch_ids": [
+          58
+        ],
+        "yolo_patch_id": 58,
+        "match_distance_m": 29.391,
+        "match_distances_m": [
+          29.391
+        ],
+        "nearest_match_distance_m": 29.391,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0013",
+        "cfar_id": 72,
+        "cfar_ids": [
+          72
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 13,
+        "cfar_patch_id": 88,
+        "cfar_patch_ids": [
+          88
+        ],
+        "yolo_patch_id": 87,
+        "match_distance_m": 41.727,
+        "match_distances_m": [
+          41.727
+        ],
+        "nearest_match_distance_m": 41.727,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0014",
+        "cfar_id": 42,
+        "cfar_ids": [
+          42
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 14,
+        "cfar_patch_id": 34,
+        "cfar_patch_ids": [
+          34
+        ],
+        "yolo_patch_id": 33,
+        "match_distance_m": 20.659,
+        "match_distances_m": [
+          20.659
+        ],
+        "nearest_match_distance_m": 20.659,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0015",
+        "cfar_id": 78,
+        "cfar_ids": [
+          78
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 15,
+        "cfar_patch_id": 89,
+        "cfar_patch_ids": [
+          89
+        ],
+        "yolo_patch_id": 89,
+        "match_distance_m": 25.159,
+        "match_distances_m": [
+          25.159
+        ],
+        "nearest_match_distance_m": 25.159,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0016",
+        "cfar_id": 16,
+        "cfar_ids": [
+          16,
+          17
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 16,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10,
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 140.371,
+        "match_distances_m": [
+          140.371,
+          175.672
+        ],
+        "nearest_match_distance_m": 140.371,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0017",
+        "cfar_id": 65,
+        "cfar_ids": [
+          65
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 17,
+        "cfar_patch_id": 75,
+        "cfar_patch_ids": [
+          75
+        ],
+        "yolo_patch_id": 75,
+        "match_distance_m": 50.085,
+        "match_distances_m": [
+          50.085
+        ],
+        "nearest_match_distance_m": 50.085,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0018",
+        "cfar_id": 82,
+        "cfar_ids": [
+          82,
+          83
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 19,
+        "cfar_patch_id": 103,
+        "cfar_patch_ids": [
+          103,
+          103
+        ],
+        "yolo_patch_id": 102,
+        "match_distance_m": 5.069,
+        "match_distances_m": [
+          5.069,
+          107.894
+        ],
+        "nearest_match_distance_m": 5.069,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0019",
+        "cfar_id": 38,
+        "cfar_ids": [
+          38,
+          39
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 20,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24,
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 91.199,
+        "match_distances_m": [
+          91.199,
+          96.338
+        ],
+        "nearest_match_distance_m": 91.199,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0020",
+        "cfar_id": 64,
+        "cfar_ids": [
+          64
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 21,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 7.103,
+        "match_distances_m": [
+          7.103
+        ],
+        "nearest_match_distance_m": 7.103,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0021",
+        "cfar_id": 24,
+        "cfar_ids": [
+          24
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 22,
+        "cfar_patch_id": 13,
+        "cfar_patch_ids": [
+          13
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 35.338,
+        "match_distances_m": [
+          35.338
+        ],
+        "nearest_match_distance_m": 35.338,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0022",
+        "cfar_id": 32,
+        "cfar_ids": [
+          32
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 23,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 60.048,
+        "match_distances_m": [
+          60.048
+        ],
+        "nearest_match_distance_m": 60.048,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0023",
+        "cfar_id": 11,
+        "cfar_ids": [
+          11,
+          12
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 24,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10,
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 43.615,
+        "match_distances_m": [
+          43.615,
+          177.556
+        ],
+        "nearest_match_distance_m": 43.615,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0024",
+        "cfar_id": 50,
+        "cfar_ids": [
+          50
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 25,
+        "cfar_patch_id": 49,
+        "cfar_patch_ids": [
+          49
+        ],
+        "yolo_patch_id": 49,
+        "match_distance_m": 18.152,
+        "match_distances_m": [
+          18.152
+        ],
+        "nearest_match_distance_m": 18.152,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0025",
+        "cfar_id": 4,
+        "cfar_ids": [
+          4,
+          3
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 26,
+        "cfar_patch_id": 4,
+        "cfar_patch_ids": [
+          4,
+          4
+        ],
+        "yolo_patch_id": 4,
+        "match_distance_m": 46.07,
+        "match_distances_m": [
+          46.07,
+          60.183
+        ],
+        "nearest_match_distance_m": 46.07,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0026",
+        "cfar_id": 9,
+        "cfar_ids": [
+          9
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 27,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 47.157,
+        "match_distances_m": [
+          47.157
+        ],
+        "nearest_match_distance_m": 47.157,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0027",
+        "cfar_id": 20,
+        "cfar_ids": [
+          20
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 28,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10
+        ],
+        "yolo_patch_id": 9,
+        "match_distance_m": 11.328,
+        "match_distances_m": [
+          11.328
+        ],
+        "nearest_match_distance_m": 11.328,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0028",
+        "cfar_id": 67,
+        "cfar_ids": [
+          67
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 29,
+        "cfar_patch_id": 79,
+        "cfar_patch_ids": [
+          79
+        ],
+        "yolo_patch_id": 79,
+        "match_distance_m": 49.711,
+        "match_distances_m": [
+          49.711
+        ],
+        "nearest_match_distance_m": 49.711,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0029",
+        "cfar_id": 85,
+        "cfar_ids": [
+          85
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 30,
+        "cfar_patch_id": 124,
+        "cfar_patch_ids": [
+          124
+        ],
+        "yolo_patch_id": 123,
+        "match_distance_m": 117.141,
+        "match_distances_m": [
+          117.141
+        ],
+        "nearest_match_distance_m": 117.141,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0030",
+        "cfar_id": 53,
+        "cfar_ids": [
+          53
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 32,
+        "cfar_patch_id": 58,
+        "cfar_patch_ids": [
+          58
+        ],
+        "yolo_patch_id": 58,
+        "match_distance_m": 25.506,
+        "match_distances_m": [
+          25.506
+        ],
+        "nearest_match_distance_m": 25.506,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0031",
+        "cfar_id": 84,
+        "cfar_ids": [
+          84
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 33,
+        "cfar_patch_id": 103,
+        "cfar_patch_ids": [
+          103
+        ],
+        "yolo_patch_id": 103,
+        "match_distance_m": 30.802,
+        "match_distances_m": [
+          30.802
+        ],
+        "nearest_match_distance_m": 30.802,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0032",
+        "cfar_id": 86,
+        "cfar_ids": [
+          86
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 34,
+        "cfar_patch_id": 124,
+        "cfar_patch_ids": [
+          124
+        ],
+        "yolo_patch_id": 124,
+        "match_distance_m": 20.254,
+        "match_distances_m": [
+          20.254
+        ],
+        "nearest_match_distance_m": 20.254,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0033",
+        "cfar_id": 69,
+        "cfar_ids": [
+          69
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 35,
+        "cfar_patch_id": 84,
+        "cfar_patch_ids": [
+          84
+        ],
+        "yolo_patch_id": 84,
+        "match_distance_m": 104.343,
+        "match_distances_m": [
+          104.343
+        ],
+        "nearest_match_distance_m": 104.343,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0034",
+        "cfar_id": 2,
+        "cfar_ids": [
+          2
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 38,
+        "cfar_patch_id": 1,
+        "cfar_patch_ids": [
+          1
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 20.605,
+        "match_distances_m": [
+          20.605
+        ],
+        "nearest_match_distance_m": 20.605,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0035",
+        "cfar_id": 70,
+        "cfar_ids": [
+          70
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 39,
+        "cfar_patch_id": 85,
+        "cfar_patch_ids": [
+          85
+        ],
+        "yolo_patch_id": 72,
+        "match_distance_m": 55.947,
+        "match_distances_m": [
+          55.947
+        ],
+        "nearest_match_distance_m": 55.947,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0036",
+        "cfar_id": 48,
+        "cfar_ids": [
+          48
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 42,
+        "cfar_patch_id": 38,
+        "cfar_patch_ids": [
+          38
+        ],
+        "yolo_patch_id": 37,
+        "match_distance_m": 43.08,
+        "match_distances_m": [
+          43.08
+        ],
+        "nearest_match_distance_m": 43.08,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0037",
+        "cfar_id": 25,
+        "cfar_ids": [
+          25
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 43,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 20.001,
+        "match_distances_m": [
+          20.001
+        ],
+        "nearest_match_distance_m": 20.001,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0038",
+        "cfar_id": 37,
+        "cfar_ids": [
+          37
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 45,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 141.332,
+        "match_distances_m": [
+          141.332
+        ],
+        "nearest_match_distance_m": 141.332,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0039",
+        "cfar_id": 49,
+        "cfar_ids": [
+          49
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 46,
+        "cfar_patch_id": 40,
+        "cfar_patch_ids": [
+          40
+        ],
+        "yolo_patch_id": 39,
+        "match_distance_m": 142.446,
+        "match_distances_m": [
+          142.446
+        ],
+        "nearest_match_distance_m": 142.446,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0040",
+        "cfar_id": 30,
+        "cfar_ids": [
+          30
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 47,
+        "cfar_patch_id": 23,
+        "cfar_patch_ids": [
+          23
+        ],
+        "yolo_patch_id": 23,
+        "match_distance_m": 5.067,
+        "match_distances_m": [
+          5.067
+        ],
+        "nearest_match_distance_m": 5.067,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0041",
+        "cfar_id": 56,
+        "cfar_ids": [
+          56,
+          57
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 48,
+        "cfar_patch_id": 64,
+        "cfar_patch_ids": [
+          64,
+          64
+        ],
+        "yolo_patch_id": 63,
+        "match_distance_m": 18.243,
+        "match_distances_m": [
+          18.243,
+          128.267
+        ],
+        "nearest_match_distance_m": 18.243,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0042",
+        "cfar_id": 22,
+        "cfar_ids": [
+          22
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 49,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 33.317,
+        "match_distances_m": [
+          33.317
+        ],
+        "nearest_match_distance_m": 33.317,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0043",
+        "cfar_id": 33,
+        "cfar_ids": [
+          33
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 53,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 135.154,
+        "match_distances_m": [
+          135.154
+        ],
+        "nearest_match_distance_m": 135.154,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0044",
+        "cfar_id": 63,
+        "cfar_ids": [
+          63
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 58,
+        "cfar_patch_id": 64,
+        "cfar_patch_ids": [
+          64
+        ],
+        "yolo_patch_id": 64,
+        "match_distance_m": 50.307,
+        "match_distances_m": [
+          50.307
+        ],
+        "nearest_match_distance_m": 50.307,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0045",
+        "cfar_id": 71,
+        "cfar_ids": [
+          71
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 61,
+        "cfar_patch_id": 85,
+        "cfar_patch_ids": [
+          85
+        ],
+        "yolo_patch_id": 85,
+        "match_distance_m": 30.46,
+        "match_distances_m": [
+          30.46
+        ],
+        "nearest_match_distance_m": 30.46,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0046",
+        "cfar_id": 13,
+        "cfar_ids": [
+          13,
+          14
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 63,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10,
+          10
+        ],
+        "yolo_patch_id": 9,
+        "match_distance_m": 88.181,
+        "match_distances_m": [
+          88.181,
+          178.03
+        ],
+        "nearest_match_distance_m": 88.181,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0047",
+        "cfar_id": 15,
+        "cfar_ids": [
+          15
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 64,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 21.234,
+        "match_distances_m": [
+          21.234
+        ],
+        "nearest_match_distance_m": 21.234,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0048",
+        "cfar_id": 8,
+        "cfar_ids": [
+          8,
+          10
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 65,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10,
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 106.278,
+        "match_distances_m": [
+          106.278,
+          118.423
+        ],
+        "nearest_match_distance_m": 106.278,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0049",
+        "cfar_id": 59,
+        "cfar_ids": [
+          59,
+          58
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 66,
+        "cfar_patch_id": 64,
+        "cfar_patch_ids": [
+          64,
+          64
+        ],
+        "yolo_patch_id": 64,
+        "match_distance_m": 63.843,
+        "match_distances_m": [
+          63.843,
+          149.44
+        ],
+        "nearest_match_distance_m": 63.843,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0050",
+        "cfar_id": 34,
+        "cfar_ids": [
+          34
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 67,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 66.467,
+        "match_distances_m": [
+          66.467
+        ],
+        "nearest_match_distance_m": 66.467,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0051",
+        "cfar_id": 7,
+        "cfar_ids": [
+          7,
+          6
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 68,
+        "cfar_patch_id": 10,
+        "cfar_patch_ids": [
+          10,
+          10
+        ],
+        "yolo_patch_id": 10,
+        "match_distance_m": 66.811,
+        "match_distances_m": [
+          66.811,
+          69.933
+        ],
+        "nearest_match_distance_m": 66.811,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0052",
+        "cfar_id": 40,
+        "cfar_ids": [
+          40
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 69,
+        "cfar_patch_id": 28,
+        "cfar_patch_ids": [
+          28
+        ],
+        "yolo_patch_id": 27,
+        "match_distance_m": 61.635,
+        "match_distances_m": [
+          61.635
+        ],
+        "nearest_match_distance_m": 61.635,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0053",
+        "cfar_id": 35,
+        "cfar_ids": [
+          35
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 71,
+        "cfar_patch_id": 24,
+        "cfar_patch_ids": [
+          24
+        ],
+        "yolo_patch_id": 24,
+        "match_distance_m": 25.378,
+        "match_distances_m": [
+          25.378
+        ],
+        "nearest_match_distance_m": 25.378,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0054",
+        "cfar_id": 28,
+        "cfar_ids": [
+          28
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 75,
+        "cfar_patch_id": 17,
+        "cfar_patch_ids": [
+          17
+        ],
+        "yolo_patch_id": 17,
+        "match_distance_m": 50.941,
+        "match_distances_m": [
+          50.941
+        ],
+        "nearest_match_distance_m": 50.941,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0055",
+        "cfar_id": 55,
+        "cfar_ids": [
+          55
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 77,
+        "cfar_patch_id": 59,
+        "cfar_patch_ids": [
+          59
+        ],
+        "yolo_patch_id": 59,
+        "match_distance_m": 28.408,
+        "match_distances_m": [
+          28.408
+        ],
+        "nearest_match_distance_m": 28.408,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0056",
+        "cfar_id": 5,
+        "cfar_ids": [
+          5
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 79,
+        "cfar_patch_id": 9,
+        "cfar_patch_ids": [
+          9
+        ],
+        "yolo_patch_id": 9,
+        "match_distance_m": 49.991,
+        "match_distances_m": [
+          49.991
+        ],
+        "nearest_match_distance_m": 49.991,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      }
+    ]
+  },
+  "files": {
+    "mosaic": "mosaic.png",
+    "footprint": "footprint.geojson",
+    "patches": "patches.geojson",
+    "cfar_geojson": "detections-cfar.geojson",
+    "yolo_geojson": "detections-yolo.geojson",
+    "combined_geojson": "detections-combined.geojson",
+    "fusion_report": "fusion-report.json",
+    "previews": "previews/"
+  }
+}

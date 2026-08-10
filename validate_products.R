@@ -26,7 +26,9 @@ for (product_dir in product_dirs) {
     has_error <- TRUE
   } else {
     total <- if (is.null(manifest$total_patches)) "não informado" else manifest$total_patches
-    message(sprintf("[OK] %s: produto %s, data %s, %s recortes", label, manifest$id, manifest$date, total))
+    unique_targets <- if (is.null(manifest$presentation_counts$total)) "não informado" else manifest$presentation_counts$total
+    combined <- if (is.null(manifest$presentation_counts$combined)) "não informado" else manifest$presentation_counts$combined
+    message(sprintf("[OK] %s: produto %s, data %s, %s recortes, %s alvos únicos, %s CFAR+YOLO", label, manifest$id, manifest$date, total, unique_targets, combined))
   }
 }
 if (has_error) quit(status = 1L)

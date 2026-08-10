@@ -1,0 +1,1864 @@
+{
+  "schema_version": "2.0-dashboard",
+  "id": "70EA",
+  "arquivo_id": "70EA",
+  "product_id": "S1D_IW_GRDH_1SDV_20260804T080829_20260804T080854_003973_007364_70EA",
+  "name": "S1D_IW_GRDH_1SDV_20260804T080829_20260804T080854_003973_007364_70EA",
+  "source_name": "S1D_IW_GRDH_1SDV_20260804T080829_20260804T080854_003973_007364_70EA.SAFE",
+  "satellite": "Sentinel-1D",
+  "mode": "IW",
+  "polarization": "VV",
+  "status": "processado",
+  "date": "2026-08-04",
+  "start_utc": "2026-08-04T08:08:29+00:00",
+  "end_utc": "2026-08-04T08:08:54+00:00",
+  "generated_at_utc": "2026-08-06T11:17:35.717503+00:00",
+  "total_patches": 117,
+  "total_unique_targets": 39,
+  "total_cfar_detections": 38,
+  "total_yolo_detections": 20,
+  "total_cfar_yolo_matches": 19,
+  "presentation_counts": {
+    "cfar": 19,
+    "yolo": 1,
+    "combined": 19,
+    "total": 39
+  },
+  "pixel_spacing_m": 10,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.9,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4,
+    "processing_scope": "display_only",
+    "detector_inputs_modified": false,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {
+      "west": -38.45697632563473,
+      "south": -5.08186442458689,
+      "east": -35.869291401710186,
+      "north": -3.0747373856294344
+    },
+    "width": 3000,
+    "height": 2327
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "presentation": "presentation.json",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": null,
+    "yolo_geojson": "detections-yolo.geojson",
+    "combined_geojson": "detections-combined.geojson",
+    "fusion_report": "fusion-report.json",
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "selection": "detections_only",
+    "exported_count": 25,
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.9,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4
+  },
+  "cfar": {
+    "params": {
+      "device": "cuda",
+      "gpu_engine": "cupy",
+      "gpu_parity_guard": true,
+      "gpu_candidate_batch_size": 524288,
+      "PFA": 0.0001,
+      "janela": 100,
+      "guarda": 20,
+      "f_factor": 1.35,
+      "limiar_db": -10,
+      "resample_factor": 0.3333333333333333,
+      "min_area": 3,
+      "max_area": 100,
+      "legacy_compatible": true,
+      "strict_post_filters": false,
+      "exclude_edges": false,
+      "land_mask_enabled": true,
+      "skip_land_tiles": true,
+      "land_skip_threshold": 0.95,
+      "min_water_fraction": 0.03,
+      "land_mask_max_dim": 384,
+      "land_mask_buffer_degrees": 0,
+      "use_parallel": false
+    },
+    "patch_summaries": [
+      {
+        "patch_id": 0,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 13.827,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 1,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.272,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 2,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.272,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 3,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.268,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 4,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.268,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 5,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 8.739,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 6,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 8.717,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 7,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.27,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 8,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.299,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 9,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 10,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.268,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 11,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.269,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 12,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.212,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 13,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.266,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 14,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 15,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 16,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 17,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 18,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.282,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 19,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 20,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 8.718,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 21,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 22,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.292,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 23,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 24,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 25,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.221,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 26,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 27,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 28,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 29,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 30,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.289,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 31,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 32,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 33,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 34,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 35,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.282,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 36,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.289,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 37,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 38,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.221,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 39,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.27,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 40,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 41,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 42,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 43,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.289,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 44,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 45,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.29,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 46,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 47,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 48,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.28,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 49,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 50,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 51,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.221,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 52,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.27,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 53,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.281,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 54,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 55,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 56,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 57,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 58,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.294,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 59,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.289,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 60,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 61,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 62,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 63,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 64,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 35.356,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 65,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 66,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 67,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.291,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 68,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.287,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 69,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 70,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.282,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 71,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 72,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.286,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 73,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.282,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 74,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.281,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 75,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 43.481,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 76,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 43.632,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 77,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 35.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 78,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.264,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 79,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.279,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 80,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 81,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.284,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 82,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 83,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.277,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 84,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.278,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 85,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 86,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 43.761,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 87,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 43.726,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 88,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 43.673,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 89,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 43.614,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            384,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.25184359085432,
+            "south": -4.399266564014337,
+            "east": -38.03604837545087,
+            "north": -4.181196024796073
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 147456,
+          "land_points": 144697,
+          "water_points": 2759,
+          "land_fraction": 0.9812893337673612,
+          "water_fraction": 0.018710666232638888,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 11072,
+          "pixels_masked_by_land": 586457,
+          "valid_water_fraction": 0.018529644586287863,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 98.1% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 90,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 35.106,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            618
+          ],
+          "sample_shape": [
+            384,
+            307
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.40040578317064,
+            "south": -4.359984563328674,
+            "east": -38.212726416214785,
+            "north": -4.148168761855634
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 117888,
+          "land_points": 117888,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 343815,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 343815,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 91,
+        "status": "success",
+        "detections": 5,
+        "elapsed_seconds": 0.275,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 92,
+        "status": "success",
+        "detections": 7,
+        "elapsed_seconds": 0.298,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 93,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.28,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 94,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.285,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 95,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.281,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 96,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.281,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 97,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 43.801,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 98,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 43.706,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 99,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 43.712,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 100,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 43.504,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            384,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -37.93826321187475,
+            "south": -4.656595399794088,
+            "east": -37.72304681728115,
+            "north": -4.438535817529829
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 147456,
+          "land_points": 145103,
+          "water_points": 2353,
+          "land_fraction": 0.9840426974826388,
+          "water_fraction": 0.015957302517361112,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 9432,
+          "pixels_masked_by_land": 588097,
+          "valid_water_fraction": 0.015785007924301583,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 98.4% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 101,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 43.476,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            384,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.115054221816685,
+            "south": -4.6173992184136425,
+            "east": -37.89926363343305,
+            "north": -4.399375681899942
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 147456,
+          "land_points": 147456,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 102,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 43.537,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            384,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.29135447621878,
+            "south": -4.578055506118027,
+            "east": -38.075440625456935,
+            "north": -4.360093607630311
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 147456,
+          "land_points": 147456,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 103,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 35.044,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            618
+          ],
+          "sample_shape": [
+            384,
+            307
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.440186384279656,
+            "south": -4.538772522992486,
+            "east": -38.25195101754621,
+            "north": -4.327001373758584
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 117888,
+          "land_points": 117888,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 347220,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 347220,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 104,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.133,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 105,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.135,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 106,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.136,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 107,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 19.508,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 108,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.14,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 109,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 22.278,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 110,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 20.17,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 111,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 19.475,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            773
+          ],
+          "sample_shape": [
+            165,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -37.6031114662334,
+            "south": -4.8096068269853225,
+            "east": -37.41052478719303,
+            "north": -4.695633002573585
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 63360,
+          "land_points": 63360,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 257409,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 257409,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 112,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 19.449,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            773
+          ],
+          "sample_shape": [
+            165,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -37.778272916940296,
+            "south": -4.770496439021152,
+            "east": -37.58668035771541,
+            "north": -4.656704473749597
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 63360,
+          "land_points": 63360,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 257409,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 257409,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 113,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 19.445,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            773
+          ],
+          "sample_shape": [
+            165,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -37.95459072488825,
+            "south": -4.731595255096779,
+            "east": -37.76204369418729,
+            "north": -4.617508335033362
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 63360,
+          "land_points": 63360,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 257409,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 257409,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 114,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 19.504,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            773
+          ],
+          "sample_shape": [
+            165,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.13171241500477,
+            "south": -4.692382510144849,
+            "east": -37.93837099361788,
+            "north": -4.578164547583541
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 63360,
+          "land_points": 63360,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 257409,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 257409,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 115,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 19.433,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            773
+          ],
+          "sample_shape": [
+            165,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.30809902578547,
+            "south": -4.652945535927286,
+            "east": -38.11516242297299,
+            "north": -4.5388814432972415
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 63360,
+          "land_points": 63360,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 257409,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 257409,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      },
+      {
+        "patch_id": 116,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 24.012,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            333,
+            618
+          ],
+          "sample_shape": [
+            207,
+            384
+          ],
+          "sample_max_dim": 384,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -38.45697632563473,
+            "south": -4.61362297160843,
+            "east": -38.29146238611075,
+            "north": -4.505686752197321
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 79488,
+          "land_points": 79488,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 149850,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 149850,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.95,
+          "min_water_fraction": 0.03,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 95.0%)."
+        }
+      }
+    ]
+  },
+  "yolo": {
+    "params": {
+      "tile_size": 768,
+      "stride": 736,
+      "batch_size": 8,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "imgsz": 800,
+      "device": "cuda",
+      "model_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/api/app/domain/yolo8/models/SAR-MULTI-1280p.pt",
+      "deduplicate_close_boxes": true,
+      "duplicate_center_distance_px": 12,
+      "duplicate_overlap_smaller_threshold": 0.8,
+      "duplicate_iou_threshold": 0.3,
+      "land_mask_enabled": true,
+      "land_mask_required": true,
+      "land_center_must_be_water": true,
+      "land_min_water_fraction": 0.5,
+      "land_mask_buffer_degrees": 0
+    },
+    "stats": {
+      "image_width": 25693,
+      "image_height": 16838,
+      "tile_size": 768,
+      "stride": 736,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "total_tiles": 805,
+      "raw_detections": 60,
+      "merged_detections": 50,
+      "geocoder": "SAFEGeocoder",
+      "final_detections": 20,
+      "file_path": "/content/sismom_colab_work_v2/run/input_extracted/S1D_IW_GRDH_1SDV_20260804T080829_20260804T080854_003973_007364_70EA.SAFE",
+      "format": "safe",
+      "detections_before_dedup": 50,
+      "duplicates_removed": 0,
+      "detections_before_land_mask": 50,
+      "land_detections_removed": 30,
+      "processing_time_seconds": 25.119
+    },
+    "model_sha256": "6eb6e332acea1e83bce53cd4e87de602cae4eadc28bf09a0be80e16521b3fe7d"
+  },
+  "ais": {
+    "status": "sem_ais",
+    "total_correlations": 0
+  }
+}

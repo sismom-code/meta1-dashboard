@@ -1,0 +1,76 @@
+{
+  "enabled": true,
+  "match_on_overlap": true,
+  "max_centroid_distance_m": 100.0,
+  "assignment": "many_cfar_to_one_yolo_overlap_then_nearest",
+  "distance_method": "WGS84_geodesic_between_centroids",
+  "total_cfar": 50,
+  "total_yolo": 12,
+  "candidate_pairs": 4,
+  "total_matches": 2,
+  "total_matched_targets": 2,
+  "total_cfar_yolo_associations": 4,
+  "cfar_fragments_absorbed": 4,
+  "cfar_only": 46,
+  "yolo_only": 10,
+  "total_unique_targets": 58,
+  "count_check": 58,
+  "matches": [
+    {
+      "target_id": "T0001",
+      "cfar_id": 1,
+      "cfar_ids": [
+        1
+      ],
+      "cfar_fragment_count": 1,
+      "yolo_id": 3,
+      "cfar_patch_id": 33,
+      "cfar_patch_ids": [
+        33
+      ],
+      "yolo_patch_id": 33,
+      "match_distance_m": 25.188,
+      "match_distances_m": [
+        25.188
+      ],
+      "nearest_match_distance_m": 25.188,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap",
+      "fusion_rules": [
+        "geometry_overlap"
+      ]
+    },
+    {
+      "target_id": "T0002",
+      "cfar_id": 17,
+      "cfar_ids": [
+        17,
+        18,
+        16
+      ],
+      "cfar_fragment_count": 3,
+      "yolo_id": 11,
+      "cfar_patch_id": 80,
+      "cfar_patch_ids": [
+        80,
+        80,
+        80
+      ],
+      "yolo_patch_id": 80,
+      "match_distance_m": 97.539,
+      "match_distances_m": [
+        97.539,
+        153.979,
+        250.51
+      ],
+      "nearest_match_distance_m": 97.539,
+      "geometries_overlap": true,
+      "fusion_rule": "geometry_overlap",
+      "fusion_rules": [
+        "geometry_overlap",
+        "geometry_overlap",
+        "geometry_overlap"
+      ]
+    }
+  ]
+}

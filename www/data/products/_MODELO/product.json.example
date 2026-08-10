@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0-dashboard",
   "id": "1050",
   "arquivo_id": 1050,
   "date": "2026-08-15",
@@ -13,6 +13,9 @@
   "end_utc": "2026-08-15T09:30:29Z",
   "total_patches": 130,
   "total_cfar_detections": 0,
+  "total_unique_targets": 0,
+  "total_cfar_yolo_matches": 0,
+  "presentation_counts": {"cfar": 0, "yolo": 0, "combined": 0, "total": 0},
   "pixel_spacing_m": 10,
   "visualization": {
     "quantity": "sigma0",
@@ -32,10 +35,12 @@
   },
   "footprint": "footprint.geojson",
   "patches": "patches.geojson",
+  "presentation": "presentation.json",
   "detections": {
     "cfar_geojson": "detections-cfar.geojson",
-    "cfar_csv": "detections-cfar.csv",
+    "cfar_csv": null,
     "yolo_geojson": null,
+    "combined_geojson": null,
     "ais_geojson": null
   },
   "previews": {

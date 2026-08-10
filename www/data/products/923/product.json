@@ -1,18 +1,29 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0-dashboard",
   "id": "923",
-  "arquivo_id": 923,
-  "date": "2026-07-29",
+  "arquivo_id": "923",
+  "product_id": "923",
   "name": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2",
   "source_name": "S1D_IW_GRDH_1SDV_20260729T085606_20260729T085635_003886_007049_4FF2.SAFE.zip",
   "satellite": "Sentinel-1D",
   "mode": "IW",
   "polarization": "VV",
   "status": "processado",
+  "date": "2026-07-29",
   "start_utc": "2026-07-29T08:56:06Z",
   "end_utc": "2026-07-29T08:56:35Z",
+  "generated_at_utc": null,
   "total_patches": 130,
+  "total_unique_targets": 6,
   "total_cfar_detections": 6,
+  "total_yolo_detections": 0,
+  "total_cfar_yolo_matches": 0,
+  "presentation_counts": {
+    "cfar": 6,
+    "yolo": 0,
+    "combined": 0,
+    "total": 6
+  },
   "pixel_spacing_m": 10,
   "visualization": {
     "quantity": "sigma0",
@@ -37,10 +48,13 @@
   },
   "footprint": "footprint.geojson",
   "patches": "patches.geojson",
+  "presentation": "presentation.json",
   "detections": {
     "cfar_geojson": "detections-cfar.geojson",
     "cfar_csv": "detections-cfar.csv",
     "yolo_geojson": null,
+    "combined_geojson": null,
+    "fusion_report": null,
     "ais_geojson": null
   },
   "previews": {
@@ -63,25 +77,5 @@
   "ais": {
     "status": "sem_ais",
     "total_correlations": 0
-  },
-  "patch_metadata": {
-    "P005": {
-      "snap_seconds": 2.9
-    },
-    "P016": {
-      "snap_seconds": 2.95
-    },
-    "P034": {
-      "snap_seconds": 3.205
-    },
-    "P100": {
-      "snap_seconds": 3.141
-    },
-    "P121": {
-      "snap_seconds": 3.143
-    },
-    "P126": {
-      "snap_seconds": 3.294
-    }
   }
 }

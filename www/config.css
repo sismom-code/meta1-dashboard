@@ -18,6 +18,7 @@
   --green: #45ec8b;   /* CFAR / processado */
   --cyan: #31d9ef;    /* ZEE / AIS */
   --purple: #b65cff;  /* YOLO */
+  --yellow: #ffd84a;  /* CFAR + YOLO */
   --orange: #ffa451;  /* recorte selecionado */
 }
 
@@ -203,6 +204,102 @@
 .preview-message[hidden]{display:none}
 .sar-image-wrap:has(.preview-message:not([hidden])){width:100%;aspect-ratio:16/9}
 .status-chip{flex:none}
+
+/* Atualização CFAR + YOLO, composição diária e maior área visual. */
+.right-grid{grid-template-rows:minmax(0,75%) minmax(0,25%)}
+.details-column{gap:.55em}
+.compact-details{padding:.24em .62em}
+.compact-details div{padding:.24em 0}
+.product-kpis .combined-total{color:var(--yellow);font-size:1.28em}
+.legend-box.combined{color:var(--yellow)}
+.status-inline.cfar{color:var(--green)}
+.status-inline.yolo{color:var(--purple)}
+.status-inline.combined{color:var(--yellow)}
+
+/*
+  Pilha automática de controles no canto superior esquerdo:
+  enquadramento -> produtos do dia -> opacidade.
+*/
+.map-view-controls{
+  width:max-content;max-width:calc(100% - 1.4em);position:relative;top:auto;left:auto;right:auto;bottom:auto;
+  margin:.7em 0 0 .7em
+}
+
+.daily-product-selector{
+  /*
+    Participa do fluxo vertical dos controles da esquerda. Assim, sua altura
+    real (inclusive quando há vários produtos) empurra a opacidade para baixo.
+  */
+  width:17.5em;max-width:calc(100% - 1.4em);position:relative;top:auto;left:auto;right:auto;z-index:560;
+  margin:.35em 0 0 .7em;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(7.2em,1fr));gap:.3em;padding:.48em;
+  border:1px solid rgba(49,217,239,.5);border-radius:.58em;
+  background:rgba(2,18,32,.93);box-shadow:0 .65em 1.8em rgba(0,0,0,.4)
+}
+.daily-product-selector[hidden]{display:none}
+.daily-product-selector>span{grid-column:1/-1;padding:0 .35em;color:#9bb8cc;font-size:.58em;font-weight:800;text-transform:uppercase}
+.daily-product-selector button{min-height:2.2em;padding:.36em .65em;border:1px solid rgba(49,217,239,.28);border-radius:.38em;color:#d7edfb;background:rgba(11,40,65,.78);font-size:.62em;text-align:left;cursor:pointer}
+.daily-product-selector button b{float:right;margin-left:.75em;color:#06140b;background:var(--orange);padding:.16em .38em;border-radius:.28em;font-size:.82em;text-transform:uppercase}
+.daily-product-selector button.active{border-color:var(--orange);box-shadow:0 0 .75em rgba(255,164,81,.28)}
+
+.detection-layer-controls{
+  /* Faixa superior direita; o espaço à direita é reservado ao zoom. */
+  position:absolute;top:.7em;right:4.65em;bottom:auto;left:auto;z-index:560;display:flex;gap:.28em;padding:.32em;
+  border:1px solid rgba(121,180,220,.42);border-radius:.58em;background:rgba(2,18,32,.92);
+  box-shadow:0 .65em 1.8em rgba(0,0,0,.35)
+}
+.detection-layer-controls button{min-height:2.25em;padding:.34em .62em;border:1px solid transparent;border-radius:.38em;color:#a9c3d7;background:transparent;font-size:.6em;font-weight:800;cursor:pointer}
+.detection-layer-controls button b{margin-left:.2em;font-size:.9em}
+.detection-layer-controls button[data-detection-filter="all"].active{color:#04131f;border-color:#d7edfb;background:#d7edfb}
+.detection-layer-controls button[data-detection-filter="cfar"].active{color:#03140b;border-color:var(--green);background:var(--green)}
+.detection-layer-controls button[data-detection-filter="yolo"].active{color:#11041d;border-color:var(--purple);background:var(--purple)}
+.detection-layer-controls button[data-detection-filter="combined"].active{color:#181300;border-color:var(--yellow);background:var(--yellow)}
+
+.sar-opacity-control{
+  /*
+    Fica no fluxo normal logo depois de Produtos do dia. Não usa coordenada
+    vertical fixa, portanto nunca invade o seletor, qualquer que seja a altura.
+  */
+  width:17.5em;max-width:calc(100% - 1.4em);position:relative;top:auto;left:auto;right:auto;bottom:auto;z-index:560;
+  margin:.35em 0 0 .7em;
+  display:grid;grid-template-columns:minmax(0,1fr) 3em;align-items:center;gap:.32em .5em;
+  padding:.42em .62em;border:1px solid rgba(121,180,220,.42);border-radius:.58em;color:#c9dfed;background:rgba(2,18,32,.92);
+  box-shadow:0 .65em 1.8em rgba(0,0,0,.35);font-size:1em;font-weight:800
+}
+.sar-opacity-control span{grid-column:1/-1;font-size:.58em}
+.sar-opacity-control input{width:100%;min-width:0;accent-color:var(--cyan);cursor:pointer}
+.sar-opacity-control b{color:var(--cyan);font-size:.58em;text-align:right}
+
+/*
+  Zonas reservadas aos controles nativos do Leaflet.
+  As classes são adicionadas por assets/app.js para que estes ajustes não
+  atinjam controles de outros mapas que eventualmente sejam incluídos.
+*/
+.zee-map .sismom-zoom-control{margin-top:.7em!important;margin-right:.7em!important}
+.zee-map .sismom-layer-control{margin-bottom:.7em!important;margin-left:.7em!important}
+.zee-map .leaflet-control-attribution{max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Em telas estreitas, mantém a mesma organização, reduzindo apenas as larguras. */
+@media (max-width: 720px), (max-height: 720px) {
+  .daily-product-selector{
+    width:15.5em;top:auto;left:auto;right:auto;max-width:calc(100% - 1.4em)
+  }
+  .detection-layer-controls{
+    top:.7em;right:4.65em;bottom:auto;left:auto;max-width:calc(100% - 7em);flex-wrap:wrap;justify-content:flex-end
+  }
+  .sar-opacity-control{
+    width:15.5em;top:auto;left:auto;right:auto;bottom:auto;grid-template-columns:minmax(0,1fr) 3em
+  }
+}
+
+.detection-frames{position:absolute;inset:0;z-index:3;pointer-events:none}
+.detection-frame{width:5.5%;min-width:10px;max-width:36px;display:block;border-color:var(--green);box-shadow:0 0 .3em rgba(69,236,139,.48)}
+.detection-frame.yolo{border-color:var(--purple);box-shadow:0 0 .3em rgba(182,92,255,.55)}
+.detection-frame.combined{border-color:var(--yellow);box-shadow:0 0 .35em rgba(255,216,74,.6)}
+.detection-frame.current{width:7.2%;z-index:4;border-width:clamp(2px,.18em,3px);filter:drop-shadow(0 0 .25em var(--orange))}
+
+/* Os antigos rótulos PXXX permanecem desativados: somente os boxes são exibidos. */
+.map-patch-label{display:none!important}
 
 
 /* ============================================================
