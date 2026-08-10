@@ -901,7 +901,7 @@
       "checksum": "1f62705d7647e7fc727905a58fead261"
     },
     "config.R": {
-      "checksum": "558f1c713d2a05a32e96ae14924a88dc"
+      "checksum": "b831d49c3f4b9a1fa6325b1db425a0c8"
     },
     "CORRECAO_ABERTURA_WINDOWS.txt": {
       "checksum": "cd2c9b3b93827da72fc5b18bec47f756"
@@ -925,7 +925,7 @@
       "checksum": "df36edbaf3db70e8e40b524fc68b41fd"
     },
     "www/assets/app.js": {
-      "checksum": "eaa8a807c3b8c30694f367b5709a4501"
+      "checksum": "dd03fa4c57543ff9da9a97153102270f"
     },
     "www/assets/images/layers-2x.png": {
       "checksum": "4f0283c6ce28e888000e978e537a6a56"
@@ -961,10 +961,10 @@
       "checksum": "50068b7749b2e971682da1bee42769bf"
     },
     "www/config.css": {
-      "checksum": "58505c07b43420f552394f25d76627c2"
+      "checksum": "d5fc60a7f23ee6e5d814a6a87493a552"
     },
     "www/dashboard.html": {
-      "checksum": "60d8616982cd85092a4cb0a2e660a053"
+      "checksum": "640fe857996b041be50ba6625560a792"
     },
     "www/data/products/_MODELO/presentation.json.example": {
       "checksum": "9131349f49ea3a8ee8b2cdb1cf4c7077"
@@ -1299,6 +1299,189 @@
     "www/data/products/5A86/source-product.json": {
       "checksum": "c0da4780c8007f699b4aac75b33978dd"
     },
+    "www/data/products/6FB2/detections-cfar.csv": {
+      "checksum": "847d0b3b01b14e7dea0c097ba0389653"
+    },
+    "www/data/products/6FB2/detections-cfar.geojson": {
+      "checksum": "62ea0cfa5b94768db358358f489ab834"
+    },
+    "www/data/products/6FB2/detections-combined.csv": {
+      "checksum": "a9a08690df2e6deac8abef7bb253a2c0"
+    },
+    "www/data/products/6FB2/detections-combined.geojson": {
+      "checksum": "dd74a5e2b40a36b3bcb682df81d62b1d"
+    },
+    "www/data/products/6FB2/detections-yolo.csv": {
+      "checksum": "23310212d814df3b2c52d7400c3c0d53"
+    },
+    "www/data/products/6FB2/detections-yolo.geojson": {
+      "checksum": "a7012b03bdd75554210daaf056577ecf"
+    },
+    "www/data/products/6FB2/footprint.geojson": {
+      "checksum": "e73c6eacc47de0cf367540e6447c5eb0"
+    },
+    "www/data/products/6FB2/fusion-report.json": {
+      "checksum": "68f77334cea555631a9afc2e13d34ae9"
+    },
+    "www/data/products/6FB2/mosaic.png": {
+      "checksum": "f068baaab01bcbeea8a0a670e6973419"
+    },
+    "www/data/products/6FB2/patches.geojson": {
+      "checksum": "b9311c858925d82b1b9582a33770caf5"
+    },
+    "www/data/products/6FB2/presentation.json": {
+      "checksum": "a5afd996c6ecd4b6dbdda18b0b447f4e"
+    },
+    "www/data/products/6FB2/previews/P001.png": {
+      "checksum": "9b112d2f3b6e34ba5d5cc4990a995b1e"
+    },
+    "www/data/products/6FB2/previews/P002.png": {
+      "checksum": "edf127df2fd82df8191611d80fecdd13"
+    },
+    "www/data/products/6FB2/previews/P004.png": {
+      "checksum": "c9c5e349dbf976596a56011544a57095"
+    },
+    "www/data/products/6FB2/previews/P005.png": {
+      "checksum": "bc95799829f0249172bfb199d812fafa"
+    },
+    "www/data/products/6FB2/previews/P006.png": {
+      "checksum": "b70284f71204ea86eea17a97d0798e75"
+    },
+    "www/data/products/6FB2/previews/P007.png": {
+      "checksum": "d6a13997f10fa4fe16c2455544120f6d"
+    },
+    "www/data/products/6FB2/previews/P008.png": {
+      "checksum": "eccdebb1e2cee00eda506f8ac612edb6"
+    },
+    "www/data/products/6FB2/previews/P014.png": {
+      "checksum": "17ed8721faa7a9ce4b0dfe124b145cd6"
+    },
+    "www/data/products/6FB2/previews/P015.png": {
+      "checksum": "bfa95ee118b7e5c4f37516afd741b0f0"
+    },
+    "www/data/products/6FB2/previews/P017.png": {
+      "checksum": "c3f443b19932763c5cb609b43e62b115"
+    },
+    "www/data/products/6FB2/previews/P020.png": {
+      "checksum": "2d43650ec9e5836131f5b2818302d2ad"
+    },
+    "www/data/products/6FB2/previews/P021.png": {
+      "checksum": "316b60c8544a5a3757b48480a9bc0e56"
+    },
+    "www/data/products/6FB2/previews/P028.png": {
+      "checksum": "804672bc28693e2910349e43a8e2d5cf"
+    },
+    "www/data/products/6FB2/previews/P034.png": {
+      "checksum": "cfdc2a8e8848f94d7b39ff91f9db4bdf"
+    },
+    "www/data/products/6FB2/previews/P035.png": {
+      "checksum": "e2335ceb7b9d3fa0f41a2b022445d504"
+    },
+    "www/data/products/6FB2/previews/P042.png": {
+      "checksum": "67d7753000bc9c66da5b514d7e999c52"
+    },
+    "www/data/products/6FB2/previews/P043.png": {
+      "checksum": "948dfc3267df6ae96280aab89110b551"
+    },
+    "www/data/products/6FB2/previews/P046.png": {
+      "checksum": "eaf69af0e183b0d83341e0f111428f26"
+    },
+    "www/data/products/6FB2/previews/P047.png": {
+      "checksum": "a5eceba9a1ee491645681eb243b67ddb"
+    },
+    "www/data/products/6FB2/previews/P055.png": {
+      "checksum": "afd4022437fc2762b970a179c622f9de"
+    },
+    "www/data/products/6FB2/previews/P056.png": {
+      "checksum": "c50ae7801fdec049fc183917852b5fae"
+    },
+    "www/data/products/6FB2/previews/P057.png": {
+      "checksum": "f7eedc61f1d48d90420bf1faf51191b8"
+    },
+    "www/data/products/6FB2/previews/P058.png": {
+      "checksum": "98a0bc105ebe0e15a444a85494c5cc2a"
+    },
+    "www/data/products/6FB2/previews/P060.png": {
+      "checksum": "34ca0008a5e60a9196171307cf62945d"
+    },
+    "www/data/products/6FB2/previews/P068.png": {
+      "checksum": "d636d130b808fb81e397cf667d6ca6c5"
+    },
+    "www/data/products/6FB2/previews/P069.png": {
+      "checksum": "739a924ff01c760ac4aea04bcffbcf9c"
+    },
+    "www/data/products/6FB2/previews/P070.png": {
+      "checksum": "52b31ab4f688ac20204d449bb669fd60"
+    },
+    "www/data/products/6FB2/previews/P072.png": {
+      "checksum": "8ae4a80e0d790d1af17d59f97e3f594d"
+    },
+    "www/data/products/6FB2/previews/P073.png": {
+      "checksum": "cd662846a81dbf49e202dbf1315f0cac"
+    },
+    "www/data/products/6FB2/previews/P075.png": {
+      "checksum": "9b92e11d0c819d0ae52942ac9248e03a"
+    },
+    "www/data/products/6FB2/previews/P076.png": {
+      "checksum": "ac85308fc9cba80dbb5c4b727b2e7eb2"
+    },
+    "www/data/products/6FB2/previews/P078.png": {
+      "checksum": "9ff764b07ab1fe0147f1846315518027"
+    },
+    "www/data/products/6FB2/previews/P081.png": {
+      "checksum": "4ce65c57a5c2705dbb4f6d226d5eef2c"
+    },
+    "www/data/products/6FB2/previews/P082.png": {
+      "checksum": "6264baebcd55dea4a057c31ef841700d"
+    },
+    "www/data/products/6FB2/previews/P086.png": {
+      "checksum": "314390fd106fe4f9ca2ab3219748b3fb"
+    },
+    "www/data/products/6FB2/previews/P088.png": {
+      "checksum": "f1e7fbf8562991fd90cd02c594f3c067"
+    },
+    "www/data/products/6FB2/previews/P094.png": {
+      "checksum": "eddb5b2ba049887996c03962fb0020a7"
+    },
+    "www/data/products/6FB2/previews/P095.png": {
+      "checksum": "3ee9c44495a8451268fd8fa1a0816760"
+    },
+    "www/data/products/6FB2/previews/P096.png": {
+      "checksum": "6eb7648865084c47e683aef272a3487f"
+    },
+    "www/data/products/6FB2/previews/P103.png": {
+      "checksum": "2e9e2f15567ed49721ae08714a85d941"
+    },
+    "www/data/products/6FB2/previews/P104.png": {
+      "checksum": "c69fbcad767ee0b354ea9c194e75c7d4"
+    },
+    "www/data/products/6FB2/previews/P112.png": {
+      "checksum": "fcd40c0026df4111b5dbe8bf3d31ab47"
+    },
+    "www/data/products/6FB2/previews/P113.png": {
+      "checksum": "e57a7b5cfc91b7f6035180295f855cc4"
+    },
+    "www/data/products/6FB2/previews/P115.png": {
+      "checksum": "2c12c7ae4311b9c808c631f365f7866f"
+    },
+    "www/data/products/6FB2/previews/P116.png": {
+      "checksum": "832a72a21736466ea722ccd7240aad71"
+    },
+    "www/data/products/6FB2/previews/P117.png": {
+      "checksum": "7f6c419eade3ea6748098c639dbc1774"
+    },
+    "www/data/products/6FB2/previews/P128.png": {
+      "checksum": "ee5ab1ae7f77c23083d22da17da4838b"
+    },
+    "www/data/products/6FB2/product.json": {
+      "checksum": "47271bc67574764a2a2817ab8fe7897c"
+    },
+    "www/data/products/6FB2/source-product.json": {
+      "checksum": "184fdff129ad79fa63be868d4171e7f2"
+    },
+    "www/data/products/6FB2/source-results.json": {
+      "checksum": "81ee2919314e819fb3171b2c30a4e437"
+    },
     "www/data/products/70EA/detections-cfar.geojson": {
       "checksum": "9a23a8d5e772dd766cae95e6fdfd9088"
     },
@@ -1578,6 +1761,126 @@
     "www/data/products/7710/source-product.json": {
       "checksum": "b5af8b60d61b0820e9b6901377f7fa44"
     },
+    "www/data/products/86B1/detections-cfar.csv": {
+      "checksum": "e2660fc91a355eb66ccc8d3fa6bf5a6f"
+    },
+    "www/data/products/86B1/detections-cfar.geojson": {
+      "checksum": "ed6122de043529bb01b8d4e6886a4dcc"
+    },
+    "www/data/products/86B1/detections-combined.csv": {
+      "checksum": "5d6ee5708634f3052d6d644ae07120af"
+    },
+    "www/data/products/86B1/detections-combined.geojson": {
+      "checksum": "c8a8442ffb78437b310e5c71fcb2617a"
+    },
+    "www/data/products/86B1/detections-yolo.csv": {
+      "checksum": "36f1d71e92b3f72a244ff3d1fb072301"
+    },
+    "www/data/products/86B1/detections-yolo.geojson": {
+      "checksum": "d5d856ed3faf959a117c65d543df264c"
+    },
+    "www/data/products/86B1/footprint.geojson": {
+      "checksum": "77f5f1aa32c5df78801db62aff9dbcab"
+    },
+    "www/data/products/86B1/fusion-report.json": {
+      "checksum": "cad3389bef4d9e7b8eaacc8ebeef9991"
+    },
+    "www/data/products/86B1/mosaic.png": {
+      "checksum": "c07975b23ea0f8830aeacd7ec6663a00"
+    },
+    "www/data/products/86B1/patches.geojson": {
+      "checksum": "5703929ab1b0464dbb42794074463dbc"
+    },
+    "www/data/products/86B1/presentation.json": {
+      "checksum": "32238cd6c2f7fae1eb61892979780464"
+    },
+    "www/data/products/86B1/previews/P001.png": {
+      "checksum": "21aba00f4f04a1be067b8390f8b8132d"
+    },
+    "www/data/products/86B1/previews/P002.png": {
+      "checksum": "658e6cb60fb177e43510018171218753"
+    },
+    "www/data/products/86B1/previews/P003.png": {
+      "checksum": "79d8885ea62a5ebd2f0adb77558e8e69"
+    },
+    "www/data/products/86B1/previews/P005.png": {
+      "checksum": "372a51e62ccb4dac61e9ea572c5e704c"
+    },
+    "www/data/products/86B1/previews/P014.png": {
+      "checksum": "30a2b848d715a74d4164df9780409098"
+    },
+    "www/data/products/86B1/previews/P018.png": {
+      "checksum": "d9ee9c5cd8685e2c49039e8a5a28e1c0"
+    },
+    "www/data/products/86B1/previews/P031.png": {
+      "checksum": "4541ffc894ca26cf1f542d87cd7fac11"
+    },
+    "www/data/products/86B1/previews/P041.png": {
+      "checksum": "062da944d25892cb1f688df4d27f4727"
+    },
+    "www/data/products/86B1/previews/P044.png": {
+      "checksum": "aa38a516a71cd46f78d52b4c4a3f1beb"
+    },
+    "www/data/products/86B1/previews/P045.png": {
+      "checksum": "171735b4ce553688ee08477a5a25b052"
+    },
+    "www/data/products/86B1/previews/P055.png": {
+      "checksum": "ebebafbc70e5637497a6323d9152ae5d"
+    },
+    "www/data/products/86B1/previews/P056.png": {
+      "checksum": "dd7dd31aedf7b414308007688e8534b4"
+    },
+    "www/data/products/86B1/previews/P058.png": {
+      "checksum": "0383ab38a220faaa9db4598025bc7b36"
+    },
+    "www/data/products/86B1/previews/P068.png": {
+      "checksum": "d405a9d1b0c5ff3f9fc5adc793b1bd71"
+    },
+    "www/data/products/86B1/previews/P069.png": {
+      "checksum": "0a35295d907d4864ccdd230cda9df977"
+    },
+    "www/data/products/86B1/previews/P070.png": {
+      "checksum": "d2f9baa5056238ba4a4420ea8786782a"
+    },
+    "www/data/products/86B1/previews/P079.png": {
+      "checksum": "70338ff67ce7daf1563cc92d067a7fc6"
+    },
+    "www/data/products/86B1/previews/P080.png": {
+      "checksum": "27515c551dc61e799f5109ee2d6545c9"
+    },
+    "www/data/products/86B1/previews/P081.png": {
+      "checksum": "527c0a5c32221958f6c5add21d5ac5ef"
+    },
+    "www/data/products/86B1/previews/P083.png": {
+      "checksum": "f0dc1c00f62d3d5f8a6c3c06886f106a"
+    },
+    "www/data/products/86B1/previews/P092.png": {
+      "checksum": "4bfb4d945533615e4f4593a4a9be5634"
+    },
+    "www/data/products/86B1/previews/P094.png": {
+      "checksum": "732725832b0420023bbd1ab59fa3efb3"
+    },
+    "www/data/products/86B1/previews/P095.png": {
+      "checksum": "0cf6d11cd1a6c5b2c154fcd9151ae2c8"
+    },
+    "www/data/products/86B1/previews/P097.png": {
+      "checksum": "2bad2a46c12454400b791513c53c6f81"
+    },
+    "www/data/products/86B1/previews/P098.png": {
+      "checksum": "5fd19b62702666a1a2219a0504bc584f"
+    },
+    "www/data/products/86B1/previews/P105.png": {
+      "checksum": "831a2e8321685136bd524894677e572d"
+    },
+    "www/data/products/86B1/product.json": {
+      "checksum": "7054ed4f0feefc23b1fde1e90754c7a1"
+    },
+    "www/data/products/86B1/source-product.json": {
+      "checksum": "e6eff01c029a02426acb560a5c8e6992"
+    },
+    "www/data/products/86B1/source-results.json": {
+      "checksum": "ddb856f2cf7c3eeabfb8945e6bcc23ff"
+    },
     "www/data/products/923/detections-cfar.csv": {
       "checksum": "efe8becf5f9d3a2ca4c260f6b4f1e6ee"
     },
@@ -1701,6 +2004,72 @@
     "www/data/products/9C2D/source-product.json": {
       "checksum": "d5dd841e16497203b089bfac8d3f062c"
     },
+    "www/data/products/AF45/detections-cfar.csv": {
+      "checksum": "cb99d44de37df0d20c8ed499a43a361b"
+    },
+    "www/data/products/AF45/detections-cfar.geojson": {
+      "checksum": "413a80692e9627a2b824f532c22753f3"
+    },
+    "www/data/products/AF45/detections-combined.csv": {
+      "checksum": "d8f132a3ee502357597b8f4f7c695c91"
+    },
+    "www/data/products/AF45/detections-combined.geojson": {
+      "checksum": "6727544cfda8e3fca5d4456a38560a7f"
+    },
+    "www/data/products/AF45/detections-yolo.csv": {
+      "checksum": "894ca9c798e04323a20bfdeb518b7946"
+    },
+    "www/data/products/AF45/detections-yolo.geojson": {
+      "checksum": "3a9018cde2027f944eab11f907a89e22"
+    },
+    "www/data/products/AF45/footprint.geojson": {
+      "checksum": "370fbe4164b22369eb4dc355baa191b6"
+    },
+    "www/data/products/AF45/fusion-report.json": {
+      "checksum": "84e50353b28b1614e35a6ae0ac6f856b"
+    },
+    "www/data/products/AF45/mosaic.png": {
+      "checksum": "8fa10bd65d750c1ce911fad42d7a66f0"
+    },
+    "www/data/products/AF45/patches.geojson": {
+      "checksum": "e5b17a849ff437b1b534482360b5cf42"
+    },
+    "www/data/products/AF45/presentation.json": {
+      "checksum": "99df9fa488a3a2cb8a3b9421caf42e03"
+    },
+    "www/data/products/AF45/previews/P001.png": {
+      "checksum": "3b8c3403b56fcf1c4d8ace42ed1caa44"
+    },
+    "www/data/products/AF45/previews/P014.png": {
+      "checksum": "86a4836f25e57f3ff0bce346fdfb18ad"
+    },
+    "www/data/products/AF45/previews/P042.png": {
+      "checksum": "de5de36073b857d10fac65a4788e23f0"
+    },
+    "www/data/products/AF45/previews/P055.png": {
+      "checksum": "2760d482a2d82201dda6ce98739e3f95"
+    },
+    "www/data/products/AF45/previews/P068.png": {
+      "checksum": "6daaf4fc13e21845509060b0088812eb"
+    },
+    "www/data/products/AF45/previews/P093.png": {
+      "checksum": "741fb86e33401847db0bb20ccaee48ca"
+    },
+    "www/data/products/AF45/previews/P106.png": {
+      "checksum": "995eca2229cb7450445bee0e8826994b"
+    },
+    "www/data/products/AF45/previews/P118.png": {
+      "checksum": "d262890937565d5053facd270ca095d4"
+    },
+    "www/data/products/AF45/product.json": {
+      "checksum": "b2af8f9e729d7f70dbf9150772616968"
+    },
+    "www/data/products/AF45/source-product.json": {
+      "checksum": "5f2dda355bd2f96d8966d2a31e16f280"
+    },
+    "www/data/products/AF45/source-results.json": {
+      "checksum": "a0fecc6232748f0acbec9b95991299ca"
+    },
     "www/data/products/CB1F/detections-cfar.geojson": {
       "checksum": "684393066c5761de2edeaccbbc641130"
     },
@@ -1745,6 +2114,93 @@
     },
     "www/data/products/CB1F/source-product.json": {
       "checksum": "9ae96ea24c73eb9b4b02ecddca7cf4ae"
+    },
+    "www/data/products/D208/detections-cfar.csv": {
+      "checksum": "73baeb0d7257ba2a39261c4e49cd1062"
+    },
+    "www/data/products/D208/detections-cfar.geojson": {
+      "checksum": "f5306f1373330428ac93fbd6e5b0b8a3"
+    },
+    "www/data/products/D208/detections-combined.csv": {
+      "checksum": "584c71e0d33ddf724610acf38d55b5c8"
+    },
+    "www/data/products/D208/detections-combined.geojson": {
+      "checksum": "369b0c0498a524af469c7b7adba4f48b"
+    },
+    "www/data/products/D208/detections-yolo.csv": {
+      "checksum": "0116a62d497e8c7fa8a8b59c8299d12b"
+    },
+    "www/data/products/D208/detections-yolo.geojson": {
+      "checksum": "b24b6205440c15c233c8e3032e207092"
+    },
+    "www/data/products/D208/footprint.geojson": {
+      "checksum": "2ab5b5013fdf74cfa56798ae1f15feac"
+    },
+    "www/data/products/D208/fusion-report.json": {
+      "checksum": "ecd905953e16058bf29e8faec066f710"
+    },
+    "www/data/products/D208/mosaic.png": {
+      "checksum": "70ade221ee92f5fe29bfdade73f61c29"
+    },
+    "www/data/products/D208/patches.geojson": {
+      "checksum": "f208232e823fa3159644ce362c68c71c"
+    },
+    "www/data/products/D208/presentation.json": {
+      "checksum": "10b22e5b365cf3cbfc7dda249864df82"
+    },
+    "www/data/products/D208/previews/P002.png": {
+      "checksum": "f7524dcb017b57f7c391b9af0e4ba501"
+    },
+    "www/data/products/D208/previews/P027.png": {
+      "checksum": "8857488bec947674983dba649f773831"
+    },
+    "www/data/products/D208/previews/P029.png": {
+      "checksum": "4a48cd63be95a923b19eb97ad7a3084c"
+    },
+    "www/data/products/D208/previews/P040.png": {
+      "checksum": "a178ddccf2b073b0191adaae0772213d"
+    },
+    "www/data/products/D208/previews/P053.png": {
+      "checksum": "3756bcb4d09d6f8accb28250449f7672"
+    },
+    "www/data/products/D208/previews/P054.png": {
+      "checksum": "acb140de3c45e416addb3e7a649106ea"
+    },
+    "www/data/products/D208/previews/P055.png": {
+      "checksum": "16e4fbba04f3646ab889eed66930c4db"
+    },
+    "www/data/products/D208/previews/P056.png": {
+      "checksum": "2ef44288e101c95434956f66f7fad61e"
+    },
+    "www/data/products/D208/previews/P067.png": {
+      "checksum": "5667231a251a26d276f8cca119859872"
+    },
+    "www/data/products/D208/previews/P068.png": {
+      "checksum": "2c275652184ddb8cb1c377f76cd19a56"
+    },
+    "www/data/products/D208/previews/P081.png": {
+      "checksum": "d476cef515d5c77084108c8b3ce3c054"
+    },
+    "www/data/products/D208/previews/P082.png": {
+      "checksum": "d6f41aa782ac69c36e990652a663954b"
+    },
+    "www/data/products/D208/previews/P094.png": {
+      "checksum": "99ab9b9646c07fcee2e35334f21d384b"
+    },
+    "www/data/products/D208/previews/P095.png": {
+      "checksum": "80f160fe45cd2f75ea8c3fce1aff5c8a"
+    },
+    "www/data/products/D208/previews/P109.png": {
+      "checksum": "e2513ea5d64d9fa93d0f4785ae2f4e67"
+    },
+    "www/data/products/D208/product.json": {
+      "checksum": "2ad04897922cbcc52a779ad1ca19fbd3"
+    },
+    "www/data/products/D208/source-product.json": {
+      "checksum": "22c4c35bc27cbf337a03f7df1e5e1952"
+    },
+    "www/data/products/D208/source-results.json": {
+      "checksum": "26fe7b9185fb540e1f856d537aee6de1"
     },
     "www/data/products/E28D/detections-cfar.geojson": {
       "checksum": "1b473c2db57d40fe1231d3914e999be6"
