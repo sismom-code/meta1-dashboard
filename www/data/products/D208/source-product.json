@@ -1,0 +1,5105 @@
+{
+  "schema_version": "1.1",
+  "id": "S1C_IW_GRDH_1SDV_20260810T081241_20260810T081306_008930_011B7A_D208",
+  "product_id": "S1C_IW_GRDH_1SDV_20260810T081241_20260810T081306_008930_011B7A_D208",
+  "name": "S1C_IW_GRDH_1SDV_20260810T081241_20260810T081306_008930_011B7A_D208",
+  "source_name": "S1C_IW_GRDH_1SDV_20260810T081241_20260810T081306_008930_011B7A_D208.SAFE",
+  "date": "2026-08-10",
+  "start_utc": "2026-08-10T08:12:41+00:00",
+  "end_utc": "2026-08-10T08:13:06+00:00",
+  "status": "processado",
+  "generated_at_utc": "2026-08-10T20:10:11.763413+00:00",
+  "bounds": {
+    "west": -42.31207824834236,
+    "south": -21.043442695131294,
+    "east": -39.55504099957051,
+    "north": -18.988186332943915
+  },
+  "total_patches": 117,
+  "total_cfar_detections": 72,
+  "total_yolo_detections": 37,
+  "total_cfar_yolo_matches": 27,
+  "total_cfar_yolo_associations": 30,
+  "total_cfar_fragments_absorbed": 30,
+  "total_unique_targets": 79,
+  "total_detections": 79,
+  "total_algorithm_detections": 109,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4,
+    "processing_scope": "display_only",
+    "detector_inputs_modified": false,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {
+      "west": -42.31207824834236,
+      "south": -21.043442695131294,
+      "east": -39.55504099957051,
+      "north": -18.988186332943915
+    },
+    "width": 3000,
+    "height": 2236
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": "detections-cfar.csv",
+    "yolo_geojson": "detections-yolo.geojson",
+    "yolo_csv": "detections-yolo.csv",
+    "combined_geojson": "detections-combined.geojson",
+    "combined_csv": "detections-combined.csv",
+    "fusion_report": "fusion-report.json",
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "selection": "detections_only",
+    "exported_count": 15,
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4
+  },
+  "cfar": {
+    "params": {
+      "device": "cuda",
+      "gpu_engine": "cupy",
+      "gpu_parity_guard": true,
+      "gpu_candidate_batch_size": 524288,
+      "PFA": 0.0001,
+      "janela": 100,
+      "guarda": 20,
+      "f_factor": 1.35,
+      "limiar_db": -10,
+      "resample_factor": 0.3333333333333333,
+      "min_area": 3,
+      "max_area": 100,
+      "legacy_compatible": true,
+      "strict_post_filters": false,
+      "exclude_edges": false,
+      "land_mask_enabled": true,
+      "skip_land_tiles": true,
+      "land_skip_threshold": 0.99,
+      "min_water_fraction": 0.01,
+      "land_mask_max_dim": 128,
+      "land_mask_buffer_degrees": 0,
+      "use_parallel": false
+    },
+    "patch_summaries": [
+      {
+        "patch_id": 0,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.328,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 1,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 5.941,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 2,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.868,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.15648337734735,
+            "south": -19.633004810154947,
+            "east": -39.92565727049124,
+            "north": -19.412122043616012
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 3,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.914,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.341934576694854,
+            "south": -19.590250841806277,
+            "east": -40.11142064872636,
+            "north": -19.369134310109608
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 4,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.89,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.527961543258904,
+            "south": -19.5473331361454,
+            "east": -40.29722815815996,
+            "north": -19.325662427503932
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 5,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.938,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.712954566570325,
+            "south": -19.50407236062938,
+            "east": -40.48421640679022,
+            "north": -19.282732611305814
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 6,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.871,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.89818523917221,
+            "south": -19.460833354566773,
+            "east": -40.667969058374105,
+            "north": -19.238840892785525
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 7,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.879,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.082575797005305,
+            "south": -19.41734353015871,
+            "east": -40.854961818159616,
+            "north": -19.19563808953493
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 8,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.9,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.26756715491197,
+            "south": -19.37382230265808,
+            "east": -41.03810019982069,
+            "north": -19.152176264110178
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 9,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.887,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.45398681155002,
+            "south": -19.329961574577194,
+            "east": -41.221533622074844,
+            "north": -19.1083169573694
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 10,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.893,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.63806162423077,
+            "south": -19.285541287623104,
+            "east": -41.405728654630124,
+            "north": -19.06423923560894
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 11,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.156,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.822915570448046,
+            "south": -19.24147891470913,
+            "east": -41.58998077599689,
+            "north": -19.01997737770554
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 12,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.941,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            531
+          ],
+          "sample_shape": [
+            128,
+            94
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.95469468708589,
+            "south": -19.197022863091416,
+            "east": -41.77416609604062,
+            "north": -18.988186332943915
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 12032,
+          "land_points": 12032,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 322236,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 322236,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 13,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 14,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.304,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 15,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.297,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 16,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.266,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.38882277191171,
+            "south": -19.768372658258006,
+            "east": -40.15659901643929,
+            "north": -19.547443693850997
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 17,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.249,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.57409121408452,
+            "south": -19.725167238947193,
+            "east": -40.342051349630516,
+            "north": -19.504183006238836
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 18,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.223,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.75875018587446,
+            "south": -19.682069153900258,
+            "east": -40.52807724960745,
+            "north": -19.460944085806272
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 19,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.219,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.943770319422,
+            "south": -19.638890570349826,
+            "east": -40.71306987956721,
+            "north": -19.417454329807242
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 20,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.227,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.128509540160536,
+            "south": -19.595431916042518,
+            "east": -40.89830008531257,
+            "north": -19.373933116587168
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 21,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.262,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.31354185289534,
+            "south": -19.551806526158217,
+            "east": -41.08269097302453,
+            "north": -19.330073001509966
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 22,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.258,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.499014437627395,
+            "south": -19.507915978684434,
+            "east": -41.267684464900924,
+            "north": -19.285652312970765
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 23,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.234,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.68550898635688,
+            "south": -19.463699418186117,
+            "east": -41.45410117149659,
+            "north": -19.24158975864655
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 24,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.257,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.86990526713185,
+            "south": -19.41902362443603,
+            "east": -41.63817742229599,
+            "north": -19.19713401430821
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 25,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.726,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.00186769234462,
+            "south": -19.374650396386762,
+            "east": -41.82303183636307,
+            "north": -19.165317956121584
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 346805,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 346805,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 26,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.24,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 27,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 28,
+        "status": "success",
+        "detections": 6,
+        "elapsed_seconds": 6.29,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 29,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.234,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.435252758442495,
+            "south": -19.94632934899087,
+            "east": -40.20232132096079,
+            "north": -19.725278174837737
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 30,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.235,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.62278660285735,
+            "south": -19.903120006898018,
+            "east": -40.388940200043294,
+            "north": -19.682179139784576
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 31,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.232,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.80656931021178,
+            "south": -19.8594698470967,
+            "east": -40.57420657739432,
+            "north": -19.639001075175784
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 32,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.236,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.99112992765039,
+            "south": -19.81648060491958,
+            "east": -40.75886612673563,
+            "north": -19.59554256511535
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 33,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.235,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.175382371181534,
+            "south": -19.773109330198473,
+            "east": -40.94388626156155,
+            "north": -19.551917322478293
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 34,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.234,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.359973412982335,
+            "south": -19.72957909841667,
+            "east": -41.12862512589915,
+            "north": -19.508027243739075
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 35,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.224,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.54536601032089,
+            "south": -19.68577034635031,
+            "east": -41.31365850899674,
+            "north": -19.463810293897144
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 36,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.253,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.73211684545874,
+            "south": -19.64154870626598,
+            "east": -41.499129062418376,
+            "north": -19.41913462439809
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 37,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.244,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.916930644576254,
+            "south": -19.596784249538405,
+            "east": -41.6856242855921,
+            "north": -19.374761474870258
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 38,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.71,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.04913130692491,
+            "south": -19.552281302249952,
+            "east": -41.87002103815762,
+            "north": -19.34287812608386
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 347604,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 347604,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 39,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.242,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 40,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 41,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.283,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 42,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.252,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.48283541305604,
+            "south": -20.124235514966408,
+            "east": -40.24879399929643,
+            "north": -19.903230629952393
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 43,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.239,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.67234410569545,
+            "south": -20.08081244626107,
+            "east": -40.4353705440247,
+            "north": -19.8595802052815
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 44,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.244,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.85699404047907,
+            "south": -20.036678262813187,
+            "east": -40.622905423924145,
+            "north": -19.816590340802126
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 45,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.235,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.039667384330116,
+            "south": -19.993463633017317,
+            "east": -40.80668502218664,
+            "north": -19.77321982687457
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 46,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.251,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.223875276829304,
+            "south": -19.950517390700554,
+            "east": -40.991246257226926,
+            "north": -19.729689532902732
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 47,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.25,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.408171263787985,
+            "south": -19.906975339991334,
+            "east": -41.17549876239855,
+            "north": -19.685881185455077
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 48,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.243,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.59372417983882,
+            "south": -19.863212802110763,
+            "east": -41.36009024920355,
+            "north": -19.641659503895216
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 49,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.226,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.7791598534522,
+            "south": -19.818926753319566,
+            "east": -41.54548280180997,
+            "north": -19.596895346512305
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 50,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.269,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.965089043570636,
+            "south": -19.77445278006697,
+            "east": -41.73223289905735,
+            "north": -19.55239230036161
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 51,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.694,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.09750679201134,
+            "south": -19.729650053352398,
+            "east": -41.91704672911617,
+            "north": -19.520429890625035
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 346871,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 346871,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 52,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.243,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 53,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 54,
+        "status": "success",
+        "detections": 17,
+        "elapsed_seconds": 8.096,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 55,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 7.627,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 56,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.222,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.719302573431584,
+            "south": -20.258818855972702,
+            "east": -40.48295236344283,
+            "north": -20.036789446997492
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 57,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.241,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.90663026309119,
+            "south": -20.21451137561214,
+            "east": -40.67246359009925,
+            "north": -19.99357302146631
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 58,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.292,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.088280332365734,
+            "south": -20.17064206334253,
+            "east": -40.85710864227557,
+            "north": -19.950627725934773
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 59,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.237,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.271144362155624,
+            "south": -20.127919693501884,
+            "east": -41.03978412279579,
+            "north": -19.90708599380088
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 60,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.226,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.45699156674209,
+            "south": -20.084674948554454,
+            "east": -41.223991277018115,
+            "north": -19.86332362242167
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 61,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.215,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.64215015009984,
+            "south": -20.040516078758255,
+            "east": -41.40828843992323,
+            "north": -19.819037618911565
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 62,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.22,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.82665328787413,
+            "south": -19.996298400927202,
+            "east": -41.59384089191167,
+            "north": -19.774564147579362
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 63,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.232,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.01455864841623,
+            "south": -19.952024414427225,
+            "east": -41.77927724955967,
+            "north": -19.72976082342609
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 64,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.728,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.14643110271858,
+            "south": -19.90670908547323,
+            "east": -41.96520624624809,
+            "north": -19.69772337507874
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 346870,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 346870,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 65,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 66,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 67,
+        "status": "success",
+        "detections": 21,
+        "elapsed_seconds": 8.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 68,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 7.597,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 69,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.218,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.76477142370837,
+            "south": -20.43716126845244,
+            "east": -40.52923404000361,
+            "north": -20.214622691281726
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 70,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.225,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.95386273564959,
+            "south": -20.3927048081289,
+            "east": -40.7194209055629,
+            "north": -20.170752378548332
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 71,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.2,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.13576244868648,
+            "south": -20.348401073123192,
+            "east": -40.9067452359673,
+            "north": -20.128029981731977
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 72,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.219,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.31863721751126,
+            "south": -20.305600784557498,
+            "east": -41.08839431477849,
+            "north": -20.084785912936713
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 73,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.202,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.50621678053822,
+            "south": -20.262331611478817,
+            "east": -41.271260649026075,
+            "north": -20.040626712962574
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 74,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.219,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.692796953019894,
+            "south": -20.21773291191036,
+            "east": -41.4571087040214,
+            "north": -19.99640919852462
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 75,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.209,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.87551603833191,
+            "south": -20.17314232896555,
+            "east": -41.64226739483972,
+            "north": -19.95213563083446
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 76,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.222,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.06256556924252,
+            "south": -20.129275183636192,
+            "east": -41.82677067154592,
+            "north": -19.906820490421865
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 77,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.675,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.19388593032952,
+            "south": -20.084138801230864,
+            "east": -42.01467747647524,
+            "north": -19.87489456385962
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 348524,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 348524,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 78,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 79,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 80,
+        "status": "success",
+        "detections": 6,
+        "elapsed_seconds": 6.296,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 81,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 82,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.231,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.80919336374017,
+            "south": -20.615800017447313,
+            "east": -40.57412765490601,
+            "north": -20.392816264791954
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 83,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.204,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.0001541169229,
+            "south": -20.571155889030052,
+            "east": -40.76488936353961,
+            "north": -20.348511910663298
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 84,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.223,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.18365023292867,
+            "south": -20.526394726085073,
+            "east": -40.95397976721352,
+            "north": -20.30571075402582
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 85,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.212,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.367928631748256,
+            "south": -20.483195322373604,
+            "east": -41.13587654872689,
+            "north": -20.262442583369964
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 86,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.217,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.55439449776644,
+            "south": -20.43956915422072,
+            "east": -41.31875575154373,
+            "north": -20.217843585350053
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 87,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.218,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.74446497338077,
+            "south": -20.39521374033671,
+            "east": -41.506333611086696,
+            "north": -20.173253036658462
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 88,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.235,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.926039463860114,
+            "south": -20.349750802816757,
+            "east": -41.69291799537503,
+            "north": -20.129385904471775
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 89,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.228,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.109685858091765,
+            "south": -20.30613258659893,
+            "east": -41.87563367131692,
+            "north": -20.08425049758768
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 90,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.689,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.24134833482994,
+            "south": -20.26179811876077,
+            "east": -42.062683245381706,
+            "north": -20.0524388347642
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 351294,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 351294,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 91,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 92,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 93,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 94,
+        "status": "success",
+        "detections": 6,
+        "elapsed_seconds": 6.291,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 95,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.217,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.85316860620114,
+            "south": -20.794708942019067,
+            "east": -40.617805218251995,
+            "north": -20.571267547080936
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16371,
+          "water_points": 13,
+          "land_fraction": 0.99920654296875,
+          "water_fraction": 0.00079345703125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 364,
+          "pixels_masked_by_land": 597165,
+          "valid_water_fraction": 0.0006091754542457353,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 99.9% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 96,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.218,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.041096918535594,
+            "south": -20.74967090645075,
+            "east": -40.8093110537086,
+            "north": -20.526505943211436
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 97,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.223,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.228871203284505,
+            "south": -20.70561873087512,
+            "east": -41.0002706788806,
+            "north": -20.483305831400052
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 98,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.212,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.41582153057132,
+            "south": -20.661386063168543,
+            "east": -41.1837653200419,
+            "north": -20.439679846243127
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 99,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.255,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.60088915975585,
+            "south": -20.617102307172722,
+            "east": -41.36804678868219,
+            "north": -20.39532489365099
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 100,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.221,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.79001144235449,
+            "south": -20.573060438204426,
+            "east": -41.55451143125301,
+            "north": -20.349862603045967
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 101,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.241,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.975622515933914,
+            "south": -20.52780522646524,
+            "east": -41.74458679290931,
+            "north": -20.30624294939246
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 102,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.22,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.1591453373888,
+            "south": -20.48317810989852,
+            "east": -41.92615598279135,
+            "north": -20.261909205081444
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 103,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.726,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            531
+          ],
+          "sample_shape": [
+            128,
+            88
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.29063863588239,
+            "south": -20.438844151672544,
+            "east": -42.10980211454986,
+            "north": -20.229992920712988
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11264,
+          "land_points": 11264,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 355961,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 355961,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 104,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.125,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 105,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.134,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 106,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.137,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 107,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 3.533,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 108,
+        "status": "success",
+        "detections": 5,
+        "elapsed_seconds": 3.507,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 109,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.466,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.056895593274774,
+            "south": -20.826220465913085,
+            "east": -40.85328893457839,
+            "north": -20.705730352393893
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 110,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.471,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.247436904654194,
+            "south": -20.78290614836086,
+            "east": -41.0412070062285,
+            "north": -20.661497669761843
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 111,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.453,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.4355826562843,
+            "south": -20.738009543492847,
+            "east": -41.22898709423031,
+            "north": -20.617213140138468
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 112,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.469,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.620553936065946,
+            "south": -20.693432702803136,
+            "east": -41.4159367117169,
+            "north": -20.573171829274894
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 113,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.47,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.807843197386106,
+            "south": -20.649405433232907,
+            "east": -41.60100588675593,
+            "north": -20.52791759399426
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 114,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.485,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.99639996294085,
+            "south": -20.604586348237923,
+            "east": -41.79012766194538,
+            "north": -20.483288940306476
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 115,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 3.471,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            773
+          ],
+          "sample_shape": [
+            56,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.18107094283749,
+            "south": -20.55923160552458,
+            "east": -41.97573874472944,
+            "north": -20.4389545988103
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 7168,
+          "land_points": 7168,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 262047,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 262047,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 116,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.418,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            339,
+            531
+          ],
+          "sample_shape": [
+            82,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.31207824834236,
+            "south": -20.514604086275263,
+            "east": -42.15926245236837,
+            "north": -20.40705821372754
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 10496,
+          "land_points": 10496,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 157060,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 157060,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      }
+    ]
+  },
+  "yolo": {
+    "params": {
+      "tile_size": 768,
+      "stride": 736,
+      "batch_size": 8,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "imgsz": 800,
+      "device": "cuda",
+      "model_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/api/app/domain/yolo8/models/SAR-MULTI-1280p.pt",
+      "deduplicate_close_boxes": true,
+      "duplicate_center_distance_px": 12,
+      "duplicate_overlap_smaller_threshold": 0.8,
+      "duplicate_iou_threshold": 0.3,
+      "land_mask_enabled": true,
+      "land_mask_required": true,
+      "land_center_must_be_water": true,
+      "land_min_water_fraction": 0.5,
+      "land_mask_buffer_degrees": 0
+    },
+    "stats": {
+      "image_width": 25433,
+      "image_height": 16858,
+      "tile_size": 768,
+      "stride": 736,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "total_tiles": 805,
+      "raw_detections": 317,
+      "merged_detections": 298,
+      "geocoder": "SAFEGeocoder",
+      "final_detections": 37,
+      "file_path": "/content/sismom_colab_work_v2/run/input_extracted/S1C_IW_GRDH_1SDV_20260810T081241_20260810T081306_008930_011B7A_D208.SAFE",
+      "format": "safe",
+      "detections_before_dedup": 298,
+      "duplicates_removed": 0,
+      "detections_before_land_mask": 298,
+      "land_detections_removed": 261,
+      "processing_time_seconds": 25.362
+    },
+    "model_sha256": "6eb6e332acea1e83bce53cd4e87de602cae4eadc28bf09a0be80e16521b3fe7d"
+  },
+  "fusion": {
+    "enabled": true,
+    "match_on_overlap": true,
+    "max_centroid_distance_m": 100,
+    "assignment": "many_cfar_to_one_yolo_overlap_then_nearest",
+    "distance_method": "WGS84_geodesic_between_centroids",
+    "total_cfar": 72,
+    "total_yolo": 37,
+    "candidate_pairs": 30,
+    "total_matches": 27,
+    "total_matched_targets": 27,
+    "total_cfar_yolo_associations": 30,
+    "cfar_fragments_absorbed": 30,
+    "cfar_only": 42,
+    "yolo_only": 10,
+    "total_unique_targets": 79,
+    "count_check": 79,
+    "matches": [
+      {
+        "target_id": "T0001",
+        "cfar_id": 18,
+        "cfar_ids": [
+          18
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 3,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 22.675,
+        "match_distances_m": [
+          22.675
+        ],
+        "nearest_match_distance_m": 22.675,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0002",
+        "cfar_id": 44,
+        "cfar_ids": [
+          44
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 4,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 66,
+        "match_distance_m": 11.338,
+        "match_distances_m": [
+          11.338
+        ],
+        "nearest_match_distance_m": 11.338,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0003",
+        "cfar_id": 21,
+        "cfar_ids": [
+          21
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 5,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 15.221,
+        "match_distances_m": [
+          15.221
+        ],
+        "nearest_match_distance_m": 15.221,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0004",
+        "cfar_id": 41,
+        "cfar_ids": [
+          41
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 6,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 21.324,
+        "match_distances_m": [
+          21.324
+        ],
+        "nearest_match_distance_m": 21.324,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0005",
+        "cfar_id": 37,
+        "cfar_ids": [
+          37
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 7,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 66,
+        "match_distance_m": 7.107,
+        "match_distances_m": [
+          7.107
+        ],
+        "nearest_match_distance_m": 7.107,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0006",
+        "cfar_id": 30,
+        "cfar_ids": [
+          30
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 8,
+        "cfar_patch_id": 66,
+        "cfar_patch_ids": [
+          66
+        ],
+        "yolo_patch_id": 53,
+        "match_distance_m": 35.03,
+        "match_distances_m": [
+          35.03
+        ],
+        "nearest_match_distance_m": 35.03,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0007",
+        "cfar_id": 26,
+        "cfar_ids": [
+          26
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 9,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 94.811,
+        "match_distances_m": [
+          94.811
+        ],
+        "nearest_match_distance_m": 94.811,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0008",
+        "cfar_id": 46,
+        "cfar_ids": [
+          46
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 10,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 66,
+        "match_distance_m": 14.214,
+        "match_distances_m": [
+          14.214
+        ],
+        "nearest_match_distance_m": 14.214,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0009",
+        "cfar_id": 45,
+        "cfar_ids": [
+          45
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 11,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 10.147,
+        "match_distances_m": [
+          10.147
+        ],
+        "nearest_match_distance_m": 10.147,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0010",
+        "cfar_id": 35,
+        "cfar_ids": [
+          35,
+          36,
+          34
+        ],
+        "cfar_fragment_count": 3,
+        "yolo_id": 12,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67,
+          67,
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 41.254,
+        "match_distances_m": [
+          41.254,
+          120.993,
+          169.326
+        ],
+        "nearest_match_distance_m": 41.254,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0011",
+        "cfar_id": 48,
+        "cfar_ids": [
+          48
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 13,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 31.348,
+        "match_distances_m": [
+          31.348
+        ],
+        "nearest_match_distance_m": 31.348,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0012",
+        "cfar_id": 19,
+        "cfar_ids": [
+          19
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 15,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 71.182,
+        "match_distances_m": [
+          71.182
+        ],
+        "nearest_match_distance_m": 71.182,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0013",
+        "cfar_id": 42,
+        "cfar_ids": [
+          42
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 16,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 66,
+        "match_distance_m": 7.108,
+        "match_distances_m": [
+          7.108
+        ],
+        "nearest_match_distance_m": 7.108,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0014",
+        "cfar_id": 31,
+        "cfar_ids": [
+          31
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 17,
+        "cfar_patch_id": 66,
+        "cfar_patch_ids": [
+          66
+        ],
+        "yolo_patch_id": 66,
+        "match_distance_m": 20.676,
+        "match_distances_m": [
+          20.676
+        ],
+        "nearest_match_distance_m": 20.676,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0015",
+        "cfar_id": 43,
+        "cfar_ids": [
+          43
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 18,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 10.147,
+        "match_distances_m": [
+          10.147
+        ],
+        "nearest_match_distance_m": 10.147,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0016",
+        "cfar_id": 39,
+        "cfar_ids": [
+          39
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 19,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 5.073,
+        "match_distances_m": [
+          5.073
+        ],
+        "nearest_match_distance_m": 5.073,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0017",
+        "cfar_id": 22,
+        "cfar_ids": [
+          22
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 20,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 53,
+        "match_distance_m": 45.963,
+        "match_distances_m": [
+          45.963
+        ],
+        "nearest_match_distance_m": 45.963,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0018",
+        "cfar_id": 20,
+        "cfar_ids": [
+          20
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 21,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 25.832,
+        "match_distances_m": [
+          25.832
+        ],
+        "nearest_match_distance_m": 25.832,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0019",
+        "cfar_id": 23,
+        "cfar_ids": [
+          23
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 22,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 20.878,
+        "match_distances_m": [
+          20.878
+        ],
+        "nearest_match_distance_m": 20.878,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0020",
+        "cfar_id": 25,
+        "cfar_ids": [
+          25
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 23,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 98.996,
+        "match_distances_m": [
+          98.996
+        ],
+        "nearest_match_distance_m": 98.996,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0021",
+        "cfar_id": 8,
+        "cfar_ids": [
+          8
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 24,
+        "cfar_patch_id": 39,
+        "cfar_patch_ids": [
+          39
+        ],
+        "yolo_patch_id": 26,
+        "match_distance_m": 35.518,
+        "match_distances_m": [
+          35.518
+        ],
+        "nearest_match_distance_m": 35.518,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0022",
+        "cfar_id": 24,
+        "cfar_ids": [
+          24
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 25,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 97.975,
+        "match_distances_m": [
+          97.975
+        ],
+        "nearest_match_distance_m": 97.975,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0023",
+        "cfar_id": 47,
+        "cfar_ids": [
+          47
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 26,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 16.046,
+        "match_distances_m": [
+          16.046
+        ],
+        "nearest_match_distance_m": 16.046,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0024",
+        "cfar_id": 58,
+        "cfar_ids": [
+          58
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 28,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 80,
+        "match_distance_m": 22.575,
+        "match_distances_m": [
+          22.575
+        ],
+        "nearest_match_distance_m": 22.575,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0025",
+        "cfar_id": 16,
+        "cfar_ids": [
+          16
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 29,
+        "cfar_patch_id": 54,
+        "cfar_patch_ids": [
+          54
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 29.543,
+        "match_distances_m": [
+          29.543
+        ],
+        "nearest_match_distance_m": 29.543,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0026",
+        "cfar_id": 72,
+        "cfar_ids": [
+          72,
+          71
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 33,
+        "cfar_patch_id": 108,
+        "cfar_patch_ids": [
+          108,
+          108
+        ],
+        "yolo_patch_id": 108,
+        "match_distance_m": 47.594,
+        "match_distances_m": [
+          47.594,
+          137.198
+        ],
+        "nearest_match_distance_m": 47.594,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0027",
+        "cfar_id": 61,
+        "cfar_ids": [
+          61
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 36,
+        "cfar_patch_id": 93,
+        "cfar_patch_ids": [
+          93
+        ],
+        "yolo_patch_id": 80,
+        "match_distance_m": 20.817,
+        "match_distances_m": [
+          20.817
+        ],
+        "nearest_match_distance_m": 20.817,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      }
+    ]
+  },
+  "files": {
+    "mosaic": "mosaic.png",
+    "footprint": "footprint.geojson",
+    "patches": "patches.geojson",
+    "cfar_geojson": "detections-cfar.geojson",
+    "yolo_geojson": "detections-yolo.geojson",
+    "combined_geojson": "detections-combined.geojson",
+    "fusion_report": "fusion-report.json",
+    "previews": "previews/"
+  }
+}

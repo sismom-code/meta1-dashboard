@@ -1,0 +1,3991 @@
+{
+  "schema_version": "1.1",
+  "id": "S1C_IW_GRDH_1SDV_20260810T081331_20260810T081359_008930_011B7A_6FB2",
+  "product_id": "S1C_IW_GRDH_1SDV_20260810T081331_20260810T081359_008930_011B7A_6FB2",
+  "name": "S1C_IW_GRDH_1SDV_20260810T081331_20260810T081359_008930_011B7A_6FB2",
+  "source_name": "S1C_IW_GRDH_1SDV_20260810T081331_20260810T081359_008930_011B7A_6FB2.SAFE",
+  "date": "2026-08-10",
+  "start_utc": "2026-08-10T08:13:31+00:00",
+  "end_utc": "2026-08-10T08:13:59+00:00",
+  "status": "processado",
+  "generated_at_utc": "2026-08-10T21:15:07.850945+00:00",
+  "bounds": {
+    "west": -43.17150800647824,
+    "south": -24.212693648615396,
+    "east": -40.314351884219164,
+    "north": -21.98031304176977
+  },
+  "total_patches": 130,
+  "total_cfar_detections": 100,
+  "total_yolo_detections": 100,
+  "total_cfar_yolo_matches": 71,
+  "total_cfar_yolo_associations": 82,
+  "total_cfar_fragments_absorbed": 82,
+  "total_unique_targets": 118,
+  "total_detections": 118,
+  "total_algorithm_detections": 200,
+  "visualization": {
+    "quantity": "sigma0",
+    "polarization": "VV",
+    "scale": "dB",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4,
+    "processing_scope": "display_only",
+    "detector_inputs_modified": false,
+    "north_up": true,
+    "crs": "EPSG:4326"
+  },
+  "mosaic": {
+    "path": "mosaic.png",
+    "crs": "EPSG:4326",
+    "north_up": true,
+    "bounds": {
+      "west": -43.17150800647824,
+      "south": -24.212693648615396,
+      "east": -40.314351884219164,
+      "north": -21.98031304176977
+    },
+    "width": 3000,
+    "height": 2344
+  },
+  "footprint": "footprint.geojson",
+  "patches": "patches.geojson",
+  "detections": {
+    "cfar_geojson": "detections-cfar.geojson",
+    "cfar_csv": "detections-cfar.csv",
+    "yolo_geojson": "detections-yolo.geojson",
+    "yolo_csv": "detections-yolo.csv",
+    "combined_geojson": "detections-combined.geojson",
+    "combined_csv": "detections-combined.csv",
+    "fusion_report": "fusion-report.json",
+    "ais_geojson": null
+  },
+  "previews": {
+    "directory": "previews",
+    "pattern": "{patch_label}.png",
+    "selection": "detections_only",
+    "exported_count": 47,
+    "north_up": true,
+    "crs": "EPSG:4326",
+    "vmin_db": -25,
+    "vmax_db": 0,
+    "gamma": 0.95,
+    "linear_resampling": "average",
+    "speckle_filter": "lee",
+    "lee_window_size": 3,
+    "lee_enl": 4.4
+  },
+  "cfar": {
+    "params": {
+      "device": "cuda",
+      "gpu_engine": "cupy",
+      "gpu_parity_guard": true,
+      "gpu_candidate_batch_size": 524288,
+      "PFA": 0.0001,
+      "janela": 100,
+      "guarda": 20,
+      "f_factor": 1.35,
+      "limiar_db": -10,
+      "resample_factor": 0.3333333333333333,
+      "min_area": 3,
+      "max_area": 100,
+      "legacy_compatible": true,
+      "strict_post_filters": false,
+      "exclude_edges": false,
+      "land_mask_enabled": true,
+      "skip_land_tiles": true,
+      "land_skip_threshold": 0.99,
+      "min_water_fraction": 0.01,
+      "land_mask_max_dim": 128,
+      "land_mask_buffer_degrees": 0,
+      "use_parallel": false
+    },
+    "patch_summaries": [
+      {
+        "patch_id": 0,
+        "status": "success",
+        "detections": 5,
+        "elapsed_seconds": 0.245,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 1,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 0.247,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 2,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.241,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 3,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 4,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.241,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 5,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 6,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 5.964,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 7,
+        "status": "success",
+        "detections": 3,
+        "elapsed_seconds": 5.949,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 8,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.898,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.066182160374616,
+            "south": -22.37208257231206,
+            "east": -41.82469544706224,
+            "north": -22.14871935966948
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 9,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.88,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.25601640182277,
+            "south": -22.325873248643184,
+            "east": -42.01663653160163,
+            "north": -22.10275561643423
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 10,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.934,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.44118828237809,
+            "south": -22.280229920648203,
+            "east": -42.20788320952381,
+            "north": -22.05865710394758
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 11,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.897,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            773
+          ],
+          "sample_shape": [
+            119,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.62977629978729,
+            "south": -22.23548399771605,
+            "east": -42.39050575520903,
+            "north": -22.01286821916216
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 15232,
+          "land_points": 15232,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 556560,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 556560,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 12,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 5.004,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            542
+          ],
+          "sample_shape": [
+            128,
+            96
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.76749614949987,
+            "south": -22.18966270161866,
+            "east": -42.579068292556734,
+            "north": -21.98031304176977
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 12288,
+          "land_points": 12288,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 353679,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 353679,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 13,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.248,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 14,
+        "status": "success",
+        "detections": 6,
+        "elapsed_seconds": 0.277,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 15,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 16,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 17,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 18,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 19,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 20,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 6.291,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 21,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.281,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 22,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.237,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.30227918819793,
+            "south": -22.503879644932645,
+            "east": -42.06630055117559,
+            "north": -22.2803418104026
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 23,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.249,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.49066329162757,
+            "south": -22.45831565979314,
+            "east": -42.256134399100425,
+            "north": -22.23559553904061
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 24,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.288,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.67967011568364,
+            "south": -22.41276305355871,
+            "east": -42.44130796200911,
+            "north": -22.189774057815537
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 25,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.777,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            542
+          ],
+          "sample_shape": [
+            128,
+            90
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.817637597147126,
+            "south": -22.36681086034512,
+            "east": -42.629895534523875,
+            "north": -22.156159931734724
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11520,
+          "land_points": 11520,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 380778,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 380778,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 26,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 27,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 28,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 29,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 30,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.251,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 31,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 32,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.255,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 33,
+        "status": "success",
+        "detections": 11,
+        "elapsed_seconds": 6.32,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 34,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 6.279,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 35,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.237,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.34822137307895,
+            "south": -22.682210043228775,
+            "east": -42.11296588081963,
+            "north": -22.458427477876022
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 36,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.231,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.536747038284176,
+            "south": -22.636495560482096,
+            "east": -42.30239665888366,
+            "north": -22.412875204688635
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 37,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.232,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.72561906101092,
+            "south": -22.590889103013247,
+            "east": -42.49078140743813,
+            "north": -22.366922876423377
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 38,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.766,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            542
+          ],
+          "sample_shape": [
+            128,
+            90
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.86456475868078,
+            "south": -22.54495039931312,
+            "east": -42.67978683155091,
+            "north": -22.33322696631776
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11520,
+          "land_points": 11520,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 382011,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 382011,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 39,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 40,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 41,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 42,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.255,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 43,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.253,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 44,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 45,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.253,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 46,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 6.3,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 47,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.282,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 48,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.263,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.39365951445883,
+            "south": -22.86051362818871,
+            "east": -42.158356287408644,
+            "north": -22.636607478705997
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 49,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.257,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.583043926063205,
+            "south": -22.814813113324774,
+            "east": -42.348338266110645,
+            "north": -22.591001280353844
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 50,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 6.219,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.772982012494005,
+            "south": -22.768977630039686,
+            "east": -42.536865529444825,
+            "north": -22.545062042432285
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 16384,
+          "land_points": 16384,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 597529,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 51,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.777,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            542
+          ],
+          "sample_shape": [
+            128,
+            90
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.9110050546081,
+            "south": -22.722756499106083,
+            "east": -42.725736758337895,
+            "north": -22.511108146104924
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11520,
+          "land_points": 11520,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 383154,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 383154,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 52,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 53,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 54,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 55,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 56,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 57,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 58,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 59,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.326,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 60,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.324,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 61,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.279,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 62,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.29,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 63,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.247,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 64,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 4.793,
+        "details": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            542
+          ],
+          "sample_shape": [
+            128,
+            90
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.95661654409864,
+            "south": -22.900955086904215,
+            "east": -42.7730992039002,
+            "north": -22.68912680409278
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0,
+          "valid_geolocation_points": 11520,
+          "land_points": 11520,
+          "water_points": 0,
+          "land_fraction": 1,
+          "water_fraction": 0,
+          "valid_pixels_before_land_mask": 384347,
+          "valid_pixels_after_land_mask": 0,
+          "pixels_masked_by_land": 384347,
+          "valid_water_fraction": 0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": true,
+          "reason": "land_fraction_threshold",
+          "message": "Recorte ignorado pelo CFAR: 100.0% dos pontos amostrados são terra (limiar 99.0%)."
+        }
+      },
+      {
+        "patch_id": 65,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.234,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 66,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 67,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 68,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.269,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 69,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 70,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.249,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 71,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.261,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 72,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 73,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.25,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 74,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 75,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.298,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 76,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 6.34,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 77,
+        "status": "success",
+        "detections": 8,
+        "elapsed_seconds": 4.847,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 78,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 79,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 80,
+        "status": "success",
+        "detections": 5,
+        "elapsed_seconds": 0.266,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 81,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 82,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.253,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 83,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.253,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 84,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 85,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.259,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 86,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 87,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.257,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 88,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 89,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.23,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 90,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.187,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 91,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.237,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 92,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 93,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.26,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 94,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.267,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 95,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.263,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 96,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.255,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 97,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.254,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 98,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.262,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 99,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.235,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 100,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.233,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 101,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.238,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 102,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.256,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 103,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.193,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 104,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.215,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 105,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 106,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.239,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 107,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.236,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 108,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.242,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 109,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.249,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 110,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.249,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 111,
+        "status": "success",
+        "detections": 4,
+        "elapsed_seconds": 0.262,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 112,
+        "status": "success",
+        "detections": 2,
+        "elapsed_seconds": 0.252,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 113,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.232,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 114,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.258,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 115,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.231,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 116,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.19,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 117,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.042,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 118,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.044,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 119,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.045,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 120,
+        "status": "skipped_land",
+        "detections": 0,
+        "elapsed_seconds": 0.046,
+        "details": {
+          "reason": "insufficient_valid_pixels",
+          "message": "Raster com pixels válidos insuficientes para estimar fundo CFAR.",
+          "source": "colab_runtime_patch"
+        }
+      },
+      {
+        "patch_id": 121,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.097,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 122,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.098,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 123,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.097,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 124,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.099,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 125,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.078,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 126,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.102,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 127,
+        "status": "success",
+        "detections": 1,
+        "elapsed_seconds": 0.12,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 128,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.097,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      },
+      {
+        "patch_id": 129,
+        "status": "success",
+        "detections": 0,
+        "elapsed_seconds": 0.072,
+        "wave_age": {
+          "wave_age_status": "fallback",
+          "wave_age_factor": 1.35,
+          "wave_age_error": "Data/hora de aquisição SAR ausente; não é possível selecionar o ERA5."
+        }
+      }
+    ]
+  },
+  "yolo": {
+    "params": {
+      "tile_size": 768,
+      "stride": 736,
+      "batch_size": 8,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "imgsz": 800,
+      "device": "cuda",
+      "model_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/api/app/domain/yolo8/models/SAR-MULTI-1280p.pt",
+      "deduplicate_close_boxes": true,
+      "duplicate_center_distance_px": 12,
+      "duplicate_overlap_smaller_threshold": 0.8,
+      "duplicate_iou_threshold": 0.3,
+      "land_mask_enabled": true,
+      "land_mask_required": true,
+      "land_center_must_be_water": true,
+      "land_min_water_fraction": 0.5,
+      "land_mask_buffer_degrees": 0
+    },
+    "stats": {
+      "image_width": 25465,
+      "image_height": 18705,
+      "tile_size": 768,
+      "stride": 736,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.3,
+      "total_tiles": 910,
+      "raw_detections": 173,
+      "merged_detections": 162,
+      "geocoder": "SAFEGeocoder",
+      "final_detections": 100,
+      "file_path": "/content/sismom_colab_work_v2/run/input_extracted/S1C_IW_GRDH_1SDV_20260810T081331_20260810T081359_008930_011B7A_6FB2.SAFE",
+      "format": "safe",
+      "detections_before_dedup": 162,
+      "duplicates_removed": 3,
+      "detections_before_land_mask": 159,
+      "land_detections_removed": 59,
+      "processing_time_seconds": 25.336
+    },
+    "model_sha256": "6eb6e332acea1e83bce53cd4e87de602cae4eadc28bf09a0be80e16521b3fe7d"
+  },
+  "fusion": {
+    "enabled": true,
+    "match_on_overlap": true,
+    "max_centroid_distance_m": 100,
+    "assignment": "many_cfar_to_one_yolo_overlap_then_nearest",
+    "distance_method": "WGS84_geodesic_between_centroids",
+    "total_cfar": 100,
+    "total_yolo": 100,
+    "candidate_pairs": 84,
+    "total_matches": 71,
+    "total_matched_targets": 71,
+    "total_cfar_yolo_associations": 82,
+    "cfar_fragments_absorbed": 82,
+    "cfar_only": 18,
+    "yolo_only": 29,
+    "total_unique_targets": 118,
+    "count_check": 118,
+    "matches": [
+      {
+        "target_id": "T0001",
+        "cfar_id": 98,
+        "cfar_ids": [
+          98
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 1,
+        "cfar_patch_id": 112,
+        "cfar_patch_ids": [
+          112
+        ],
+        "yolo_patch_id": 112,
+        "match_distance_m": 60.186,
+        "match_distances_m": [
+          60.186
+        ],
+        "nearest_match_distance_m": 60.186,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0002",
+        "cfar_id": 84,
+        "cfar_ids": [
+          84,
+          83
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 2,
+        "cfar_patch_id": 87,
+        "cfar_patch_ids": [
+          87,
+          87
+        ],
+        "yolo_patch_id": 87,
+        "match_distance_m": 76.169,
+        "match_distances_m": [
+          76.169,
+          158.957
+        ],
+        "nearest_match_distance_m": 76.169,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0003",
+        "cfar_id": 99,
+        "cfar_ids": [
+          99
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 3,
+        "cfar_patch_id": 116,
+        "cfar_patch_ids": [
+          116
+        ],
+        "yolo_patch_id": 115,
+        "match_distance_m": 7.138,
+        "match_distances_m": [
+          7.138
+        ],
+        "nearest_match_distance_m": 7.138,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0004",
+        "cfar_id": 57,
+        "cfar_ids": [
+          57
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 4,
+        "cfar_patch_id": 68,
+        "cfar_patch_ids": [
+          68
+        ],
+        "yolo_patch_id": 68,
+        "match_distance_m": 33.572,
+        "match_distances_m": [
+          33.572
+        ],
+        "nearest_match_distance_m": 33.572,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0005",
+        "cfar_id": 96,
+        "cfar_ids": [
+          96
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 5,
+        "cfar_patch_id": 111,
+        "cfar_patch_ids": [
+          111
+        ],
+        "yolo_patch_id": 111,
+        "match_distance_m": 36.422,
+        "match_distances_m": [
+          36.422
+        ],
+        "nearest_match_distance_m": 36.422,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0006",
+        "cfar_id": 60,
+        "cfar_ids": [
+          60
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 6,
+        "cfar_patch_id": 69,
+        "cfar_patch_ids": [
+          69
+        ],
+        "yolo_patch_id": 56,
+        "match_distance_m": 20.661,
+        "match_distances_m": [
+          20.661
+        ],
+        "nearest_match_distance_m": 20.661,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0007",
+        "cfar_id": 89,
+        "cfar_ids": [
+          89
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 7,
+        "cfar_patch_id": 95,
+        "cfar_patch_ids": [
+          95
+        ],
+        "yolo_patch_id": 95,
+        "match_distance_m": 14.212,
+        "match_distances_m": [
+          14.212
+        ],
+        "nearest_match_distance_m": 14.212,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0008",
+        "cfar_id": 51,
+        "cfar_ids": [
+          51
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 8,
+        "cfar_patch_id": 55,
+        "cfar_patch_ids": [
+          55
+        ],
+        "yolo_patch_id": 54,
+        "match_distance_m": 107.902,
+        "match_distances_m": [
+          107.902
+        ],
+        "nearest_match_distance_m": 107.902,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0009",
+        "cfar_id": 63,
+        "cfar_ids": [
+          63
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 9,
+        "cfar_patch_id": 71,
+        "cfar_patch_ids": [
+          71
+        ],
+        "yolo_patch_id": 71,
+        "match_distance_m": 14.204,
+        "match_distances_m": [
+          14.204
+        ],
+        "nearest_match_distance_m": 14.204,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0010",
+        "cfar_id": 66,
+        "cfar_ids": [
+          66
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 10,
+        "cfar_patch_id": 72,
+        "cfar_patch_ids": [
+          72
+        ],
+        "yolo_patch_id": 71,
+        "match_distance_m": 14.286,
+        "match_distances_m": [
+          14.286
+        ],
+        "nearest_match_distance_m": 14.286,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0011",
+        "cfar_id": 88,
+        "cfar_ids": [
+          88
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 11,
+        "cfar_patch_id": 95,
+        "cfar_patch_ids": [
+          95
+        ],
+        "yolo_patch_id": 95,
+        "match_distance_m": 11.218,
+        "match_distances_m": [
+          11.218
+        ],
+        "nearest_match_distance_m": 11.218,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0012",
+        "cfar_id": 92,
+        "cfar_ids": [
+          92
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 12,
+        "cfar_patch_id": 103,
+        "cfar_patch_ids": [
+          103
+        ],
+        "yolo_patch_id": 103,
+        "match_distance_m": 15.796,
+        "match_distances_m": [
+          15.796
+        ],
+        "nearest_match_distance_m": 15.796,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0013",
+        "cfar_id": 11,
+        "cfar_ids": [
+          11
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 13,
+        "cfar_patch_id": 5,
+        "cfar_patch_ids": [
+          5
+        ],
+        "yolo_patch_id": 5,
+        "match_distance_m": 25.172,
+        "match_distances_m": [
+          25.172
+        ],
+        "nearest_match_distance_m": 25.172,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0014",
+        "cfar_id": 52,
+        "cfar_ids": [
+          52
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 14,
+        "cfar_patch_id": 56,
+        "cfar_patch_ids": [
+          56
+        ],
+        "yolo_patch_id": 56,
+        "match_distance_m": 56.651,
+        "match_distances_m": [
+          56.651
+        ],
+        "nearest_match_distance_m": 56.651,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0015",
+        "cfar_id": 85,
+        "cfar_ids": [
+          85
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 15,
+        "cfar_patch_id": 93,
+        "cfar_patch_ids": [
+          93
+        ],
+        "yolo_patch_id": 93,
+        "match_distance_m": 39.179,
+        "match_distances_m": [
+          39.179
+        ],
+        "nearest_match_distance_m": 39.179,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0016",
+        "cfar_id": 58,
+        "cfar_ids": [
+          58
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 16,
+        "cfar_patch_id": 68,
+        "cfar_patch_ids": [
+          68
+        ],
+        "yolo_patch_id": 68,
+        "match_distance_m": 25.48,
+        "match_distances_m": [
+          25.48
+        ],
+        "nearest_match_distance_m": 25.48,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0017",
+        "cfar_id": 100,
+        "cfar_ids": [
+          100
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 17,
+        "cfar_patch_id": 127,
+        "cfar_patch_ids": [
+          127
+        ],
+        "yolo_patch_id": 114,
+        "match_distance_m": 106.843,
+        "match_distances_m": [
+          106.843
+        ],
+        "nearest_match_distance_m": 106.843,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0018",
+        "cfar_id": 64,
+        "cfar_ids": [
+          64
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 18,
+        "cfar_patch_id": 71,
+        "cfar_patch_ids": [
+          71
+        ],
+        "yolo_patch_id": 71,
+        "match_distance_m": 25.166,
+        "match_distances_m": [
+          25.166
+        ],
+        "nearest_match_distance_m": 25.166,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0019",
+        "cfar_id": 80,
+        "cfar_ids": [
+          80
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 19,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 80,
+        "match_distance_m": 31.614,
+        "match_distances_m": [
+          31.614
+        ],
+        "nearest_match_distance_m": 31.614,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0020",
+        "cfar_id": 90,
+        "cfar_ids": [
+          90
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 20,
+        "cfar_patch_id": 102,
+        "cfar_patch_ids": [
+          102
+        ],
+        "yolo_patch_id": 102,
+        "match_distance_m": 11.19,
+        "match_distances_m": [
+          11.19
+        ],
+        "nearest_match_distance_m": 11.19,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0021",
+        "cfar_id": 82,
+        "cfar_ids": [
+          82
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 21,
+        "cfar_patch_id": 85,
+        "cfar_patch_ids": [
+          85
+        ],
+        "yolo_patch_id": 85,
+        "match_distance_m": 35.553,
+        "match_distances_m": [
+          35.553
+        ],
+        "nearest_match_distance_m": 35.553,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0022",
+        "cfar_id": 3,
+        "cfar_ids": [
+          3
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 22,
+        "cfar_patch_id": 0,
+        "cfar_patch_ids": [
+          0
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 7.143,
+        "match_distances_m": [
+          7.143
+        ],
+        "nearest_match_distance_m": 7.143,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0023",
+        "cfar_id": 27,
+        "cfar_ids": [
+          27
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 24,
+        "cfar_patch_id": 16,
+        "cfar_patch_ids": [
+          16
+        ],
+        "yolo_patch_id": 3,
+        "match_distance_m": 49.726,
+        "match_distances_m": [
+          49.726
+        ],
+        "nearest_match_distance_m": 49.726,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0024",
+        "cfar_id": 16,
+        "cfar_ids": [
+          16
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 26,
+        "cfar_patch_id": 7,
+        "cfar_patch_ids": [
+          7
+        ],
+        "yolo_patch_id": 7,
+        "match_distance_m": 18.105,
+        "match_distances_m": [
+          18.105
+        ],
+        "nearest_match_distance_m": 18.105,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0025",
+        "cfar_id": 32,
+        "cfar_ids": [
+          32
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 27,
+        "cfar_patch_id": 27,
+        "cfar_patch_ids": [
+          27
+        ],
+        "yolo_patch_id": 27,
+        "match_distance_m": 18.071,
+        "match_distances_m": [
+          18.071
+        ],
+        "nearest_match_distance_m": 18.071,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0026",
+        "cfar_id": 81,
+        "cfar_ids": [
+          81
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 28,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 80,
+        "match_distance_m": 72.307,
+        "match_distances_m": [
+          72.307
+        ],
+        "nearest_match_distance_m": 72.307,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0027",
+        "cfar_id": 97,
+        "cfar_ids": [
+          97
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 29,
+        "cfar_patch_id": 112,
+        "cfar_patch_ids": [
+          112
+        ],
+        "yolo_patch_id": 112,
+        "match_distance_m": 29.192,
+        "match_distances_m": [
+          29.192
+        ],
+        "nearest_match_distance_m": 29.192,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0028",
+        "cfar_id": 1,
+        "cfar_ids": [
+          1
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 31,
+        "cfar_patch_id": 0,
+        "cfar_patch_ids": [
+          0
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 40.347,
+        "match_distances_m": [
+          40.347
+        ],
+        "nearest_match_distance_m": 40.347,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0029",
+        "cfar_id": 61,
+        "cfar_ids": [
+          61
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 32,
+        "cfar_patch_id": 69,
+        "cfar_patch_ids": [
+          69
+        ],
+        "yolo_patch_id": 69,
+        "match_distance_m": 15.998,
+        "match_distances_m": [
+          15.998
+        ],
+        "nearest_match_distance_m": 15.998,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0030",
+        "cfar_id": 76,
+        "cfar_ids": [
+          76
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 33,
+        "cfar_patch_id": 77,
+        "cfar_patch_ids": [
+          77
+        ],
+        "yolo_patch_id": 77,
+        "match_distance_m": 65.602,
+        "match_distances_m": [
+          65.602
+        ],
+        "nearest_match_distance_m": 65.602,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0031",
+        "cfar_id": 78,
+        "cfar_ids": [
+          78
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 34,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 25.007,
+        "match_distances_m": [
+          25.007
+        ],
+        "nearest_match_distance_m": 25.007,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0032",
+        "cfar_id": 5,
+        "cfar_ids": [
+          5
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 35,
+        "cfar_patch_id": 0,
+        "cfar_patch_ids": [
+          0
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 27.209,
+        "match_distances_m": [
+          27.209
+        ],
+        "nearest_match_distance_m": 27.209,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0033",
+        "cfar_id": 19,
+        "cfar_ids": [
+          19
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 37,
+        "cfar_patch_id": 13,
+        "cfar_patch_ids": [
+          13
+        ],
+        "yolo_patch_id": 13,
+        "match_distance_m": 21.424,
+        "match_distances_m": [
+          21.424
+        ],
+        "nearest_match_distance_m": 21.424,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0034",
+        "cfar_id": 67,
+        "cfar_ids": [
+          67
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 38,
+        "cfar_patch_id": 72,
+        "cfar_patch_ids": [
+          72
+        ],
+        "yolo_patch_id": 72,
+        "match_distance_m": 41.744,
+        "match_distances_m": [
+          41.744
+        ],
+        "nearest_match_distance_m": 41.744,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0035",
+        "cfar_id": 77,
+        "cfar_ids": [
+          77
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 39,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 35.529,
+        "match_distances_m": [
+          35.529
+        ],
+        "nearest_match_distance_m": 35.529,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0036",
+        "cfar_id": 18,
+        "cfar_ids": [
+          18
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 40,
+        "cfar_patch_id": 13,
+        "cfar_patch_ids": [
+          13
+        ],
+        "yolo_patch_id": 13,
+        "match_distance_m": 32.229,
+        "match_distances_m": [
+          32.229
+        ],
+        "nearest_match_distance_m": 32.229,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0037",
+        "cfar_id": 13,
+        "cfar_ids": [
+          13
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 41,
+        "cfar_patch_id": 6,
+        "cfar_patch_ids": [
+          6
+        ],
+        "yolo_patch_id": 6,
+        "match_distance_m": 15.982,
+        "match_distances_m": [
+          15.982
+        ],
+        "nearest_match_distance_m": 15.982,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0038",
+        "cfar_id": 55,
+        "cfar_ids": [
+          55
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 42,
+        "cfar_patch_id": 67,
+        "cfar_patch_ids": [
+          67
+        ],
+        "yolo_patch_id": 67,
+        "match_distance_m": 97.646,
+        "match_distances_m": [
+          97.646
+        ],
+        "nearest_match_distance_m": 97.646,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0039",
+        "cfar_id": 91,
+        "cfar_ids": [
+          91
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 43,
+        "cfar_patch_id": 103,
+        "cfar_patch_ids": [
+          103
+        ],
+        "yolo_patch_id": 103,
+        "match_distance_m": 32.195,
+        "match_distances_m": [
+          32.195
+        ],
+        "nearest_match_distance_m": 32.195,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0040",
+        "cfar_id": 46,
+        "cfar_ids": [
+          46
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 44,
+        "cfar_patch_id": 41,
+        "cfar_patch_ids": [
+          41
+        ],
+        "yolo_patch_id": 41,
+        "match_distance_m": 45.908,
+        "match_distances_m": [
+          45.908
+        ],
+        "nearest_match_distance_m": 45.908,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0041",
+        "cfar_id": 22,
+        "cfar_ids": [
+          22
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 45,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 22.385,
+        "match_distances_m": [
+          22.385
+        ],
+        "nearest_match_distance_m": 22.385,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0042",
+        "cfar_id": 31,
+        "cfar_ids": [
+          31
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 46,
+        "cfar_patch_id": 27,
+        "cfar_patch_ids": [
+          27
+        ],
+        "yolo_patch_id": 27,
+        "match_distance_m": 55.814,
+        "match_distances_m": [
+          55.814
+        ],
+        "nearest_match_distance_m": 55.814,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0043",
+        "cfar_id": 25,
+        "cfar_ids": [
+          25
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 47,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 14,
+        "match_distance_m": 28.569,
+        "match_distances_m": [
+          28.569
+        ],
+        "nearest_match_distance_m": 28.569,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0044",
+        "cfar_id": 68,
+        "cfar_ids": [
+          68
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 48,
+        "cfar_patch_id": 74,
+        "cfar_patch_ids": [
+          74
+        ],
+        "yolo_patch_id": 74,
+        "match_distance_m": 11.344,
+        "match_distances_m": [
+          11.344
+        ],
+        "nearest_match_distance_m": 11.344,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0045",
+        "cfar_id": 86,
+        "cfar_ids": [
+          86
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 49,
+        "cfar_patch_id": 94,
+        "cfar_patch_ids": [
+          94
+        ],
+        "yolo_patch_id": 81,
+        "match_distance_m": 11.239,
+        "match_distances_m": [
+          11.239
+        ],
+        "nearest_match_distance_m": 11.239,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0046",
+        "cfar_id": 54,
+        "cfar_ids": [
+          54,
+          53
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 50,
+        "cfar_patch_id": 57,
+        "cfar_patch_ids": [
+          57,
+          57
+        ],
+        "yolo_patch_id": 57,
+        "match_distance_m": 40.92,
+        "match_distances_m": [
+          40.92,
+          200.189
+        ],
+        "nearest_match_distance_m": 40.92,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0047",
+        "cfar_id": 59,
+        "cfar_ids": [
+          59
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 51,
+        "cfar_patch_id": 68,
+        "cfar_patch_ids": [
+          68
+        ],
+        "yolo_patch_id": 68,
+        "match_distance_m": 38.081,
+        "match_distances_m": [
+          38.081
+        ],
+        "nearest_match_distance_m": 38.081,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0048",
+        "cfar_id": 79,
+        "cfar_ids": [
+          79
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 52,
+        "cfar_patch_id": 80,
+        "cfar_patch_ids": [
+          80
+        ],
+        "yolo_patch_id": 80,
+        "match_distance_m": 44.758,
+        "match_distances_m": [
+          44.758
+        ],
+        "nearest_match_distance_m": 44.758,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0049",
+        "cfar_id": 20,
+        "cfar_ids": [
+          20
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 53,
+        "cfar_patch_id": 13,
+        "cfar_patch_ids": [
+          13
+        ],
+        "yolo_patch_id": 13,
+        "match_distance_m": 7.142,
+        "match_distances_m": [
+          7.142
+        ],
+        "nearest_match_distance_m": 7.142,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0050",
+        "cfar_id": 28,
+        "cfar_ids": [
+          28
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 56,
+        "cfar_patch_id": 20,
+        "cfar_patch_ids": [
+          20
+        ],
+        "yolo_patch_id": 7,
+        "match_distance_m": 46.795,
+        "match_distances_m": [
+          46.795
+        ],
+        "nearest_match_distance_m": 46.795,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0051",
+        "cfar_id": 49,
+        "cfar_ids": [
+          49
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 58,
+        "cfar_patch_id": 46,
+        "cfar_patch_ids": [
+          46
+        ],
+        "yolo_patch_id": 46,
+        "match_distance_m": 183.155,
+        "match_distances_m": [
+          183.155
+        ],
+        "nearest_match_distance_m": 183.155,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0052",
+        "cfar_id": 6,
+        "cfar_ids": [
+          6,
+          7
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 59,
+        "cfar_patch_id": 1,
+        "cfar_patch_ids": [
+          1,
+          1
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 43.371,
+        "match_distances_m": [
+          43.371,
+          44.933
+        ],
+        "nearest_match_distance_m": 43.371,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0053",
+        "cfar_id": 8,
+        "cfar_ids": [
+          8
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 60,
+        "cfar_patch_id": 1,
+        "cfar_patch_ids": [
+          1
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 15.998,
+        "match_distances_m": [
+          15.998
+        ],
+        "nearest_match_distance_m": 15.998,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0054",
+        "cfar_id": 17,
+        "cfar_ids": [
+          17
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 62,
+        "cfar_patch_id": 13,
+        "cfar_patch_ids": [
+          13
+        ],
+        "yolo_patch_id": 13,
+        "match_distance_m": 25.197,
+        "match_distances_m": [
+          25.197
+        ],
+        "nearest_match_distance_m": 25.197,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0055",
+        "cfar_id": 47,
+        "cfar_ids": [
+          47
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 63,
+        "cfar_patch_id": 46,
+        "cfar_patch_ids": [
+          46
+        ],
+        "yolo_patch_id": 46,
+        "match_distance_m": 110.115,
+        "match_distances_m": [
+          110.115
+        ],
+        "nearest_match_distance_m": 110.115,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0056",
+        "cfar_id": 30,
+        "cfar_ids": [
+          30,
+          29
+        ],
+        "cfar_fragment_count": 2,
+        "yolo_id": 65,
+        "cfar_patch_id": 27,
+        "cfar_patch_ids": [
+          27,
+          27
+        ],
+        "yolo_patch_id": 27,
+        "match_distance_m": 38.475,
+        "match_distances_m": [
+          38.475,
+          91.162
+        ],
+        "nearest_match_distance_m": 38.475,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0057",
+        "cfar_id": 56,
+        "cfar_ids": [
+          56
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 67,
+        "cfar_patch_id": 68,
+        "cfar_patch_ids": [
+          68
+        ],
+        "yolo_patch_id": 55,
+        "match_distance_m": 14.285,
+        "match_distances_m": [
+          14.285
+        ],
+        "nearest_match_distance_m": 14.285,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0058",
+        "cfar_id": 24,
+        "cfar_ids": [
+          24
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 70,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 14,
+        "match_distance_m": 25.072,
+        "match_distances_m": [
+          25.072
+        ],
+        "nearest_match_distance_m": 25.072,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0059",
+        "cfar_id": 23,
+        "cfar_ids": [
+          23
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 71,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 14,
+        "match_distance_m": 32.095,
+        "match_distances_m": [
+          32.095
+        ],
+        "nearest_match_distance_m": 32.095,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0060",
+        "cfar_id": 2,
+        "cfar_ids": [
+          2
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 73,
+        "cfar_patch_id": 0,
+        "cfar_patch_ids": [
+          0
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 15,
+        "match_distances_m": [
+          15
+        ],
+        "nearest_match_distance_m": 15,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0061",
+        "cfar_id": 94,
+        "cfar_ids": [
+          94
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 74,
+        "cfar_patch_id": 111,
+        "cfar_patch_ids": [
+          111
+        ],
+        "yolo_patch_id": 111,
+        "match_distance_m": 70.794,
+        "match_distances_m": [
+          70.794
+        ],
+        "nearest_match_distance_m": 70.794,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0062",
+        "cfar_id": 26,
+        "cfar_ids": [
+          26
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 77,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 14,
+        "match_distance_m": 40.247,
+        "match_distances_m": [
+          40.247
+        ],
+        "nearest_match_distance_m": 40.247,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0063",
+        "cfar_id": 14,
+        "cfar_ids": [
+          14
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 78,
+        "cfar_patch_id": 7,
+        "cfar_patch_ids": [
+          7
+        ],
+        "yolo_patch_id": 7,
+        "match_distance_m": 10.146,
+        "match_distances_m": [
+          10.146
+        ],
+        "nearest_match_distance_m": 10.146,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0064",
+        "cfar_id": 33,
+        "cfar_ids": [
+          33
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 80,
+        "cfar_patch_id": 33,
+        "cfar_patch_ids": [
+          33
+        ],
+        "yolo_patch_id": 33,
+        "match_distance_m": 49.741,
+        "match_distances_m": [
+          49.741
+        ],
+        "nearest_match_distance_m": 49.741,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0065",
+        "cfar_id": 50,
+        "cfar_ids": [
+          50
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 85,
+        "cfar_patch_id": 46,
+        "cfar_patch_ids": [
+          46
+        ],
+        "yolo_patch_id": 46,
+        "match_distance_m": 172.807,
+        "match_distances_m": [
+          172.807
+        ],
+        "nearest_match_distance_m": 172.807,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0066",
+        "cfar_id": 4,
+        "cfar_ids": [
+          4
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 90,
+        "cfar_patch_id": 0,
+        "cfar_patch_ids": [
+          0
+        ],
+        "yolo_patch_id": 0,
+        "match_distance_m": 10,
+        "match_distances_m": [
+          10
+        ],
+        "nearest_match_distance_m": 10,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0067",
+        "cfar_id": 93,
+        "cfar_ids": [
+          93
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 92,
+        "cfar_patch_id": 111,
+        "cfar_patch_ids": [
+          111
+        ],
+        "yolo_patch_id": 111,
+        "match_distance_m": 18.159,
+        "match_distances_m": [
+          18.159
+        ],
+        "nearest_match_distance_m": 18.159,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0068",
+        "cfar_id": 21,
+        "cfar_ids": [
+          21
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 95,
+        "cfar_patch_id": 14,
+        "cfar_patch_ids": [
+          14
+        ],
+        "yolo_patch_id": 1,
+        "match_distance_m": 15.018,
+        "match_distances_m": [
+          15.018
+        ],
+        "nearest_match_distance_m": 15.018,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0069",
+        "cfar_id": 48,
+        "cfar_ids": [
+          48
+        ],
+        "cfar_fragment_count": 1,
+        "yolo_id": 96,
+        "cfar_patch_id": 46,
+        "cfar_patch_ids": [
+          46
+        ],
+        "yolo_patch_id": 46,
+        "match_distance_m": 36.387,
+        "match_distances_m": [
+          36.387
+        ],
+        "nearest_match_distance_m": 36.387,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0070",
+        "cfar_id": 34,
+        "cfar_ids": [
+          34,
+          36,
+          38,
+          37
+        ],
+        "cfar_fragment_count": 4,
+        "yolo_id": 97,
+        "cfar_patch_id": 33,
+        "cfar_patch_ids": [
+          33,
+          33,
+          33,
+          33
+        ],
+        "yolo_patch_id": 33,
+        "match_distance_m": 32.216,
+        "match_distances_m": [
+          32.216,
+          101.922,
+          203.626,
+          340.486
+        ],
+        "nearest_match_distance_m": 32.216,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      },
+      {
+        "target_id": "T0071",
+        "cfar_id": 73,
+        "cfar_ids": [
+          73,
+          74,
+          72,
+          75,
+          71
+        ],
+        "cfar_fragment_count": 5,
+        "yolo_id": 98,
+        "cfar_patch_id": 77,
+        "cfar_patch_ids": [
+          77,
+          77,
+          77,
+          77,
+          77
+        ],
+        "yolo_patch_id": 77,
+        "match_distance_m": 41.851,
+        "match_distances_m": [
+          41.851,
+          287.939,
+          326.867,
+          482.01,
+          592.173
+        ],
+        "nearest_match_distance_m": 41.851,
+        "geometries_overlap": true,
+        "fusion_rule": "geometry_overlap",
+        "fusion_rules": [
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap",
+          "geometry_overlap"
+        ]
+      }
+    ]
+  },
+  "files": {
+    "mosaic": "mosaic.png",
+    "footprint": "footprint.geojson",
+    "patches": "patches.geojson",
+    "cfar_geojson": "detections-cfar.geojson",
+    "yolo_geojson": "detections-yolo.geojson",
+    "combined_geojson": "detections-combined.geojson",
+    "fusion_report": "fusion-report.json",
+    "previews": "previews/"
+  }
+}
