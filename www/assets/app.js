@@ -225,7 +225,10 @@
       const detection = source.detection || {};
       const kind = detection.kind || (detection.yoloCount ? "combined" : "cfar");
       const patchFeature = patchByLabel.get(source.id) || null;
-      const bounds = normalizeBounds(source.bounds) || geometryBounds(patchFeature);
+      // O preview PNNN.png usa o bounding box georreferenciado do mesmo patch.
+      // Nao usar bounds de outro recorte, mesmo que sejam trazidos no presentation.json.
+      const bounds = normalizeBounds(patchFeature?.properties?.display_bounds_lonlat)
+        || normalizeBounds(source.bounds) || geometryBounds(patchFeature);
       return {
         ...source, code, entry, manifest, baseUrl, detection, kind, patchFeature, bounds,
         uid: `${code}:${source.targetLabel || source.id}:${detection.id ?? index}`,
@@ -366,13 +369,18 @@
 
   function framePosition(item) {
     const detection = item.detection || {}, bounds = item.bounds;
-    let left = numberOrNull(detection.frameX), top = numberOrNull(detection.frameY);
-    if ((left === null || top === null) && bounds) {
+    // Priorizar coordenadas geograficas auditaveis em vez de frameX/frameY herdados.
+    let left = null, top = null;
+    if (bounds) {
       const lon = numberOrNull(detection.lon), lat = numberOrNull(detection.lat);
       if (lon !== null && lat !== null) {
         left = ((lon - bounds.west) / (bounds.east - bounds.west)) * 100;
         top = ((bounds.north - lat) / (bounds.north - bounds.south)) * 100;
       }
+    }
+    if (left === null || top === null) {
+      left = numberOrNull(detection.frameX);
+      top = numberOrNull(detection.frameY);
     }
     if (left === null || top === null) return null;
     return { left: Math.max(1.6, Math.min(98.4, left)), top: Math.max(1.6, Math.min(98.4, top)) };
