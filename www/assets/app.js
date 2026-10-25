@@ -8,7 +8,7 @@
   const KIND_COLORS = { cfar: "#45ec8b", yolo: "#b65cff", combined: "#ffd84a" };
 
   const state = {
-    catalog: [], catalogFingerprint: "", defaultProductId: String(CONFIG.default_product_id || "186F"),
+    catalog: [], catalogFingerprint: "", defaultProductId: CONFIG.default_product_id == null ? null : String(CONFIG.default_product_id),
     currentDate: null, dailyProducts: [], activeProductCode: null,
     allItems: [], filteredItems: [], currentIndex: 0, filter: "combined", opacity: 0.85,
     timer: null, loadToken: 0, calendarMonth: null,
@@ -82,7 +82,7 @@
   const catalogFingerprint = (products) => JSON.stringify(products.map((item) => [item.id, item.date, item.manifest, item.version || ""]));
   function normalizeCatalog(payload) {
     const products = Array.isArray(payload) ? payload : (Array.isArray(payload?.products) ? payload.products : []);
-    if (payload?.default_product_id !== undefined && payload?.default_product_id !== null) state.defaultProductId = String(payload.default_product_id);
+    if (payload && Object.hasOwn(payload, "default_product_id")) state.defaultProductId = payload.default_product_id == null ? null : String(payload.default_product_id);
     const seen = new Set();
     return products.filter((entry) => entry && entry.id !== undefined && entry.date && entry.manifest)
       .map((entry) => ({ ...entry, id: String(entry.id) }))

@@ -1,0 +1,4269 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -39.70273867818104,
+              -2.1984682713015156
+            ],
+            [
+              -39.70352954065307,
+              -2.1982965571011626
+            ],
+            [
+              -39.70358663590952,
+              -2.198565934943989
+            ],
+            [
+              -39.70279577338205,
+              -2.1987376493745705
+            ],
+            [
+              -39.70273867818104,
+              -2.1984682713015156
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.1983537951679466,
+        "lon": -39.703265919829065,
+        "area_px": 7,
+        "min_sigma0_dB": 7.900000095367432,
+        "mean_sigma0_dB": 12.90999984741211,
+        "max_sigma0_dB": 17.81999969482422,
+        "threshold_cfar_dB": 7.83,
+        "pixel_coords": {
+          "row": 930,
+          "col": 120,
+          "row_resampled": 310,
+          "col_resampled": 40
+        },
+        "bbox_pixel_coords": {
+          "row_min": 930,
+          "row_max": 933,
+          "col_min": 114,
+          "col_max": 123
+        },
+        "global_pixel_coords": {
+          "row": 930,
+          "col": 120
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 0,
+        "patch_name": "patch_0001_VV",
+        "geotiff_name": "patch_0001_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.29611680203741,
+          0.0,
+          -0.00011446067124026651,
+          -1.6293965136383808,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 2000,
+          "y1": 2000
+        },
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 2160,
+          "y1": 2160
+        },
+        "core_bounds_lonlat": {
+          "west": -39.88872981000567,
+          "south": -2.296632694968601,
+          "east": -39.67502179360988,
+          "north": -2.079006969431091
+        },
+        "processing_bounds_lonlat": {
+          "west": -39.90583858023283,
+          "south": -2.3109993717582378,
+          "east": -39.67502179360988,
+          "north": -2.0759545542226716
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 2.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            720,
+            720
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -39.88872981000567,
+            "south": -2.296632694968601,
+            "east": -39.67502179360988,
+            "north": -2.079006969431091
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 0,
+          "water_points": 16384,
+          "land_fraction": 0.0,
+          "water_fraction": 1.0,
+          "valid_pixels_before_land_mask": 513366,
+          "valid_pixels_after_land_mask": 513366,
+          "pixels_masked_by_land": 0,
+          "valid_water_fraction": 1.0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.0,
+        "water_fraction": 1.0,
+        "valid_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P001",
+        "id": 1,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -39.800474377177224,
+              -2.300468793870238
+            ],
+            [
+              -39.80258342302495,
+              -2.3000106208390885
+            ],
+            [
+              -39.8028120244572,
+              -2.3010880227538064
+            ],
+            [
+              -39.800702977410836,
+              -2.30154619824072
+            ],
+            [
+              -39.800474377177224,
+              -2.300468793870238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.300778408925963,
+        "lon": -39.801643200543026,
+        "area_px": 14,
+        "min_sigma0_dB": -0.05000000074505806,
+        "mean_sigma0_dB": 3.009999990463257,
+        "max_sigma0_dB": 10.800000190734863,
+        "threshold_cfar_dB": -0.48,
+        "pixel_coords": {
+          "row": 408,
+          "col": 954,
+          "row_resampled": 136,
+          "col_resampled": 318
+        },
+        "bbox_pixel_coords": {
+          "row_min": 402,
+          "row_max": 414,
+          "col_min": 942,
+          "col_max": 966
+        },
+        "global_pixel_coords": {
+          "row": 2248,
+          "col": 954
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 13,
+        "patch_name": "patch_0014_VV",
+        "geotiff_name": "patch_0014_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.29611680203741,
+          0.0,
+          -0.00011446067124026651,
+          -1.8400041487204712,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 2000,
+          "x1": 2000,
+          "y1": 4000
+        },
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 1840,
+          "x1": 2160,
+          "y1": 4160
+        },
+        "core_bounds_lonlat": {
+          "west": -39.926838149637504,
+          "south": -2.476216054508251,
+          "east": -39.71308517378773,
+          "north": -2.258559880090381
+        },
+        "processing_bounds_lonlat": {
+          "west": -39.94395076306678,
+          "south": -2.490582421992885,
+          "east": -39.71003975174094,
+          "north": -2.241140712504133
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.8,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            720
+          ],
+          "sample_shape": [
+            128,
+            119
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -39.926838149637504,
+            "south": -2.476216054508251,
+            "east": -39.71308517378773,
+            "north": -2.258559880090381
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 15232,
+          "land_points": 0,
+          "water_points": 15232,
+          "land_fraction": 0.0,
+          "water_fraction": 1.0,
+          "valid_pixels_before_land_mask": 555787,
+          "valid_pixels_after_land_mask": 555787,
+          "pixels_masked_by_land": 0,
+          "valid_water_fraction": 1.0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.0,
+        "water_fraction": 1.0,
+        "valid_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P014",
+        "id": 2,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.495311633933845,
+              -2.270702628858708
+            ],
+            [
+              -40.496102437304295,
+              -2.2705303481546792
+            ],
+            [
+              -40.496274139571256,
+              -2.271337758998473
+            ],
+            [
+              -40.4954833359205,
+              -2.2715100405082995
+            ],
+            [
+              -40.495311633933845,
+              -2.270702628858708
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.2709143390843627,
+        "lon": -40.49563246908402,
+        "area_px": 8,
+        "min_sigma0_dB": -4.309999942779541,
+        "mean_sigma0_dB": 0.5799999833106995,
+        "max_sigma0_dB": 8.4399995803833,
+        "threshold_cfar_dB": -5.18,
+        "pixel_coords": {
+          "row": 1698,
+          "col": 732,
+          "row_resampled": 566,
+          "col_resampled": 244
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1695,
+          "row_max": 1704,
+          "col_min": 729,
+          "col_max": 738
+        },
+        "global_pixel_coords": {
+          "row": 3538,
+          "col": 8572
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 17,
+        "patch_name": "patch_0018_VV",
+        "geotiff_name": "patch_0018_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.49041655243648,
+          0.0,
+          -0.00011446067124026651,
+          -1.8400041487204712,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 8000,
+          "y0": 2000,
+          "x1": 10000,
+          "y1": 4000
+        },
+        "processing_bbox_pixels": {
+          "x0": 7840,
+          "y0": 1840,
+          "x1": 10160,
+          "y1": 4160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.62980869185322,
+          "south": -2.323223670408707,
+          "east": -40.41603357561571,
+          "north": -2.1056362058659435
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.64692298743391,
+          "south": -2.3406419894959454,
+          "east": -40.39892660779803,
+          "north": -2.0882233038085234
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.62980869185322,
+            "south": -2.323223670408707,
+            "east": -40.41603357561571,
+            "north": -2.1056362058659435
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 0,
+          "water_points": 16384,
+          "land_fraction": 0.0,
+          "water_fraction": 1.0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 597529,
+          "pixels_masked_by_land": 0,
+          "valid_water_fraction": 1.0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.0,
+        "water_fraction": 1.0,
+        "valid_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P018",
+        "id": 3,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.99867307920795,
+              -2.0531457612383375
+            ],
+            [
+              -40.99867307920795,
+              -2.0531457612383375
+            ],
+            [
+              -40.99884492236279,
+              -2.053952591775484
+            ],
+            [
+              -40.99884492236279,
+              -2.053952591775484
+            ],
+            [
+              -40.99867307920795,
+              -2.0531457612383375
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.053683648263102,
+        "lon": -40.998787641311175,
+        "area_px": 4,
+        "min_sigma0_dB": -8.40999984741211,
+        "mean_sigma0_dB": -4.53000020980835,
+        "max_sigma0_dB": -0.30000001192092896,
+        "threshold_cfar_dB": -8.46,
+        "pixel_coords": {
+          "row": 552,
+          "col": 708,
+          "row_resampled": 184,
+          "col_resampled": 236
+        },
+        "bbox_pixel_coords": {
+          "row_min": 546,
+          "row_max": 555,
+          "col_min": 708,
+          "col_max": 708
+        },
+        "global_pixel_coords": {
+          "row": 2392,
+          "col": 14548
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 20,
+        "patch_name": "patch_0021_VV",
+        "geotiff_name": "patch_0021_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.87380921855821,
+          0.0,
+          -0.00011446067124026651,
+          -1.8400041487204712,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 14000,
+          "y0": 2000,
+          "x1": 16000,
+          "y1": 4000
+        },
+        "processing_bbox_pixels": {
+          "x0": 13840,
+          "y0": 1840,
+          "x1": 16160,
+          "y1": 4160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.1569446019165,
+          "south": -2.2082578069299608,
+          "east": -40.9431618348353,
+          "north": -1.9907412146643158
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.17406003802106,
+          "south": -2.2256701140959967,
+          "east": -40.926054352362094,
+          "north": -1.973334241184155
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 4.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.1569446019165,
+            "south": -2.2082578069299608,
+            "east": -40.9431618348353,
+            "north": -1.9907412146643158
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 0,
+          "water_points": 16384,
+          "land_fraction": 0.0,
+          "water_fraction": 1.0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 597529,
+          "pixels_masked_by_land": 0,
+          "valid_water_fraction": 1.0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.0,
+        "water_fraction": 1.0,
+        "valid_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P021",
+        "id": 4,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -39.94443628646631,
+              -2.8716148023393124
+            ],
+            [
+              -39.94496234099448,
+              -2.871500233342104
+            ],
+            [
+              -39.94502056970508,
+              -2.871769359565538
+            ],
+            [
+              -39.94449451212027,
+              -2.871883929362574
+            ],
+            [
+              -39.94443628646631,
+              -2.8716148023393124
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.8715575178407082,
+        "lon": -39.944699313730396,
+        "area_px": 3,
+        "min_sigma0_dB": 2.4800000190734863,
+        "mean_sigma0_dB": 4.829999923706055,
+        "max_sigma0_dB": 8.609999656677246,
+        "threshold_cfar_dB": 1.29,
+        "pixel_coords": {
+          "row": 816,
+          "col": 1188,
+          "row_resampled": 272,
+          "col_resampled": 396
+        },
+        "bbox_pixel_coords": {
+          "row_min": 816,
+          "row_max": 819,
+          "col_min": 1185,
+          "col_max": 1191
+        },
+        "global_pixel_coords": {
+          "row": 8656,
+          "col": 1188
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 52,
+        "patch_name": "patch_0053_VV",
+        "geotiff_name": "patch_0053_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.29611680203741,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 8000,
+          "x1": 2000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 7840,
+          "x1": 2160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.041893690631284,
+          "south": -3.014787612477356,
+          "east": -39.827940472840716,
+          "north": -2.7971890340726695
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.05907005809172,
+          "south": -3.0291440477757186,
+          "east": -39.82486168807034,
+          "north": -2.779767540983946
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            720
+          ],
+          "sample_shape": [
+            128,
+            119
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.041893690631284,
+            "south": -3.014787612477356,
+            "east": -39.827940472840716,
+            "north": -2.7971890340726695
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 15232,
+          "land_points": 9374,
+          "water_points": 5858,
+          "land_fraction": 0.6154149159663865,
+          "water_fraction": 0.38458508403361347,
+          "valid_pixels_before_land_mask": 555787,
+          "valid_pixels_after_land_mask": 213062,
+          "pixels_masked_by_land": 342725,
+          "valid_water_fraction": 0.3833518956002929,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.6154149159663865,
+        "water_fraction": 0.38458508403361347,
+        "valid_water_fraction": 0.3833518956002929,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P053",
+        "id": 5,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -39.88217044010883,
+              -2.906030667404157
+            ],
+            [
+              -39.88322300213569,
+              -2.9058014110350903
+            ],
+            [
+              -39.88328084723743,
+              -2.906070637637028
+            ],
+            [
+              -39.88222827909727,
+              -2.906299895605752
+            ],
+            [
+              -39.88217044010883,
+              -2.906030667404157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.905916039219624,
+        "lon": -39.88269672112226,
+        "area_px": 5,
+        "min_sigma0_dB": 1.3899999856948853,
+        "mean_sigma0_dB": 3.119999885559082,
+        "max_sigma0_dB": 5.510000228881836,
+        "threshold_cfar_dB": 1.19,
+        "pixel_coords": {
+          "row": 1038,
+          "col": 432,
+          "row_resampled": 346,
+          "col_resampled": 144
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1038,
+          "row_max": 1041,
+          "col_min": 426,
+          "col_max": 438
+        },
+        "global_pixel_coords": {
+          "row": 8878,
+          "col": 432
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 52,
+        "patch_name": "patch_0053_VV",
+        "geotiff_name": "patch_0053_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.29611680203741,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 8000,
+          "x1": 2000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 7840,
+          "x1": 2160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.041893690631284,
+          "south": -3.014787612477356,
+          "east": -39.827940472840716,
+          "north": -2.7971890340726695
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.05907005809172,
+          "south": -3.0291440477757186,
+          "east": -39.82486168807034,
+          "north": -2.779767540983946
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 2.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            720
+          ],
+          "sample_shape": [
+            128,
+            119
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.041893690631284,
+            "south": -3.014787612477356,
+            "east": -39.827940472840716,
+            "north": -2.7971890340726695
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 15232,
+          "land_points": 9374,
+          "water_points": 5858,
+          "land_fraction": 0.6154149159663865,
+          "water_fraction": 0.38458508403361347,
+          "valid_pixels_before_land_mask": 555787,
+          "valid_pixels_after_land_mask": 213062,
+          "pixels_masked_by_land": 342725,
+          "valid_water_fraction": 0.3833518956002929,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.6154149159663865,
+        "water_fraction": 0.38458508403361347,
+        "valid_water_fraction": 0.3833518956002929,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P053",
+        "id": 6,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -39.883807131307506,
+              -2.905956008652666
+            ],
+            [
+              -39.88407027334255,
+              -2.905898694160485
+            ],
+            [
+              -39.88418597271598,
+              -2.9064371449648743
+            ],
+            [
+              -39.883922827624296,
+              -2.906494460256884
+            ],
+            [
+              -39.883807131307506,
+              -2.905956008652666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.906225234454775,
+        "lon": -39.8838649794659,
+        "area_px": 3,
+        "min_sigma0_dB": 2.119999885559082,
+        "mean_sigma0_dB": 4.960000038146973,
+        "max_sigma0_dB": 6.820000171661377,
+        "threshold_cfar_dB": 1.19,
+        "pixel_coords": {
+          "row": 1044,
+          "col": 444,
+          "row_resampled": 348,
+          "col_resampled": 148
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1041,
+          "row_max": 1047,
+          "col_min": 444,
+          "col_max": 447
+        },
+        "global_pixel_coords": {
+          "row": 8884,
+          "col": 444
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 52,
+        "patch_name": "patch_0053_VV",
+        "geotiff_name": "patch_0053_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.29611680203741,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 0,
+          "y0": 8000,
+          "x1": 2000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 0,
+          "y0": 7840,
+          "x1": 2160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.041893690631284,
+          "south": -3.014787612477356,
+          "east": -39.827940472840716,
+          "north": -2.7971890340726695
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.05907005809172,
+          "south": -3.0291440477757186,
+          "east": -39.82486168807034,
+          "north": -2.779767540983946
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            720
+          ],
+          "sample_shape": [
+            128,
+            119
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.041893690631284,
+            "south": -3.014787612477356,
+            "east": -39.827940472840716,
+            "north": -2.7971890340726695
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 15232,
+          "land_points": 9374,
+          "water_points": 5858,
+          "land_fraction": 0.6154149159663865,
+          "water_fraction": 0.38458508403361347,
+          "valid_pixels_before_land_mask": 555787,
+          "valid_pixels_after_land_mask": 213062,
+          "pixels_masked_by_land": 342725,
+          "valid_water_fraction": 0.3833518956002929,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.6154149159663865,
+        "water_fraction": 0.38458508403361347,
+        "valid_water_fraction": 0.3833518956002929,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P053",
+        "id": 7,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.04300414773665,
+              -2.843656755474573
+            ],
+            [
+              -40.04353096479572,
+              -2.8435419659926686
+            ],
+            [
+              -40.04358880219044,
+              -2.8438111518685725
+            ],
+            [
+              -40.0430619876065,
+              -2.843925940946299
+            ],
+            [
+              -40.04300414773665,
+              -2.843656755474573
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.843868546407436,
+        "lon": -40.043325394898474,
+        "area_px": 4,
+        "min_sigma0_dB": 0.9200000166893005,
+        "mean_sigma0_dB": 2.119999885559082,
+        "max_sigma0_dB": 3.200000047683716,
+        "threshold_cfar_dB": -0.24,
+        "pixel_coords": {
+          "row": 750,
+          "col": 486,
+          "row_resampled": 250,
+          "col_resampled": 162
+        },
+        "bbox_pixel_coords": {
+          "row_min": 747,
+          "row_max": 750,
+          "col_min": 483,
+          "col_max": 489
+        },
+        "global_pixel_coords": {
+          "row": 8590,
+          "col": 2326
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 53,
+        "patch_name": "patch_0054_VV",
+        "geotiff_name": "patch_0054_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.10702388631474,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.21765144931556,
+          "south": -2.976511614060956,
+          "east": -40.00330041755902,
+          "north": -2.758880331564011
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.23488687374553,
+          "south": -2.993910845089674,
+          "east": -39.98615728684429,
+          "north": -2.741458631205641
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.21765144931556,
+            "south": -2.976511614060956,
+            "east": -40.00330041755902,
+            "north": -2.758880331564011
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10540,
+          "water_points": 5844,
+          "land_fraction": 0.643310546875,
+          "water_fraction": 0.356689453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 212714,
+          "pixels_masked_by_land": 384815,
+          "valid_water_fraction": 0.3559894164132619,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.643310546875,
+        "water_fraction": 0.356689453125,
+        "valid_water_fraction": 0.3559894164132619,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P054",
+        "id": 8,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.043852209482424,
+              -2.843753757329709
+            ],
+            [
+              -40.04437902406636,
+              -2.843638968251983
+            ],
+            [
+              -40.04443685774841,
+              -2.843908154734154
+            ],
+            [
+              -40.043910045639585,
+              -2.844022943407703
+            ],
+            [
+              -40.043852209482424,
+              -2.843753757329709
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.843696362790846,
+        "lon": -40.04411561677439,
+        "area_px": 5,
+        "min_sigma0_dB": 0.6000000238418579,
+        "mean_sigma0_dB": 1.1799999475479126,
+        "max_sigma0_dB": 2.5999999046325684,
+        "threshold_cfar_dB": -0.23,
+        "pixel_coords": {
+          "row": 750,
+          "col": 495,
+          "row_resampled": 250,
+          "col_resampled": 165
+        },
+        "bbox_pixel_coords": {
+          "row_min": 750,
+          "row_max": 753,
+          "col_min": 492,
+          "col_max": 498
+        },
+        "global_pixel_coords": {
+          "row": 8590,
+          "col": 2335
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 53,
+        "patch_name": "patch_0054_VV",
+        "geotiff_name": "patch_0054_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.10702388631474,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.21765144931556,
+          "south": -2.976511614060956,
+          "east": -40.00330041755902,
+          "north": -2.758880331564011
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.23488687374553,
+          "south": -2.993910845089674,
+          "east": -39.98615728684429,
+          "north": -2.741458631205641
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.21765144931556,
+            "south": -2.976511614060956,
+            "east": -40.00330041755902,
+            "north": -2.758880331564011
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10540,
+          "water_points": 5844,
+          "land_fraction": 0.643310546875,
+          "water_fraction": 0.356689453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 212714,
+          "pixels_masked_by_land": 384815,
+          "valid_water_fraction": 0.3559894164132619,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.643310546875,
+        "water_fraction": 0.356689453125,
+        "valid_water_fraction": 0.3559894164132619,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P054",
+        "id": 9,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.045284905881005,
+              -2.844005158812269
+            ],
+            [
+              -40.04554831069786,
+              -2.8439477646775835
+            ],
+            [
+              -40.045606139429665,
+              -2.84421695196811
+            ],
+            [
+              -40.04534273585037,
+              -2.8442743459007067
+            ],
+            [
+              -40.045284905881005,
+              -2.844005158812269
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.8439477646775835,
+        "lon": -40.04554831069786,
+        "area_px": 3,
+        "min_sigma0_dB": 0.07000000029802322,
+        "mean_sigma0_dB": 0.7699999809265137,
+        "max_sigma0_dB": 1.7100000381469727,
+        "threshold_cfar_dB": -0.23,
+        "pixel_coords": {
+          "row": 756,
+          "col": 510,
+          "row_resampled": 252,
+          "col_resampled": 170
+        },
+        "bbox_pixel_coords": {
+          "row_min": 756,
+          "row_max": 759,
+          "col_min": 507,
+          "col_max": 510
+        },
+        "global_pixel_coords": {
+          "row": 8596,
+          "col": 2350
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 53,
+        "patch_name": "patch_0054_VV",
+        "geotiff_name": "patch_0054_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.10702388631474,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.21765144931556,
+          "south": -2.976511614060956,
+          "east": -40.00330041755902,
+          "north": -2.758880331564011
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.23488687374553,
+          "south": -2.993910845089674,
+          "east": -39.98615728684429,
+          "north": -2.741458631205641
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.21765144931556,
+            "south": -2.976511614060956,
+            "east": -40.00330041755902,
+            "north": -2.758880331564011
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10540,
+          "water_points": 5844,
+          "land_fraction": 0.643310546875,
+          "water_fraction": 0.356689453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 212714,
+          "pixels_masked_by_land": 384815,
+          "valid_water_fraction": 0.3559894164132619,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.643310546875,
+        "water_fraction": 0.356689453125,
+        "valid_water_fraction": 0.3559894164132619,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P054",
+        "id": 10,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.04563188569795,
+              -2.845620281342895
+            ],
+            [
+              -40.045895283089436,
+              -2.8455628884207433
+            ],
+            [
+              -40.0460109405538,
+              -2.8461012630017963
+            ],
+            [
+              -40.045747545637425,
+              -2.8461586555197704
+            ],
+            [
+              -40.04563188569795,
+              -2.845620281342895
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.84583207571127,
+        "lon": -40.04595311182162,
+        "area_px": 4,
+        "min_sigma0_dB": -0.12999999523162842,
+        "mean_sigma0_dB": 3.319999933242798,
+        "max_sigma0_dB": 6.53000020980835,
+        "threshold_cfar_dB": -0.31,
+        "pixel_coords": {
+          "row": 777,
+          "col": 510,
+          "row_resampled": 259,
+          "col_resampled": 170
+        },
+        "bbox_pixel_coords": {
+          "row_min": 774,
+          "row_max": 780,
+          "col_min": 507,
+          "col_max": 510
+        },
+        "global_pixel_coords": {
+          "row": 8617,
+          "col": 2350
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 53,
+        "patch_name": "patch_0054_VV",
+        "geotiff_name": "patch_0054_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.10702388631474,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.21765144931556,
+          "south": -2.976511614060956,
+          "east": -40.00330041755902,
+          "north": -2.758880331564011
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.23488687374553,
+          "south": -2.993910845089674,
+          "east": -39.98615728684429,
+          "north": -2.741458631205641
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.21765144931556,
+            "south": -2.976511614060956,
+            "east": -40.00330041755902,
+            "north": -2.758880331564011
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10540,
+          "water_points": 5844,
+          "land_fraction": 0.643310546875,
+          "water_fraction": 0.356689453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 212714,
+          "pixels_masked_by_land": 384815,
+          "valid_water_fraction": 0.3559894164132619,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.643310546875,
+        "water_fraction": 0.356689453125,
+        "valid_water_fraction": 0.3559894164132619,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P054",
+        "id": 11,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.0464799040832,
+              -2.845717290271144
+            ],
+            [
+              -40.04700669632163,
+              -2.8456025048310183
+            ],
+            [
+              -40.04706452010358,
+              -2.8458716929299004
+            ],
+            [
+              -40.046537730340255,
+              -2.845986477965849
+            ],
+            [
+              -40.0464799040832,
+              -2.845717290271144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.845929085447875,
+        "lon": -40.04680112522192,
+        "area_px": 4,
+        "min_sigma0_dB": 1.2100000381469727,
+        "mean_sigma0_dB": 3.0899999141693115,
+        "max_sigma0_dB": 6.579999923706055,
+        "threshold_cfar_dB": -0.24,
+        "pixel_coords": {
+          "row": 780,
+          "col": 519,
+          "row_resampled": 260,
+          "col_resampled": 173
+        },
+        "bbox_pixel_coords": {
+          "row_min": 777,
+          "row_max": 780,
+          "col_min": 516,
+          "col_max": 522
+        },
+        "global_pixel_coords": {
+          "row": 8620,
+          "col": 2359
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 53,
+        "patch_name": "patch_0054_VV",
+        "geotiff_name": "patch_0054_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -42.10702388631474,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 2000,
+          "y0": 8000,
+          "x1": 4000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 1840,
+          "y0": 7840,
+          "x1": 4160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.21765144931556,
+          "south": -2.976511614060956,
+          "east": -40.00330041755902,
+          "north": -2.758880331564011
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.23488687374553,
+          "south": -2.993910845089674,
+          "east": -39.98615728684429,
+          "north": -2.741458631205641
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.21765144931556,
+            "south": -2.976511614060956,
+            "east": -40.00330041755902,
+            "north": -2.758880331564011
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10540,
+          "water_points": 5844,
+          "land_fraction": 0.643310546875,
+          "water_fraction": 0.356689453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 212714,
+          "pixels_masked_by_land": 384815,
+          "valid_water_fraction": 0.3559894164132619,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.643310546875,
+        "water_fraction": 0.356689453125,
+        "valid_water_fraction": 0.3559894164132619,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P054",
+        "id": 12,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.22443955515011,
+              -2.8133993962254014
+            ],
+            [
+              -40.22496726403209,
+              -2.813284301116266
+            ],
+            [
+              -40.22496726403209,
+              -2.813284301116266
+            ],
+            [
+              -40.22443955515011,
+              -2.8133993962254014
+            ],
+            [
+              -40.22443955515011,
+              -2.8133993962254014
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.8133418486708335,
+        "lon": -40.2247034095911,
+        "area_px": 3,
+        "min_sigma0_dB": -7.590000152587891,
+        "mean_sigma0_dB": -6.619999885559082,
+        "max_sigma0_dB": -5.599999904632568,
+        "threshold_cfar_dB": -7.71,
+        "pixel_coords": {
+          "row": 846,
+          "col": 528,
+          "row_resampled": 282,
+          "col_resampled": 176
+        },
+        "bbox_pixel_coords": {
+          "row_min": 846,
+          "row_max": 846,
+          "col_min": 525,
+          "col_max": 531
+        },
+        "global_pixel_coords": {
+          "row": 8686,
+          "col": 4368
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 54,
+        "patch_name": "patch_0055_VV",
+        "geotiff_name": "patch_0055_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.901488108355316,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 8000,
+          "x1": 6000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 7840,
+          "x1": 6160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.39395294685228,
+          "south": -2.9381778092856896,
+          "east": -40.17909012799584,
+          "north": -2.720538690115291
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.41119994877854,
+          "south": -2.95559365648796,
+          "east": -40.161948493565674,
+          "north": -2.703124908514254
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 3.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.39395294685228,
+            "south": -2.9381778092856896,
+            "east": -40.17909012799584,
+            "north": -2.720538690115291
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 9677,
+          "water_points": 6707,
+          "land_fraction": 0.59063720703125,
+          "water_fraction": 0.40936279296875,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 244069,
+          "pixels_masked_by_land": 353460,
+          "valid_water_fraction": 0.40846385698434723,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.59063720703125,
+        "water_fraction": 0.40936279296875,
+        "valid_water_fraction": 0.40846385698434723,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P055",
+        "id": 13,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.23088811110557,
+              -2.812556440485708
+            ],
+            [
+              -40.231679678249975,
+              -2.8123837965071483
+            ],
+            [
+              -40.23179573141412,
+              -2.812921980762221
+            ],
+            [
+              -40.23100416045699,
+              -2.813094626055638
+            ],
+            [
+              -40.23088811110557,
+              -2.812556440485708
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.812767985058677,
+        "lon": -40.23120999213153,
+        "area_px": 6,
+        "min_sigma0_dB": -8.90999984741211,
+        "mean_sigma0_dB": -8.0,
+        "max_sigma0_dB": -6.760000228881836,
+        "threshold_cfar_dB": -9.17,
+        "pixel_coords": {
+          "row": 855,
+          "col": 600,
+          "row_resampled": 285,
+          "col_resampled": 200
+        },
+        "bbox_pixel_coords": {
+          "row_min": 852,
+          "row_max": 858,
+          "col_min": 597,
+          "col_max": 606
+        },
+        "global_pixel_coords": {
+          "row": 8695,
+          "col": 4440
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 54,
+        "patch_name": "patch_0055_VV",
+        "geotiff_name": "patch_0055_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.901488108355316,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 4000,
+          "y0": 8000,
+          "x1": 6000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 3840,
+          "y0": 7840,
+          "x1": 6160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.39395294685228,
+          "south": -2.9381778092856896,
+          "east": -40.17909012799584,
+          "north": -2.720538690115291
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.41119994877854,
+          "south": -2.95559365648796,
+          "east": -40.161948493565674,
+          "north": -2.703124908514254
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.3333,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.39395294685228,
+            "south": -2.9381778092856896,
+            "east": -40.17909012799584,
+            "north": -2.720538690115291
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 9677,
+          "water_points": 6707,
+          "land_fraction": 0.59063720703125,
+          "water_fraction": 0.40936279296875,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 244069,
+          "pixels_masked_by_land": 353460,
+          "valid_water_fraction": 0.40846385698434723,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.59063720703125,
+        "water_fraction": 0.40936279296875,
+        "valid_water_fraction": 0.40846385698434723,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P055",
+        "id": 14,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.49630151317653,
+              -2.7853405637394055
+            ],
+            [
+              -40.49735805212175,
+              -2.7851098744257397
+            ],
+            [
+              -40.49753630514692,
+              -2.7859160060656425
+            ],
+            [
+              -40.49647975098007,
+              -2.7861466996973605
+            ],
+            [
+              -40.49630151317653,
+              -2.7853405637394055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.7854939303488826,
+        "lon": -40.496889197787254,
+        "area_px": 9,
+        "min_sigma0_dB": -9.460000038146973,
+        "mean_sigma0_dB": -7.590000152587891,
+        "max_sigma0_dB": -4.71999979019165,
+        "threshold_cfar_dB": -9.62,
+        "pixel_coords": {
+          "row": 1182,
+          "col": 1545,
+          "row_resampled": 394,
+          "col_resampled": 515
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1179,
+          "row_max": 1188,
+          "col_min": 1539,
+          "col_max": 1551
+        },
+        "global_pixel_coords": {
+          "row": 9022,
+          "col": 7385
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 55,
+        "patch_name": "patch_0056_VV",
+        "geotiff_name": "patch_0056_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.6959523303959,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 8000,
+          "x1": 8000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 7840,
+          "x1": 8160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.57027747018352,
+          "south": -2.8996944707851333,
+          "east": -40.354902035021716,
+          "north": -2.6821724311573023
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.5874852120728,
+          "south": -2.9171202949231536,
+          "east": -40.337732390647496,
+          "north": -2.664765620226154
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.25,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.57027747018352,
+            "south": -2.8996944707851333,
+            "east": -40.354902035021716,
+            "north": -2.6821724311573023
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 7235,
+          "water_points": 9149,
+          "land_fraction": 0.44158935546875,
+          "water_fraction": 0.55841064453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 333746,
+          "pixels_masked_by_land": 263783,
+          "valid_water_fraction": 0.5585436020678495,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.44158935546875,
+        "water_fraction": 0.55841064453125,
+        "valid_water_fraction": 0.5585436020678495,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P056",
+        "id": 15,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.49788632159436,
+              -2.7849945297689063
+            ],
+            [
+              -40.49841459106697,
+              -2.7848791851120733
+            ],
+            [
+              -40.49847401381591,
+              -2.7851478942193575
+            ],
+            [
+              -40.49794574180636,
+              -2.7852632395958654
+            ],
+            [
+              -40.49788632159436,
+              -2.7849945297689063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.7852055669076115,
+        "lon": -40.49820987781113,
+        "area_px": 5,
+        "min_sigma0_dB": -9.489999771118164,
+        "mean_sigma0_dB": -6.800000190734863,
+        "max_sigma0_dB": -4.110000133514404,
+        "threshold_cfar_dB": -9.34,
+        "pixel_coords": {
+          "row": 1182,
+          "col": 1560,
+          "row_resampled": 394,
+          "col_resampled": 520
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1179,
+          "row_max": 1182,
+          "col_min": 1557,
+          "col_max": 1563
+        },
+        "global_pixel_coords": {
+          "row": 9022,
+          "col": 7400
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 55,
+        "patch_name": "patch_0056_VV",
+        "geotiff_name": "patch_0056_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.6959523303959,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 8000,
+          "x1": 8000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 7840,
+          "x1": 8160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.57027747018352,
+          "south": -2.8996944707851333,
+          "east": -40.354902035021716,
+          "north": -2.6821724311573023
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.5874852120728,
+          "south": -2.9171202949231536,
+          "east": -40.337732390647496,
+          "north": -2.664765620226154
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.57027747018352,
+            "south": -2.8996944707851333,
+            "east": -40.354902035021716,
+            "north": -2.6821724311573023
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 7235,
+          "water_points": 9149,
+          "land_fraction": 0.44158935546875,
+          "water_fraction": 0.55841064453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 333746,
+          "pixels_masked_by_land": 263783,
+          "valid_water_fraction": 0.5585436020678495,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.44158935546875,
+        "water_fraction": 0.55841064453125,
+        "valid_water_fraction": 0.5585436020678495,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P056",
+        "id": 16,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.495568517705514,
+              -2.7857822937901533
+            ],
+            [
+              -40.49583265373922,
+              -2.785724621101899
+            ],
+            [
+              -40.496010883931945,
+              -2.78653075921888
+            ],
+            [
+              -40.49574674409283,
+              -2.7865884329866475
+            ],
+            [
+              -40.495568517705514,
+              -2.7857822937901533
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.786319719921149,
+        "lon": -40.495687335297056,
+        "area_px": 5,
+        "min_sigma0_dB": -8.890000343322754,
+        "mean_sigma0_dB": -5.730000019073486,
+        "max_sigma0_dB": -0.4399999976158142,
+        "threshold_cfar_dB": -9.36,
+        "pixel_coords": {
+          "row": 1188,
+          "col": 1530,
+          "row_resampled": 396,
+          "col_resampled": 510
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1182,
+          "row_max": 1191,
+          "col_min": 1530,
+          "col_max": 1533
+        },
+        "global_pixel_coords": {
+          "row": 9028,
+          "col": 7370
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 55,
+        "patch_name": "patch_0056_VV",
+        "geotiff_name": "patch_0056_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.6959523303959,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 6000,
+          "y0": 8000,
+          "x1": 8000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 5840,
+          "y0": 7840,
+          "x1": 8160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.57027747018352,
+          "south": -2.8996944707851333,
+          "east": -40.354902035021716,
+          "north": -2.6821724311573023
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.5874852120728,
+          "south": -2.9171202949231536,
+          "east": -40.337732390647496,
+          "north": -2.664765620226154
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 2.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.57027747018352,
+            "south": -2.8996944707851333,
+            "east": -40.354902035021716,
+            "north": -2.6821724311573023
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 7235,
+          "water_points": 9149,
+          "land_fraction": 0.44158935546875,
+          "water_fraction": 0.55841064453125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 333746,
+          "pixels_masked_by_land": 263783,
+          "valid_water_fraction": 0.5585436020678495,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.44158935546875,
+        "water_fraction": 0.55841064453125,
+        "valid_water_fraction": 0.5585436020678495,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P056",
+        "id": 17,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.6620216776188,
+              -2.596298789821908
+            ],
+            [
+              -41.66307605968372,
+              -2.5960673584286322
+            ],
+            [
+              -41.66319200473316,
+              -2.596604583548516
+            ],
+            [
+              -41.66213762202487,
+              -2.5968360159377406
+            ],
+            [
+              -41.6620216776188,
+              -2.596298789821908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.596451686934199,
+        "lon": -41.66260684101513,
+        "area_px": 6,
+        "min_sigma0_dB": 0.47999998927116394,
+        "mean_sigma0_dB": 5.869999885559082,
+        "max_sigma0_dB": 15.550000190734863,
+        "threshold_cfar_dB": 0.25,
+        "pixel_coords": {
+          "row": 1887,
+          "col": 663,
+          "row_resampled": 629,
+          "col_resampled": 221
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1884,
+          "row_max": 1890,
+          "col_min": 657,
+          "col_max": 669
+        },
+        "global_pixel_coords": {
+          "row": 9727,
+          "col": 20503
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 62,
+        "patch_name": "patch_0063_VV",
+        "geotiff_name": "patch_0063_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.257201884679944,
+          0.0,
+          -0.00011446067124026651,
+          -2.5267681761620704,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 8000,
+          "x1": 22000,
+          "y1": 10000
+        },
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 7840,
+          "x1": 22160,
+          "y1": 10160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.79932348875737,
+          "south": -2.630503004336786,
+          "east": -41.585045317768824,
+          "north": -2.4130018674874174
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.81649114750189,
+          "south": -2.647912280903479,
+          "east": -41.56790640850638,
+          "north": -2.395594702539343
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.6667,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.79932348875737,
+            "south": -2.630503004336786,
+            "east": -41.585045317768824,
+            "north": -2.4130018674874174
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 0,
+          "water_points": 16384,
+          "land_fraction": 0.0,
+          "water_fraction": 1.0,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 597529,
+          "pixels_masked_by_land": 0,
+          "valid_water_fraction": 1.0,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.0,
+        "water_fraction": 1.0,
+        "valid_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P063",
+        "id": 18,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.8850077842751,
+              -2.863059767679425
+            ],
+            [
+              -40.88606108854596,
+              -2.862829266595302
+            ],
+            [
+              -40.88617826134851,
+              -2.8633668359985305
+            ],
+            [
+              -40.885124966384446,
+              -2.8635973357251623
+            ],
+            [
+              -40.8850077842751,
+              -2.863059767679425
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.863213301499605,
+        "lon": -40.885593025138505,
+        "area_px": 6,
+        "min_sigma0_dB": -9.59000015258789,
+        "mean_sigma0_dB": -6.230000019073486,
+        "max_sigma0_dB": -2.0,
+        "threshold_cfar_dB": -10.75,
+        "pixel_coords": {
+          "row": 915,
+          "col": 1593,
+          "row_resampled": 305,
+          "col_resampled": 531
+        },
+        "bbox_pixel_coords": {
+          "row_min": 912,
+          "row_max": 918,
+          "col_min": 1587,
+          "col_max": 1599
+        },
+        "global_pixel_coords": {
+          "row": 10755,
+          "col": 11433
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 70,
+        "patch_name": "patch_0071_VV",
+        "geotiff_name": "patch_0071_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.28488077447705,
+          0.0,
+          -0.00011446067124026651,
+          -2.755689518642603,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 10000,
+          "x1": 12000,
+          "y1": 12000
+        },
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 9840,
+          "x1": 12160,
+          "y1": 12160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.959579213698746,
+          "south": -3.0020968359946134,
+          "east": -40.745133177866904,
+          "north": -2.7846833701236036
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.97674459590663,
+          "south": -3.0194457323674957,
+          "east": -40.728098744941995,
+          "north": -2.7672692671536434
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.6667,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.959579213698746,
+            "south": -3.0020968359946134,
+            "east": -40.745133177866904,
+            "north": -2.7846833701236036
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10596,
+          "water_points": 5788,
+          "land_fraction": 0.646728515625,
+          "water_fraction": 0.353271484375,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 210602,
+          "pixels_masked_by_land": 386927,
+          "valid_water_fraction": 0.3524548599314845,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.646728515625,
+        "water_fraction": 0.353271484375,
+        "valid_water_fraction": 0.3524548599314845,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P071",
+        "id": 19,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -40.90491634142164,
+              -2.8682761285679392
+            ],
+            [
+              -40.90544342270876,
+              -2.868160726310762
+            ],
+            [
+              -40.90567761965626,
+              -2.869235874246466
+            ],
+            [
+              -40.90515054170548,
+              -2.8693512764900007
+            ],
+            [
+              -40.90491634142164,
+              -2.8682761285679392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.868756001403792,
+        "lon": -40.90529698136674,
+        "area_px": 5,
+        "min_sigma0_dB": -7.840000152587891,
+        "mean_sigma0_dB": -6.829999923706055,
+        "max_sigma0_dB": -5.75,
+        "threshold_cfar_dB": -8.14,
+        "pixel_coords": {
+          "row": 1020,
+          "col": 1794,
+          "row_resampled": 340,
+          "col_resampled": 598
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1014,
+          "row_max": 1026,
+          "col_min": 1791,
+          "col_max": 1797
+        },
+        "global_pixel_coords": {
+          "row": 10860,
+          "col": 11634
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 70,
+        "patch_name": "patch_0071_VV",
+        "geotiff_name": "patch_0071_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -41.28488077447705,
+          0.0,
+          -0.00011446067124026651,
+          -2.755689518642603,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 10000,
+          "y0": 10000,
+          "x1": 12000,
+          "y1": 12000
+        },
+        "processing_bbox_pixels": {
+          "x0": 9840,
+          "y0": 9840,
+          "x1": 12160,
+          "y1": 12160
+        },
+        "core_bounds_lonlat": {
+          "west": -40.959579213698746,
+          "south": -3.0020968359946134,
+          "east": -40.745133177866904,
+          "north": -2.7846833701236036
+        },
+        "processing_bounds_lonlat": {
+          "west": -40.97674459590663,
+          "south": -3.0194457323674957,
+          "east": -40.728098744941995,
+          "north": -2.7672692671536434
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.6667,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -40.959579213698746,
+            "south": -3.0020968359946134,
+            "east": -40.745133177866904,
+            "north": -2.7846833701236036
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10596,
+          "water_points": 5788,
+          "land_fraction": 0.646728515625,
+          "water_fraction": 0.353271484375,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 210602,
+          "pixels_masked_by_land": 386927,
+          "valid_water_fraction": 0.3524548599314845,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.646728515625,
+        "water_fraction": 0.353271484375,
+        "valid_water_fraction": 0.3524548599314845,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P071",
+        "id": 20,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.70064483676614,
+              -2.7005448578791067
+            ],
+            [
+              -41.70196294402467,
+              -2.7002553117102996
+            ],
+            [
+              -41.702079494524725,
+              -2.700792411149919
+            ],
+            [
+              -41.70076138664292,
+              -2.7010819586062964
+            ],
+            [
+              -41.70064483676614,
+              -2.7005448578791067
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.700639680155146,
+        "lon": -41.701493976242766,
+        "area_px": 12,
+        "min_sigma0_dB": 1.090000033378601,
+        "mean_sigma0_dB": 3.4200000762939453,
+        "max_sigma0_dB": 9.970000267028809,
+        "threshold_cfar_dB": -1.7,
+        "pixel_coords": {
+          "row": 1089,
+          "col": 840,
+          "row_resampled": 363,
+          "col_resampled": 280
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1086,
+          "row_max": 1092,
+          "col_min": 831,
+          "col_max": 846
+        },
+        "global_pixel_coords": {
+          "row": 10929,
+          "col": 20680
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 75,
+        "patch_name": "patch_0076_VV",
+        "geotiff_name": "patch_0076_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.257201884679944,
+          0.0,
+          -0.00011446067124026651,
+          -2.755689518642603,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 20000,
+          "y0": 10000,
+          "x1": 22000,
+          "y1": 12000
+        },
+        "processing_bbox_pixels": {
+          "x0": 19840,
+          "y0": 9840,
+          "x1": 22160,
+          "y1": 12160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.838193097847224,
+          "south": -2.8095518833005153,
+          "east": -41.62369958484976,
+          "north": -2.5920330222435557
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.85536245783265,
+          "south": -2.826963660963642,
+          "east": -41.60653593097338,
+          "north": -2.5746256650683943
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 2.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.838193097847224,
+            "south": -2.8095518833005153,
+            "east": -41.62369958484976,
+            "north": -2.5920330222435557
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 1196,
+          "water_points": 15188,
+          "land_fraction": 0.072998046875,
+          "water_fraction": 0.927001953125,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 555001,
+          "pixels_masked_by_land": 42528,
+          "valid_water_fraction": 0.9288268853896631,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.072998046875,
+        "water_fraction": 0.927001953125,
+        "valid_water_fraction": 0.9288268853896631,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P076",
+        "id": 21,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.93229991202428,
+              -2.7247406326414367
+            ],
+            [
+              -41.93282714234427,
+              -2.724624651512685
+            ],
+            [
+              -41.93282714234427,
+              -2.724624651512685
+            ],
+            [
+              -41.93229991202428,
+              -2.7247406326414367
+            ],
+            [
+              -41.93229991202428,
+              -2.7247406326414367
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.724682642077061,
+        "lon": -41.93256352718427,
+        "area_px": 3,
+        "min_sigma0_dB": -9.779999732971191,
+        "mean_sigma0_dB": -9.319999694824219,
+        "max_sigma0_dB": -8.970000267028809,
+        "threshold_cfar_dB": -11.09,
+        "pixel_coords": {
+          "row": 1887,
+          "col": 1293,
+          "row_resampled": 629,
+          "col_resampled": 431
+        },
+        "bbox_pixel_coords": {
+          "row_min": 1887,
+          "row_max": 1887,
+          "col_min": 1290,
+          "col_max": 1296
+        },
+        "global_pixel_coords": {
+          "row": 11727,
+          "col": 23133
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 76,
+        "patch_name": "patch_0077_VV",
+        "geotiff_name": "patch_0077_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.05166610672052,
+          0.0,
+          -0.00011446067124026651,
+          -2.755689518642603,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 22000,
+          "y0": 10000,
+          "x1": 24000,
+          "y1": 12000
+        },
+        "processing_bbox_pixels": {
+          "x0": 21840,
+          "y0": 9840,
+          "x1": 24160,
+          "y1": 12160
+        },
+        "core_bounds_lonlat": {
+          "west": -42.013950202084004,
+          "south": -2.7709205661339484,
+          "east": -41.79943078473482,
+          "north": -2.553430703018783
+        },
+        "processing_bounds_lonlat": {
+          "west": -42.031121054079634,
+          "south": -2.788333689857461,
+          "east": -41.78226638415725,
+          "north": -2.5360268410144102
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 3.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.013950202084004,
+            "south": -2.7709205661339484,
+            "east": -41.79943078473482,
+            "north": -2.553430703018783
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 2916,
+          "water_points": 13468,
+          "land_fraction": 0.177978515625,
+          "water_fraction": 0.822021484375,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 491737,
+          "pixels_masked_by_land": 105792,
+          "valid_water_fraction": 0.8229508525946021,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.177978515625,
+        "water_fraction": 0.822021484375,
+        "valid_water_fraction": 0.8229508525946021,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P077",
+        "id": 22,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.64283311001094,
+              -2.851025008346513
+            ],
+            [
+              -41.64283311001094,
+              -2.851025008346513
+            ],
+            [
+              -41.64294986656333,
+              -2.851562149373957
+            ],
+            [
+              -41.64294986656333,
+              -2.851562149373957
+            ],
+            [
+              -41.64283311001094,
+              -2.851025008346513
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.851293578860235,
+        "lon": -41.642891488287134,
+        "area_px": 3,
+        "min_sigma0_dB": -7.130000114440918,
+        "mean_sigma0_dB": -6.96999979019165,
+        "max_sigma0_dB": -6.840000152587891,
+        "threshold_cfar_dB": -7.8,
+        "pixel_coords": {
+          "row": 558,
+          "col": 1848,
+          "row_resampled": 186,
+          "col_resampled": 616
+        },
+        "bbox_pixel_coords": {
+          "row_min": 555,
+          "row_max": 561,
+          "col_min": 1848,
+          "col_max": 1848
+        },
+        "global_pixel_coords": {
+          "row": 12398,
+          "col": 19688
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 87,
+        "patch_name": "patch_0088_VV",
+        "geotiff_name": "patch_0088_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.46273766263936,
+          0.0,
+          -0.00011446067124026651,
+          -2.9846108611231363,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 12000,
+          "x1": 20000,
+          "y1": 14000
+        },
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 11840,
+          "x1": 20160,
+          "y1": 14160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.70132368238012,
+          "south": -3.027225143734615,
+          "east": -41.48679966126028,
+          "north": -2.8096607062932737
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.718461712627175,
+          "south": -3.044639272135092,
+          "east": -41.469615148825454,
+          "north": -2.792249125863341
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 3.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.70132368238012,
+            "south": -3.027225143734615,
+            "east": -41.48679966126028,
+            "north": -2.8096607062932737
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10120,
+          "water_points": 6264,
+          "land_fraction": 0.61767578125,
+          "water_fraction": 0.38232421875,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 228280,
+          "pixels_masked_by_land": 369249,
+          "valid_water_fraction": 0.3820400348769683,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.61767578125,
+        "water_fraction": 0.38232421875,
+        "valid_water_fraction": 0.3820400348769683,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P088",
+        "id": 23,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.546960201625716,
+              -2.904173294795645
+            ],
+            [
+              -41.54748753962671,
+              -2.9040574340603293
+            ],
+            [
+              -41.54754600810356,
+              -2.904326025293282
+            ],
+            [
+              -41.547018670393456,
+              -2.9044418861701446
+            ],
+            [
+              -41.546960201625716,
+              -2.904173294795645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.9043839557317135,
+        "lon": -41.547282339248504,
+        "area_px": 4,
+        "min_sigma0_dB": -8.579999923706055,
+        "mean_sigma0_dB": -8.229999542236328,
+        "max_sigma0_dB": -7.929999828338623,
+        "threshold_cfar_dB": -8.77,
+        "pixel_coords": {
+          "row": 900,
+          "col": 684,
+          "row_resampled": 300,
+          "col_resampled": 228
+        },
+        "bbox_pixel_coords": {
+          "row_min": 897,
+          "row_max": 900,
+          "col_min": 681,
+          "col_max": 687
+        },
+        "global_pixel_coords": {
+          "row": 12740,
+          "col": 18524
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 87,
+        "patch_name": "patch_0088_VV",
+        "geotiff_name": "patch_0088_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.46273766263936,
+          0.0,
+          -0.00011446067124026651,
+          -2.9846108611231363,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 12000,
+          "x1": 20000,
+          "y1": 14000
+        },
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 11840,
+          "x1": 20160,
+          "y1": 14160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.70132368238012,
+          "south": -3.027225143734615,
+          "east": -41.48679966126028,
+          "north": -2.8096607062932737
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.718461712627175,
+          "south": -3.044639272135092,
+          "east": -41.469615148825454,
+          "north": -2.792249125863341
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.5,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.70132368238012,
+            "south": -3.027225143734615,
+            "east": -41.48679966126028,
+            "north": -2.8096607062932737
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10120,
+          "water_points": 6264,
+          "land_fraction": 0.61767578125,
+          "water_fraction": 0.38232421875,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 228280,
+          "pixels_masked_by_land": 369249,
+          "valid_water_fraction": 0.3820400348769683,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.61767578125,
+        "water_fraction": 0.38232421875,
+        "valid_water_fraction": 0.3820400348769683,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P088",
+        "id": 24,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -41.548014877627686,
+              -2.903941573325014
+            ],
+            [
+              -41.548278546628175,
+              -2.903883642957356
+            ],
+            [
+              -41.5483370146687,
+              -2.904152233977987
+            ],
+            [
+              -41.54807334581364,
+              -2.904210164416418
+            ],
+            [
+              -41.548014877627686,
+              -2.903941573325014
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.904152233977987,
+        "lon": -41.5483370146687,
+        "area_px": 3,
+        "min_sigma0_dB": -8.430000305175781,
+        "mean_sigma0_dB": -8.130000114440918,
+        "max_sigma0_dB": -7.960000038146973,
+        "threshold_cfar_dB": -8.33,
+        "pixel_coords": {
+          "row": 900,
+          "col": 696,
+          "row_resampled": 300,
+          "col_resampled": 232
+        },
+        "bbox_pixel_coords": {
+          "row_min": 897,
+          "row_max": 900,
+          "col_min": 693,
+          "col_max": 696
+        },
+        "global_pixel_coords": {
+          "row": 12740,
+          "col": 18536
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 87,
+        "patch_name": "patch_0088_VV",
+        "geotiff_name": "patch_0088_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -40.46273766263936,
+          0.0,
+          -0.00011446067124026651,
+          -2.9846108611231363,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 18000,
+          "y0": 12000,
+          "x1": 20000,
+          "y1": 14000
+        },
+        "processing_bbox_pixels": {
+          "x0": 17840,
+          "y0": 11840,
+          "x1": 20160,
+          "y1": 14160
+        },
+        "core_bounds_lonlat": {
+          "west": -41.70132368238012,
+          "south": -3.027225143734615,
+          "east": -41.48679966126028,
+          "north": -2.8096607062932737
+        },
+        "processing_bounds_lonlat": {
+          "west": -41.718461712627175,
+          "south": -3.044639272135092,
+          "east": -41.469615148825454,
+          "north": -2.792249125863341
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.0,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            773
+          ],
+          "sample_shape": [
+            128,
+            128
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -41.70132368238012,
+            "south": -3.027225143734615,
+            "east": -41.48679966126028,
+            "north": -2.8096607062932737
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 16384,
+          "land_points": 10120,
+          "water_points": 6264,
+          "land_fraction": 0.61767578125,
+          "water_fraction": 0.38232421875,
+          "valid_pixels_before_land_mask": 597529,
+          "valid_pixels_after_land_mask": 228280,
+          "pixels_masked_by_land": 369249,
+          "valid_water_fraction": 0.3820400348769683,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.61767578125,
+        "water_fraction": 0.38232421875,
+        "valid_water_fraction": 0.3820400348769683,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P088",
+        "id": 25,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -42.12105878597658,
+              -2.752574725315192
+            ],
+            [
+              -42.12158563131562,
+              -2.752458723789216
+            ],
+            [
+              -42.12176071010984,
+              -2.7532638401940743
+            ],
+            [
+              -42.1212338642334,
+              -2.7533798425130573
+            ],
+            [
+              -42.12105878597658,
+              -2.752574725315192
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "lat": -2.752785096819325,
+        "lon": -42.12138056815799,
+        "area_px": 12,
+        "min_sigma0_dB": -9.789999961853027,
+        "mean_sigma0_dB": -8.010000228881836,
+        "max_sigma0_dB": -6.300000190734863,
+        "threshold_cfar_dB": -11.07,
+        "pixel_coords": {
+          "row": 630,
+          "col": 1278,
+          "row_resampled": 210,
+          "col_resampled": 426
+        },
+        "bbox_pixel_coords": {
+          "row_min": 627,
+          "row_max": 636,
+          "col_min": 1275,
+          "col_max": 1281
+        },
+        "global_pixel_coords": {
+          "row": 12470,
+          "col": 25118
+        },
+        "source_product": "S1D_IW_GRDH_1SDV_20261025T082435_20261025T082504_005169_009CDE_EA6C",
+        "source_arquivo_id": null,
+        "patch_id": 90,
+        "patch_name": "patch_0091_VV",
+        "geotiff_name": "patch_0091_VV_sigma0_preproc.tif",
+        "polarization": "VV",
+        "input_scale": "linear",
+        "georef_method": "snap_geolocation_grid",
+        "geocoding_method": "geolocation_grid",
+        "geolocation_grid_status": null,
+        "snap_geolocation_grid_used": null,
+        "raster_crs": "EPSG:4326",
+        "raster_transform": [
+          0.00010276788897971108,
+          0.0,
+          -39.8461303287611,
+          0.0,
+          -0.00011446067124026651,
+          -2.9846108611231363,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "core_bbox_pixels": {
+          "x0": 24000,
+          "y0": 12000,
+          "x1": 25505,
+          "y1": 14000
+        },
+        "processing_bbox_pixels": {
+          "x0": 23840,
+          "y0": 11840,
+          "x1": 25505,
+          "y1": 14160
+        },
+        "core_bounds_lonlat": {
+          "west": -42.18499169941546,
+          "south": -2.911215146658367,
+          "east": -42.01405751833516,
+          "north": -2.7032799906706932
+        },
+        "processing_bounds_lonlat": {
+          "west": -42.18807689848665,
+          "south": -2.928636187861566,
+          "east": -41.996887166437226,
+          "north": -2.688967711795859
+        },
+        "halo_pixels": 160,
+        "valid_bbox_fraction": 1.0,
+        "artifact_aspect_ratio": 1.3333,
+        "land_mask_info": {
+          "enabled": true,
+          "applied": true,
+          "status": "ok",
+          "stage": "cfar_water_mask",
+          "resampled_shape": [
+            773,
+            555
+          ],
+          "sample_shape": [
+            128,
+            92
+          ],
+          "sample_max_dim": 128,
+          "available": true,
+          "method": "natural_earth_land_point_mask",
+          "bounds_lonlat": {
+            "west": -42.18499169941546,
+            "south": -2.911215146658367,
+            "east": -42.01405751833516,
+            "north": -2.7032799906706932
+          },
+          "mask_path": "/content/sismom_colab_work_v2/sources/api/copernicus_meta_1-main/copernicus-platform/frontend/public/shapes/ne_10m_land/ne_10m_land.shp",
+          "land_buffer_degrees": 0.0,
+          "valid_geolocation_points": 11776,
+          "land_points": 7666,
+          "water_points": 4110,
+          "land_fraction": 0.650985054347826,
+          "water_fraction": 0.3490149456521739,
+          "valid_pixels_before_land_mask": 331029,
+          "valid_pixels_after_land_mask": 115286,
+          "pixels_masked_by_land": 215743,
+          "valid_water_fraction": 0.3482655598150011,
+          "land_skip_threshold": 0.99,
+          "min_water_fraction": 0.01,
+          "skip_land_tiles": true,
+          "skipped": false,
+          "reason": "water_candidate",
+          "message": "CFAR restrito aos pixels de água."
+        },
+        "land_fraction": 0.650985054347826,
+        "water_fraction": 0.3490149456521739,
+        "valid_water_fraction": 0.3482655598150011,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "wave_age": null,
+        "wave_age_class": null,
+        "wave_age_factor": 1.35,
+        "wave_age_status": "fallback",
+        "era5_time": null,
+        "era5_lon": null,
+        "era5_lat": null,
+        "u10": null,
+        "peak_wave_period": null,
+        "friction_velocity": null,
+        "phase_speed": null,
+        "patch_label": "P091",
+        "id": 26,
+        "source": "cfar",
+        "detection_method": "cfar"
+      }
+    }
+  ]
+}

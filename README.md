@@ -104,3 +104,17 @@ Se a detecção automática ainda falhar, confirme a existência deste arquivo, 
 ```text
 C:\Program Files\R\R-4.6.1\bin\Rscript.exe
 ```
+
+
+## Aquisições de 25/10/2026 — Sentinel-1D
+
+Adicionados os produtos `EA6C`, `A685`, `ECF6` e `7A0E` com mosaicos, recortes,
+previews e detecções CFAR/YOLO consolidadas (uma entrada por alvo).
+
+`config.R` agora utiliza `default_product_id = NULL`: o calendário abre
+a aquisição de data/hora mais recente em vez de um produto fixo.
+
+Os produtos foram adaptados ao esquema do dashboard, incluindo
+`presentation.json` e contagens de alvos por modalidade.
+
+Validação: `Rscript validate_products.R`.

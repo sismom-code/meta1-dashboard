@@ -1,0 +1,935 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.820287552478014,
+              -25.956933941994418
+            ],
+            [
+              -47.818135642876264,
+              -25.956933941994418
+            ],
+            [
+              -47.818135642876264,
+              -25.955945744198303
+            ],
+            [
+              -47.820287552478014,
+              -25.955945744198303
+            ],
+            [
+              -47.820287552478014,
+              -25.956933941994418
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.8703007698059082,
+        "class": "ship-1",
+        "bbox_pixel": [
+          23917.762908935547,
+          2026.028076171875,
+          23935.28726196289,
+          2042.5360717773438
+        ],
+        "bbox_geo": [
+          -47.820287552478014,
+          -25.956933941994418,
+          -47.818135642876264,
+          -25.955945744198303
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 102,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 1,
+        "source": "yolo",
+        "centroid_lon": -47.8192115930275,
+        "centroid_lat": -25.956439844644486,
+        "score": 0.8703007698059082,
+        "patch_id": 11,
+        "patch_label": "P012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.95408771724555,
+              -27.110467489495104
+            ],
+            [
+              -46.95208563428012,
+              -27.110467489495104
+            ],
+            [
+              -46.95208563428012,
+              -27.108954061080855
+            ],
+            [
+              -46.95408771724555,
+              -27.108954061080855
+            ],
+            [
+              -46.95408771724555,
+              -27.110467489495104
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.8639569282531738,
+        "class": "ship-1",
+        "bbox_pixel": [
+          12320.626953125,
+          11978.760360717773,
+          12335.7587890625,
+          11999.130416870117
+        ],
+        "bbox_geo": [
+          -46.95408771724555,
+          -27.110467489495104,
+          -46.95208563428012,
+          -27.108954061080855
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 576,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 2,
+        "source": "yolo",
+        "centroid_lon": -46.95312255597822,
+        "centroid_lat": -27.109654893977417,
+        "score": 0.8639569282531738,
+        "patch_id": 71,
+        "patch_label": "P072"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.1927409840849,
+              -27.125698469925844
+            ],
+            [
+              -48.188921468476366,
+              -27.125698469925844
+            ],
+            [
+              -48.188921468476366,
+              -27.12446139096503
+            ],
+            [
+              -48.1927409840849,
+              -27.12446139096503
+            ],
+            [
+              -48.1927409840849,
+              -27.125698469925844
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.8462357521057129,
+        "class": "ship-1",
+        "bbox_pixel": [
+          24131.318481445312,
+          15304.826904296875,
+          24164.406372070312,
+          15327.850463867188
+        ],
+        "bbox_geo": [
+          -48.1927409840849,
+          -27.125698469925844,
+          -48.188921468476366,
+          -27.12446139096503
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 732,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 3,
+        "source": "yolo",
+        "centroid_lon": -48.19079633025164,
+        "centroid_lat": -27.12513628135062,
+        "score": 0.8462357521057129,
+        "patch_id": 102,
+        "patch_label": "P103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.52940673555837,
+              -26.467676102456807
+            ],
+            [
+              -46.52765791461394,
+              -26.467676102456807
+            ],
+            [
+              -46.52765791461394,
+              -26.465532586774387
+            ],
+            [
+              -46.52940673555837,
+              -26.465532586774387
+            ],
+            [
+              -46.52940673555837,
+              -26.467676102456807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.8124421834945679,
+        "class": "ship-1",
+        "bbox_pixel": [
+          10012.30551147461,
+          4121.639129638672,
+          10023.306182861328,
+          4148.362579345703
+        ],
+        "bbox_geo": [
+          -46.52940673555837,
+          -26.467676102456807,
+          -46.52765791461394,
+          -26.465532586774387
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 188,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 4,
+        "source": "yolo",
+        "centroid_lon": -46.52849642574932,
+        "centroid_lat": -26.466660114279595,
+        "score": 0.8124421834945679,
+        "patch_id": 30,
+        "patch_label": "P031"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.13177311354458,
+              -27.617659313013153
+            ],
+            [
+              -46.130266426189586,
+              -27.617659313013153
+            ],
+            [
+              -46.130266426189586,
+              -27.616399943623772
+            ],
+            [
+              -46.13177311354458,
+              -27.616399943623772
+            ],
+            [
+              -46.13177311354458,
+              -27.617659313013153
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.7966141700744629,
+        "class": "ship-1",
+        "bbox_pixel": [
+          3049.182861328125,
+          15307.210876464844,
+          3060.993438720703,
+          15324.3935546875
+        ],
+        "bbox_geo": [
+          -46.13177311354458,
+          -27.617659313013153,
+          -46.130266426189586,
+          -27.616399943623772
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 704,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 5,
+        "source": "yolo",
+        "centroid_lon": -46.131056221223105,
+        "centroid_lat": -27.61697396716961,
+        "score": 0.7966141700744629,
+        "patch_id": 92,
+        "patch_label": "P093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.61791727484293,
+              -26.55591058388174
+            ],
+            [
+              -46.61647445369814,
+              -26.55591058388174
+            ],
+            [
+              -46.61647445369814,
+              -26.555210402436515
+            ],
+            [
+              -46.61791727484293,
+              -26.555210402436515
+            ],
+            [
+              -46.61791727484293,
+              -26.55591058388174
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.7631267309188843,
+        "class": "ship-1",
+        "bbox_pixel": [
+          10623.25424194336,
+          5290.48210144043,
+          10635.324096679688,
+          5301.486251831055
+        ],
+        "bbox_geo": [
+          -46.61791727484293,
+          -26.55591058388174,
+          -46.61647445369814,
+          -26.555210402436515
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 259,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 6,
+        "source": "yolo",
+        "centroid_lon": -46.61718322052032,
+        "centroid_lat": -26.555516151754965,
+        "score": 0.7631267309188843,
+        "patch_id": 31,
+        "patch_label": "P032"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.07624637445746,
+              -26.84255555710261
+            ],
+            [
+              -48.074657916377504,
+              -26.84255555710261
+            ],
+            [
+              -48.074657916377504,
+              -26.841428675535166
+            ],
+            [
+              -48.07624637445746,
+              -26.841428675535166
+            ],
+            [
+              -48.07624637445746,
+              -26.84255555710261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.7561542987823486,
+        "class": "ship-1",
+        "bbox_pixel": [
+          23852.080841064453,
+          12025.560272216797,
+          23864.220642089844,
+          12041.965240478516
+        ],
+        "bbox_geo": [
+          -48.07624637445746,
+          -26.84255555710261,
+          -48.074657916377504,
+          -26.841428675535166
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 592,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 7,
+        "source": "yolo",
+        "centroid_lon": -48.07545214210779,
+        "centroid_lat": -26.841992117389196,
+        "score": 0.7561542987823486,
+        "patch_id": 76,
+        "patch_label": "P077"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.01946253673108,
+              -26.99694404138089
+            ],
+            [
+              -46.01732989307629,
+              -26.99694404138089
+            ],
+            [
+              -46.01732989307629,
+              -26.995639515641162
+            ],
+            [
+              -46.01946253673108,
+              -26.995639515641162
+            ],
+            [
+              -46.01946253673108,
+              -26.99694404138089
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.7300326228141785,
+        "class": "ship-1",
+        "bbox_pixel": [
+          3646.4518432617188,
+          8466.711059570312,
+          3663.115478515625,
+          8485.561767578125
+        ],
+        "bbox_geo": [
+          -46.01946253673108,
+          -26.99694404138089,
+          -46.01732989307629,
+          -26.995639515641162
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 389,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 8,
+        "source": "yolo",
+        "centroid_lon": -46.018359889637495,
+        "centroid_lat": -26.99634742147565,
+        "score": 0.7300326228141785,
+        "patch_id": 53,
+        "patch_label": "P054"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.87094786624412,
+              -25.798262094184167
+            ],
+            [
+              -47.869533548018346,
+              -25.798262094184167
+            ],
+            [
+              -47.869533548018346,
+              -25.797662674470175
+            ],
+            [
+              -47.87094786624412,
+              -25.797662674470175
+            ],
+            [
+              -47.87094786624412,
+              -25.798262094184167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.7237095236778259,
+        "class": "ship-1",
+        "bbox_pixel": [
+          24867.313049316406,
+          491.7543029785156,
+          24879.949645996094,
+          501.09381103515625
+        ],
+        "bbox_geo": [
+          -47.87094786624412,
+          -25.798262094184167,
+          -47.869533548018346,
+          -25.797662674470175
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 33,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 9,
+        "source": "yolo",
+        "centroid_lon": -47.87024070518951,
+        "centroid_lat": -25.797962384996115,
+        "score": 0.7237095236778259,
+        "patch_id": 12,
+        "patch_label": "P013"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.139831657079164,
+              -26.04919802040675
+            ],
+            [
+              -47.13797136207672,
+              -26.04919802040675
+            ],
+            [
+              -47.13797136207672,
+              -26.046330481722276
+            ],
+            [
+              -47.139831657079164,
+              -26.046330481722276
+            ],
+            [
+              -47.139831657079164,
+              -26.04919802040675
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.6888062357902527,
+        "class": "ship-1",
+        "bbox_pixel": [
+          17077.81071472168,
+          1231.8293151855469,
+          17087.840087890625,
+          1266.3787841796875
+        ],
+        "bbox_geo": [
+          -47.139831657079164,
+          -26.04919802040675,
+          -47.13797136207672,
+          -26.046330481722276
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 58,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 10,
+        "source": "yolo",
+        "centroid_lon": -47.13891428769612,
+        "centroid_lat": -26.047808543358524,
+        "score": 0.6888062357902527,
+        "patch_id": 8,
+        "patch_label": "P009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.56953662356484,
+              -26.512254880081382
+            ],
+            [
+              -46.56850787908976,
+              -26.512254880081382
+            ],
+            [
+              -46.56850787908976,
+              -26.51155145333997
+            ],
+            [
+              -46.56953662356484,
+              -26.51155145333997
+            ],
+            [
+              -46.56953662356484,
+              -26.512254880081382
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.634529173374176,
+        "class": "ship-1",
+        "bbox_pixel": [
+          10280.385009765625,
+          4709.841217041016,
+          10288.489501953125,
+          4719.351257324219
+        ],
+        "bbox_geo": [
+          -46.56953662356484,
+          -26.512254880081382,
+          -46.56850787908976,
+          -26.51155145333997
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 223,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 11,
+        "source": "yolo",
+        "centroid_lon": -46.56902224994999,
+        "centroid_lat": -26.511903167076998,
+        "score": 0.634529173374176,
+        "patch_id": 30,
+        "patch_label": "P031"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.27249963946861,
+              -27.210454793266557
+            ],
+            [
+              -47.27131688257987,
+              -27.210454793266557
+            ],
+            [
+              -47.27131688257987,
+              -27.20855847609863
+            ],
+            [
+              -47.27249963946861,
+              -27.20855847609863
+            ],
+            [
+              -47.27249963946861,
+              -27.210454793266557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.4883882403373718,
+        "class": "ship-1",
+        "bbox_pixel": [
+          15103.181243896484,
+          13834.324462890625,
+          15109.403411865234,
+          13857.019897460938
+        ],
+        "bbox_geo": [
+          -47.27249963946861,
+          -27.210454793266557,
+          -47.27131688257987,
+          -27.20855847609863
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 650,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 12,
+        "source": "yolo",
+        "centroid_lon": -47.27189526474438,
+        "centroid_lat": -27.20946236358883,
+        "score": 0.4883882403373718,
+        "patch_id": 85,
+        "patch_label": "P086"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.88736039234625,
+              -26.175189767697614
+            ],
+            [
+              -47.886074309281184,
+              -26.175189767697614
+            ],
+            [
+              -47.886074309281184,
+              -26.172945093134672
+            ],
+            [
+              -47.88736039234625,
+              -26.172945093134672
+            ],
+            [
+              -47.88736039234625,
+              -26.175189767697614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.29528746008872986,
+        "class": "ship-1",
+        "bbox_pixel": [
+          23954.435516357422,
+          4490.339614868164,
+          23960.299224853516,
+          4517.239044189453
+        ],
+        "bbox_geo": [
+          -47.88736039234625,
+          -26.175189767697614,
+          -47.886074309281184,
+          -26.172945093134672
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 242,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 13,
+        "source": "yolo",
+        "centroid_lon": -47.88670425539503,
+        "centroid_lat": -26.174023223698022,
+        "score": 0.29528746008872986,
+        "patch_id": 37,
+        "patch_label": "P038"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.0103743592983,
+              -26.296622648368615
+            ],
+            [
+              -48.00926893512791,
+              -26.296622648368615
+            ],
+            [
+              -48.00926893512791,
+              -26.294998061756775
+            ],
+            [
+              -48.0103743592983,
+              -26.294998061756775
+            ],
+            [
+              -48.0103743592983,
+              -26.296622648368615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.27763935923576355,
+        "class": "ship-1",
+        "bbox_pixel": [
+          24794.828552246094,
+          6097.905838012695,
+          24800.80859375,
+          6117.061248779297
+        ],
+        "bbox_geo": [
+          -48.0103743592983,
+          -26.296622648368615,
+          -48.00926893512791,
+          -26.294998061756775
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 313,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 14,
+        "source": "yolo",
+        "centroid_lon": -48.009821645263614,
+        "centroid_lat": -26.295810355731636,
+        "score": 0.27763935923576355,
+        "patch_id": 38,
+        "patch_label": "P039"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.02789537954154,
+              -26.309182139462276
+            ],
+            [
+              -48.02673705148518,
+              -26.309182139462276
+            ],
+            [
+              -48.02673705148518,
+              -26.307380870850533
+            ],
+            [
+              -48.02789537954154,
+              -26.307380870850533
+            ],
+            [
+              -48.02789537954154,
+              -26.309182139462276
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "detection_method": "yolo8",
+        "confidence": 0.2652539908885956,
+        "class": "ship-1",
+        "bbox_pixel": [
+          24927.073791503906,
+          6273.206329345703,
+          24933.154418945312,
+          6295.401580810547
+        ],
+        "bbox_geo": [
+          -48.02789537954154,
+          -26.309182139462276,
+          -48.02673705148518,
+          -26.307380870850533
+        ],
+        "model": "SAR-MULTI-1280p",
+        "class_id": 0,
+        "class_name": "ship-1",
+        "tile_id": 313,
+        "land_mask_checked": true,
+        "center_is_water": true,
+        "bbox_water_fraction": 1.0,
+        "land_mask_method": "natural_earth_land_point_mask",
+        "id": 15,
+        "source": "yolo",
+        "centroid_lon": -48.0273162133693,
+        "centroid_lat": -26.308281505892243,
+        "score": 0.2652539908885956,
+        "patch_id": 51,
+        "patch_label": "P052"
+      }
+    }
+  ]
+}
