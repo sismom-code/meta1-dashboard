@@ -8,7 +8,7 @@
   const KIND_COLORS = { cfar: "#45ec8b", yolo: "#b65cff", combined: "#ffd84a" };
 
   const state = {
-    catalog: [], catalogFingerprint: "", defaultProductId: String(CONFIG.default_product_id || "186F"),
+    catalog: [], catalogFingerprint: "", defaultProductId: CONFIG.default_product_id == null ? null : String(CONFIG.default_product_id),
     currentDate: null, dailyProducts: [], activeProductCode: null,
     allItems: [], filteredItems: [], currentIndex: 0, filter: "combined", opacity: 0.85,
     timer: null, loadToken: 0, calendarMonth: null,
@@ -82,7 +82,7 @@
   const catalogFingerprint = (products) => JSON.stringify(products.map((item) => [item.id, item.date, item.manifest, item.version || ""]));
   function normalizeCatalog(payload) {
     const products = Array.isArray(payload) ? payload : (Array.isArray(payload?.products) ? payload.products : []);
-    if (payload?.default_product_id !== undefined && payload?.default_product_id !== null) state.defaultProductId = String(payload.default_product_id);
+    if (payload && Object.hasOwn(payload, "default_product_id")) state.defaultProductId = payload.default_product_id == null ? null : String(payload.default_product_id);
     const seen = new Set();
     return products.filter((entry) => entry && entry.id !== undefined && entry.date && entry.manifest)
       .map((entry) => ({ ...entry, id: String(entry.id) }))
@@ -225,7 +225,10 @@
       const detection = source.detection || {};
       const kind = detection.kind || (detection.yoloCount ? "combined" : "cfar");
       const patchFeature = patchByLabel.get(source.id) || null;
-      const bounds = normalizeBounds(source.bounds) || geometryBounds(patchFeature);
+      // O preview PNNN.png usa o bounding box georreferenciado do mesmo patch.
+      // Nao usar bounds de outro recorte, mesmo que sejam trazidos no presentation.json.
+      const bounds = normalizeBounds(patchFeature?.properties?.display_bounds_lonlat)
+        || normalizeBounds(source.bounds) || geometryBounds(patchFeature);
       return {
         ...source, code, entry, manifest, baseUrl, detection, kind, patchFeature, bounds,
         uid: `${code}:${source.targetLabel || source.id}:${detection.id ?? index}`,
@@ -366,13 +369,18 @@
 
   function framePosition(item) {
     const detection = item.detection || {}, bounds = item.bounds;
-    let left = numberOrNull(detection.frameX), top = numberOrNull(detection.frameY);
-    if ((left === null || top === null) && bounds) {
+    // Priorizar coordenadas geograficas auditaveis em vez de frameX/frameY herdados.
+    let left = null, top = null;
+    if (bounds) {
       const lon = numberOrNull(detection.lon), lat = numberOrNull(detection.lat);
       if (lon !== null && lat !== null) {
         left = ((lon - bounds.west) / (bounds.east - bounds.west)) * 100;
         top = ((bounds.north - lat) / (bounds.north - bounds.south)) * 100;
       }
+    }
+    if (left === null || top === null) {
+      left = numberOrNull(detection.frameX);
+      top = numberOrNull(detection.frameY);
     }
     if (left === null || top === null) return null;
     return { left: Math.max(1.6, Math.min(98.4, left)), top: Math.max(1.6, Math.min(98.4, top)) };

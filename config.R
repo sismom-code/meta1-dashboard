@@ -5,7 +5,7 @@ APP_CONFIG <- list(
   port = 3838L,
   auto_interval_ms = 10000L,
   catalog_refresh_ms = 5000L,
-  default_product_id = "AF45",
+  default_product_id = NULL,
   text = list(
     PROJECT_LABEL = "PROJETO SisMOM",
     META_TITLE = "META 1",
