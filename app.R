@@ -26,6 +26,17 @@ render_dashboard_template <- function(path, values) {
   HTML(html)
 }
 
+# Inclui um hash dos recursos estáticos para impedir o navegador de usar
+# JavaScript/CSS antigos após uma atualização do visualizador.
+static_asset_url <- function(path) {
+  disk_path <- file.path("www", path)
+  if (!file.exists(disk_path)) {
+    stop(paste("Recurso estatico ausente:", disk_path), call. = FALSE)
+  }
+  version <- substr(unname(tools::md5sum(disk_path)), 1L, 12L)
+  paste0(path, "?v=", version)
+}
+
 initial_catalog <- scan_product_catalog()
 client_config_json <- jsonlite::toJSON(list(
   auto_interval_ms = APP_CONFIG$auto_interval_ms,
@@ -42,14 +53,14 @@ ui <- tags$html(
     tags$meta(name = "theme-color", content = "#031323"),
     tags$title(APP_CONFIG$app_title),
     tags$link(rel = "stylesheet", href = "assets/leaflet.css"),
-    tags$link(rel = "stylesheet", href = "assets/styles.css"),
+    tags$link(rel = "stylesheet", href = static_asset_url("assets/styles.css")),
     tags$link(rel = "stylesheet", href = "config.css"),
     tags$script(HTML(sprintf("window.SISMOM_CONFIG = %s;", client_config_json)))
   ),
   tags$body(
     render_dashboard_template("www/dashboard.html", APP_CONFIG$text),
     tags$script(src = "assets/leaflet.js"),
-    tags$script(src = "assets/app.js")
+    tags$script(src = static_asset_url("assets/app.js"))
   )
 )
 

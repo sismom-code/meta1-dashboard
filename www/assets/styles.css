@@ -80,6 +80,11 @@ button{font:inherit;color:inherit}
 .crop-controls span{min-width:8.5em;color:var(--muted);font-size:.66em;text-align:center}
 .crop-controls span b{font-weight:500}
 .crop-controls span small{display:block;margin-top:.18em;color:var(--green);font-size:.78em;font-weight:800;letter-spacing:.05em}
+.crop-controls button.autoplay-toggle{font-size:1.06em;font-weight:900;color:var(--green);border-color:rgba(69,236,139,.55);background:rgba(22,71,60,.35);transition:background .15s,border-color .15s,color .15s}
+.crop-controls button.autoplay-toggle[data-paused="true"]{color:var(--yellow,#ffd84a);border-color:rgba(255,216,74,.65);background:rgba(90,65,13,.42)}
+.crop-controls button.autoplay-toggle:hover,.crop-controls button.autoplay-toggle:focus-visible{background:rgba(49,217,239,.16);outline:2px solid rgba(49,217,239,.65);outline-offset:2px}
+.crop-controls #autoplayStatus{white-space:nowrap}
+.crop-controls #autoplayStatus[data-paused="true"]{color:var(--yellow,#ffd84a)}
 .sar-stage{min-height:0;position:relative;display:grid;grid-template-columns:4.6em minmax(0,1fr) 4.4em;align-items:stretch;gap:.75em;padding:.78em .8em .5em .45em;overflow:hidden;background:#02050a}
 .sar-visual{min-width:0;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) 1.45em;align-items:center;justify-items:center}
 .sar-image-wrap{width:auto;height:100%;max-width:100%;max-height:100%;position:relative;align-self:center;justify-self:center;overflow:hidden;border:1px solid rgba(126,188,230,.22);box-shadow:0 0 1.2em rgba(0,0,0,.55)}
