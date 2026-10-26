@@ -1,6 +1,8 @@
 (function () {
   "use strict";
 
+  // Identifica a versão ativa para conferir carregamento no navegador.
+  window.SISMOM_PLAYPAUSE_VERSION = "2026-10-26-v2";
   const CONFIG = window.SISMOM_CONFIG || {};
   const autoIntervalMs = Number(CONFIG.auto_interval_ms || 10000);
   const transparentPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
@@ -11,7 +13,7 @@
     catalog: [], catalogFingerprint: "", defaultProductId: CONFIG.default_product_id == null ? null : String(CONFIG.default_product_id),
     currentDate: null, dailyProducts: [], activeProductCode: null,
     allItems: [], filteredItems: [], currentIndex: 0, filter: "combined", opacity: 0.85,
-    timer: null, loadToken: 0, calendarMonth: null,
+    timer: null, autoplayPaused: false, loadToken: 0, calendarMonth: null,
     map: null, zeeLayer: null, mapView: "product",
   };
 
@@ -460,7 +462,28 @@
 
   function resetTimer() {
     window.clearTimeout(state.timer);
-    if (state.filteredItems.length > 1) state.timer = window.setTimeout(() => selectItem(state.currentIndex + 1), autoIntervalMs);
+    state.timer = null;
+    if (!state.autoplayPaused && state.filteredItems.length > 1) {
+      state.timer = window.setTimeout(() => selectItem(state.currentIndex + 1), autoIntervalMs);
+    }
+  }
+
+  function updateAutoplayControl() {
+    const button = el("autoplayToggleButton");
+    const paused = state.autoplayPaused;
+    button.textContent = paused ? "▶" : "❚❚";
+    button.dataset.paused = String(paused);
+    button.setAttribute("aria-label", paused ? "Retomar passagem automática" : "Pausar passagem automática");
+    button.title = paused ? "Retomar passagem automática" : "Pausar passagem automática";
+    const status = el("autoplayStatus");
+    status.dataset.paused = String(paused);
+    status.textContent = paused ? "PAUSADO" : `AUTOMÁTICO • ${autoIntervalMs / 1000} s`;
+  }
+
+  function toggleAutoplay() {
+    state.autoplayPaused = !state.autoplayPaused;
+    updateAutoplayControl();
+    resetTimer();
   }
   function selectItem(index) {
     if (!state.filteredItems.length) { renderEmpty(); resetTimer(); return; }
@@ -537,6 +560,7 @@
 
   function initializeEvents() {
     el("previousButton").addEventListener("click", () => selectItem(state.currentIndex - 1));
+    el("autoplayToggleButton").addEventListener("click", toggleAutoplay);
     el("nextButton").addEventListener("click", () => selectItem(state.currentIndex + 1));
     el("zeeButton").addEventListener("click", () => setMapView("zee"));
     el("productButton").addEventListener("click", () => setMapView("product"));
@@ -566,7 +590,7 @@
   }
 
   async function initialize() {
-    initializeEvents(); registerShinyHandler(); updateClock(); window.setInterval(updateClock, 1000);
+    initializeEvents(); updateAutoplayControl(); registerShinyHandler(); updateClock(); window.setInterval(updateClock, 1000);
     await initializeMap(); updateCatalog({ products: CONFIG.catalog || [], default_product_id: CONFIG.default_product_id });
   }
   initialize().catch((error) => { console.error(error); showAlert(`Falha ao iniciar o visualizador: ${error.message}`); });

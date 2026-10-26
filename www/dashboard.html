@@ -72,7 +72,7 @@
 <section class="panel crop-panel">
 <div class="panel-heading crop-heading">
 <div class="crop-title"><span class="eyebrow">RECORTE COM DETECÇÃO</span><span class="patch-pill" id="patchPill">—</span></div>
-<div class="crop-controls"><button aria-label="Detecção anterior" id="previousButton" type="button">‹</button><span><b id="patchCounter">0 de 0</b><small>AUTOMÁTICO • {{AUTO_INTERVAL_SECONDS}} s</small></span><button aria-label="Próxima detecção" id="nextButton" type="button">›</button></div>
+<div class="crop-controls"><button aria-label="Detecção anterior" id="previousButton" type="button">‹</button><span><b id="patchCounter">0 de 0</b><small aria-live="polite" id="autoplayStatus">AUTOMÁTICO • {{AUTO_INTERVAL_SECONDS}} s</small></span><button aria-label="Pausar passagem automática" class="autoplay-toggle" data-paused="false" id="autoplayToggleButton" title="Pausar passagem automática" type="button">❚❚</button><button aria-label="Próxima detecção" id="nextButton" type="button">›</button></div>
 </div>
 <div class="sar-stage">
 <div class="latitude-axis"><span class="orientation-label">N ↑</span><span id="latNorth">—</span><span id="latMid">—</span><span id="latSouth">—</span></div>
